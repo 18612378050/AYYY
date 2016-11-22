@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #da{
+            width: 100%;
+            height: 650px;
+            margin: 0px auto;
+            position: relative;
+        }
+
+        #zs{
+            position: absolute;
+            top: 80px;
+            left: 200px;
+            font-size: 30px;
+            color: white;
+        }
+        #riqi{
+        	width: 100px;
+        	height: 50px;
+        	position: absolute;
+        	top: 150px;
+        	right: 200px;
+        }
+        #riqi span{
+        	font-size: 18px;
+            color: white;
+        }
+        #r1{
+        	position: absolute;
+        	top: 0px;
+        	left: 40px;
+        }
+        #r2{
+        	position: absolute;
+        	top: 20px;
+        	left: 10px;
+        }
+        .aa{
+            color: white;
+        	width: 1160px;
+        	height: 155px;
+        	position: relative;
+        	top: -225px;
+            left:88px;
+        }
+        #a1{
+            border-right: 1px solid black;
+            width: 368px;
+            height: 155px;
+            float: left;
+            position: relative;
+        }
+
+        #a11{
+            font-size: 50px;
+            color: white;
+            text-align: center;
+            display: block;
+            width: 200px;
+            height: 50px;
+            position: absolute;
+            top: 10px;
+            left: 30px;
+        }
+        #a12{
+            display: block;
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            top: 10px;
+            left: 250px;
+        }
+        #a13{
+            display: block;
+            position: absolute;
+            top: 100px;
+            left: 30px;
+        }
+        #a14{
+            display: block;
+            position: absolute;
+            top: 100px;
+            left: 150px;
+        }
+        #a2{
+            position: absolute;
+            top: -16px;
+            left: 330px;
+            list-style: none;
+            float: left;
+        }
+        #a2 li{
+            width: 130px;
+            height: 155px;
+            float: left;
+            border-right: 1px solid black;
+            position: relative;
+        }
+        #a2 li span{
+            border-radius: 20px;
+            width: 60px;
+            height: 20px;
+            text-align: center;
+            background-color: rgba(0,0,0,0.3);
+            position: absolute;
+            top: 20px;
+            left: 40px;
+        }
+        #a2 li p{
+            position: absolute;
+            top: 40px;
+            left: 55px;
+        }
+        #a2 li div{
+            position: absolute;
+            top: 100px;
+            left: 20px;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="da">
+    <div id="tu">
+        <img src="img/bg1.png" alt=""  style="height: 650px;width: 100%"/>
+    </div>
+    <span id="zs"></span>
+    <div id="riqi">
+        <span id="r1"></span>
+        <span id="r2"></span>
+    </div>
+    <div class="aa">
+    	<div id="a1">
+            <span id="a11"></span>
+            <span id="a12">
+                <img src="" alt=""/>
+            </span>
+            <span id="a13"></span>
+            <span id="a14"></span>
+        </div>
+        <ul id="a2">
+            <li>
+                <span></span>
+                <p>
+                    <img src="" alt=""/>
+                </p>
+                <div></div>
+            </li>
+            <li>
+                <span></span>
+                <p><img src="" alt=""/></p>
+                <div></div>
+            </li>
+            <li>
+                <span></span>
+                <p><img src="" alt=""/></p>
+                <div></div>
+            </li>
+            <li>
+                <span></span>
+                <p><img src="" alt=""/></p>
+                <div></div>
+            </li>
+            <li>
+                <span></span>
+                <p><img src="" alt=""/></p>
+                <div></div>
+            </li>
+            <li>
+                <span></span>
+                <p><img src="" alt=""/></p>
+                <div></div>
+            </li>
+        </ul>
+        <!--<div class="a2">
+            <span></span>
+            <p></p>
+            <span></span>
+        </div>
+        <div class="a2">
+            <span></span>
+            <p></p>
+            <span></span>
+        </div>
+        <div class="a2">
+            <span></span>
+            <p></p>
+            <span></span>
+        </div>
+        <div class="a2">
+            <span></span>
+            <p></p>
+            <span></span>
+        </div>
+        <div class="a2">
+            <span></span>
+            <p></p>
+            <span></span>
+        </div>
+        <div class="a2">
+            <span></span>
+            <p></p>
+            <span></span>
+        </div>-->
+    </div>
+</div>
+<script>
+      var citys=document.getElementById('zs');
+      var xhr=new XMLHttpRequest();
+      var spas=document.getElementById('riqi').getElementsByTagName('span');
+      var spa1=document.getElementById('a1').getElementsByTagName('span');
+      var z1t=document.getElementById('a12').getElementsByTagName('img')[0];
+      var ulsa=document.getElementById('a2').getElementsByTagName('span');
+      var ulsp=document.getElementById('a2').getElementsByTagName('p');
+      var ulsd=document.getElementById('a2').getElementsByTagName('div');
+      var img1=document.getElementById('a2').getElementsByTagName('img');
+      xhr.open("get","GetWeatherByCityIdAndName.php",true);
+      xhr.send();
+      xhr.onload=function(){
+          var jsons=JSON.parse(xhr.responseText);
+          citys.innerHTML=jsons.city;
+          spas[0].innerHTML=jsons.city;
+          spas[1].innerHTML=jsons.today.date;
+          spa1[0].innerHTML=jsons.today.curTemp;
+          console.log(jsons.other[3].type);
+
+          switch (jsons.today.type){
+              case ("晴"):
+                  z1t.src="img/01.png";
+                  break;
+              case ("阵雨"):
+                  z1t.src="img/06.png";
+                  break;
+              case ("多云"):
+                  z1t.src="img/02.png";
+                  break;
+              case ("小雨"):
+                  z1t.src="img/04.png";
+                  break;
+              case ("中雨"):
+                  z1t.src="img/05.png";
+                  break;
+              case ("阴"):
+                  z1t.src="img/03.png";
+                  break;
+          }
+
+
+         /* for(var i=0;i<6;i++){
+              console.log(jsons.today.type)
+          }*/
+
+          spa1[2].innerHTML=jsons.today.week+"&nbsp"+jsons.today.aqi;
+          spa1[3].innerHTML=jsons.today.lowtemp+"&nbsp"+"/"+"&nbsp"+jsons.today.hightemp;
+          ulsa[0].innerHTML=jsons.other[0].week;
+          ulsa[1].innerHTML=jsons.other[1].week;
+          ulsa[2].innerHTML=jsons.other[2].week;
+          ulsa[3].innerHTML=jsons.other[3].week;
+          ulsa[4].innerHTML=jsons.other[4].week;
+          ulsa[5].innerHTML=jsons.other[5].week;
+          ulsd[0].innerHTML=jsons.other[0].lowtemp+"&nbsp"+"/"+"&nbsp"+jsons.today.hightemp;
+          ulsd[1].innerHTML=jsons.other[1].lowtemp+"&nbsp"+"/"+"&nbsp"+jsons.today.hightemp;
+          ulsd[2].innerHTML=jsons.other[2].lowtemp+"&nbsp"+"/"+"&nbsp"+jsons.today.hightemp;
+          ulsd[3].innerHTML=jsons.other[3].lowtemp+"&nbsp"+"/"+"&nbsp"+jsons.today.hightemp;
+          ulsd[4].innerHTML=jsons.other[4].lowtemp+"&nbsp"+"/"+"&nbsp"+jsons.today.hightemp;
+          ulsd[5].innerHTML=jsons.other[5].lowtemp+"&nbsp"+"/"+"&nbsp"+jsons.today.hightemp;
+          for(var i=0;i<img1.length;i++){
+              switch (jsons.other[i
+                      ].type){
+                  case ("晴"):
+                      img1[i].src="img/1.png";
+                      break;
+                  case ("阵雨"):
+                      img1[i].src="img/6.png";
+                      break;
+                  case ("多云"):
+                      img1[i].src="img/2.png";
+                      break;
+                  case ("小雨"):
+                      img1[i].src="img/4.png";
+                      break;
+                  case ("中雨"):
+                      img1[i].src="img/5.png";
+                      break;
+                  case ("阴"):
+                      img1[i].src="img/3.png";
+                      break;
+              }
+
+          }
+
+          
+
+
+      }
+
+
+
+
+
+
+//    var wu = {
+//      name:"老王",
+//      age:22,
+//      school:['look','12122']
+//    };
+//    var jsons=JSON.stringify(wu,["school","name"]);
+//    console.log(jsons);
+//
+//
+//    var jsons2=JSON.stringify(wu,null,3)
+//    console.log(jsons2);
+//    var jsons3=JSON.stringify(wu,null,"--")
+//    console.log(jsons3);
+</script>
+
+</body>
+</html>

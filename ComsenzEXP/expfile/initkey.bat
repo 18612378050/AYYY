@@ -1,0 +1,1 @@
+"E:\ComsenzEXP\mysql\bin\mysql" -uroot -p11111111 x3gbk<"E:\ComsenzEXP\expfile\changeuc_key.sql"

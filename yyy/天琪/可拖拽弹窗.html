@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>可拖拽弹窗</title>
+    <style>
+       body{
+           width: 100%;
+           height:100%;
+           position: relative;
+       }
+        #tc{
+            width: 400px;
+            height: 400px;
+            background-color: chartreuse;
+            position: absolute;
+            top: 150px;
+            left: 400px;
+        }
+        #bt{
+            width: 100%;
+            height: 50px;
+            background-color: antiquewhite;
+        }
+        #bt1{
+            font-size: 30px;
+            line-height: 50px;
+            position: absolute;
+            left: 20px;
+        }
+       #bt2{
+           font-size: 20px;
+           line-height: 50px;
+           position: absolute;
+           right: 20px;
+       }
+        button{
+            width: 80px;
+            height: 50px;
+            background-color: violet;
+            font-size: 30px;
+        }
+    </style>
+   <!-- <script>
+        var but=document.getElementsByTagName('button')[0];
+        var bt=document.getElementById('bt');
+        var tc=document.getElementById('tc');
+        var bt2=document.getElementById('bt2');
+        var boy=document.getElementsByTagName('body')[0];
+        var divs=document.getElementsByTagName('div');
+        console.log(bt)
+        tc.onmousedown=function(event){
+             var event=event||window.event;//IE6兼容
+             var tomx=event.clientX-bt.offsetLeft;
+            var tomy=event.clientY-bt.offsetTop;
+            if(event.preventDefault){
+                event.preventDefault()
+            }else{
+                event.returnValue=false
+            }
+            dc.onmousemove=function(event){
+                console.log(enx)
+                console.log(mw)
+               /* console.log(enx)*/
+                var event=event||window.event;//IE6兼容
+                var enx=event.clientX-tomx;
+                var eny=event.clientY-tomy;
+                var mw=boy.clientWidth-tc.offsetWidth;
+                var mh=boy.clientHeight-tc.offsetHeight;
+                if(enx>=mw){
+                    enx=mw;
+                }
+                if(enx<=0){
+                    enx=0
+                }
+                if(eny>=my){
+                    eny=my;
+                }
+                if(eny<=0){
+                    eny=0
+                }
+                tc.style.left=enx+'px';
+                tc.style.top=eny+'px'
+            }
+
+        }
+    </script>-->
+</head>
+<body>
+<button>
+    弹窗
+</button>
+<div id="tc">
+    <div id="bt">
+        <span id="bt1">弹窗</span>
+        <span id="bt2">×</span>
+    </div>
+</div>
+<script>
+    var tc=document.getElementById('tc');
+    var bt=document.getElementById('bt');
+    var but=document.getElementsByTagName('button')[0];
+    var bt2=document.getElementById('bt2');
+
+    bt.onmousedown=function(event){
+        var ev=event||window.event;
+        var x=event.clientX-tc.offsetLeft;
+        var y=event.clientY-tc.offsetTop;
+        console.log('水平'+x)
+        console.log('垂直'+y)
+        document.onmousemove=function(event){
+            var ev=event||window.event;
+            var enx=event.clientX-x;
+            var eny=event.clientY-y;
+            console.log(enx)
+            console.log(eny)
+            if(event.preventDefault){
+                event.preventDefault()
+            }else{
+                event.returnValue=false
+            }
+            tc.style.left=enx+'px';
+            tc.style.top=eny+'px';
+        }
+    }
+    bt.onmouseup=function(){
+        document.onmousemove=null;
+    }
+    bt2.onclick=function(){
+        tc.style.display="none";
+    }
+    but.onclick=function(){
+        tc.style.display="block";
+    }
+</script>
+</body>
+</html>

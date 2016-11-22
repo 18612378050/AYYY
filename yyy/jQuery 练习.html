@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .dvi1{
+            width: 1100px;
+            height: 50px;
+            margin: auto;
+            background: red;
+        }
+        span{
+        	display: block;
+        	float: left;
+        	width: 200px;
+        	height: 50px;
+        	background: #EB6375;
+        	margin-left: 50px;
+        }
+        ul{
+        	float: left;
+        	margin-left: -39px;
+        	margin-top: 50px;
+            height: 0px;
+            overflow: hidden;
+
+        }
+        li{
+        	list-style: none;
+        	width: 200px;
+        	height: 80px;
+        	background: pink;
+        	margin-top: 5px;
+        }
+
+    </style>
+    <script type="text/javascript" src="jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="jquery-color.min.js"></script>
+</head>
+<body>
+
+<div class="dvi1">
+<span id="s1">
+    <ul id="u1">
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+</span>
+<span id="s2">
+    <ul id="u2">
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</span>
+<span id="s3">
+    <ul id="u3">
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</span>
+<span id="s4">
+    <ul id="u4">
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</span>
+
+
+</div>
+<script>
+     $('li').hover(
+     	function(){
+     	$(this).css({'background':'red'})
+     },
+     function(){
+     	$(this).css({'background':''})
+     }
+
+     )
+    $('#s1').hover(
+    	function(){
+                $(this).css({'background':'#FFC0CB'})
+                $('#u1').animate({'height':'300px'})
+            },
+            function(){
+                $(this).css({'background':''})
+                $('#u1').animate({'height':'0px'})
+            }
+    )
+    $('#s2').hover(
+    	function(){
+                $(this).css({'background':'#FFC0CB'})
+                $('#u2').animate({'height':'300px'})
+            },
+            function(){
+                $(this).css({'background':''})
+                $('#u2').animate({'height':'0px'})
+            }
+    )
+    $('#s3').hover(
+    	function(){
+                $(this).css({'background':'#FFC0CB'})
+                $('#u3').animate({'height':'300px'})
+            },
+            function(){
+                $(this).css({'background':''})
+                $('#u3').animate({'height':'0px'})
+            }
+    )
+    $('#s4').hover(
+    	function(){
+          $(this).css({'background':'#FFC0CB'})
+          $('#u4').animate({'height':'300px'})
+        },
+        function(){
+          $(this).css({'background':''})
+          $('#u4').animate({'height':'0px'})
+     });
+    
+
+</script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+UPDATE pre_ucenter_applications SET authkey='2d3152eb2bb5ba154c7e8081afb39766bff1060ecd1d7da3b998045054d7390b';REPLACE INTO pre_common_setting (skey, svalue) VALUES ('authkey', '553a29ba5ff0f891');REPLACE INTO pre_common_setting (skey, svalue) VALUES ('siteuniqueid', 'EXPeea1bde7f468f');

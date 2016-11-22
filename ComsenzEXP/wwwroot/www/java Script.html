@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        .a{
+            width: 500px;
+            height: 500px;
+            background-color: aqua;
+        }
+        .b{
+            width: 400px;
+            height:400px;
+            background-color: antiquewhite;
+        }
+        .c{
+            width: 300px;
+            height:300px;
+            background-color: blue;
+        }
+        .d{
+            width: 200px;
+            height:200px;
+            background-color: yellow;
+        }
+        /*  div{
+              font-size: 30px;
+          }*/
+        ul{
+            display: none;
+        }
+        .q{
+            width: 160px;
+            border: 1px solid gray;
+            position: absolute;
+            left: 600px;
+            top: 5px;
+        }
+        ul{
+            width: 80px;
+            display: none;
+        }
+        .tab1{
+            position: absolute;
+            width: 300px;
+            height:300px;
+            font-size: 250px;
+            background-color: red;
+
+        }
+        .tab2{
+            position: absolute;
+            width: 300px;
+            height:300px;
+            font-size: 250px;
+            background-color: blue;
+
+        }
+        .tab3{
+            position: absolute;
+            width: 300px;
+            height:300px;
+            font-size: 250px;
+            background-color:yellow;
+
+        }
+    </style>
+
+</head>
+<body>
+<!--捕获  冒泡-->
+<!--<div class="a">a
+    <div class="b">b
+        <div class="c">c
+            <div class="d">d</div>
+        </div>
+    </div>
+</div-->>
+
+
+
+<!--下拉框-->
+<div class="q">
+    <input type="text" id="inpt"/>
+    <ul>
+        <li>桃子</li>
+        <li>阿狸</li>
+        <li>桃子</li>
+        <li>陶子</li>
+        <li>阿丽</li>
+    </ul>
+</div>
+
+
+
+
+
+<script language="JavaScript">
+    //学生成绩
+
+
+
+    //下拉框
+    var divs=document.getElementsByTagName('div')
+
+    var input=document.getElementById('inpt');
+    var ul=document.getElementsByTagName('ul')[0];
+    var lis=document.getElementsByTagName('li')
+    divs[0].onmouseover=function(){
+        ul.style.display="block";
+    }
+    divs[0].onmouseout=function(){
+        ul.style.display="none";
+    }
+    ul.onmouseover=function(){
+        ul.style.display="block";
+    }
+    for (var i = 0; i < lis.length; i++) {
+        lis[i].onmouseover=function() {
+            for(var i = 0; i < lis.length; i++){
+                if(this==lis[i]){
+                    lis[i].style.backgroundColor="red";
+                }else{
+                    lis[i].style.backgroundColor="white"
+                }
+            }
+        }
+    }
+    for(var a=0;a<lis.length;a++){
+        lis[a].onclick=function(){
+            input.value=this.innerHTML;
+        }
+    }
+
+    //捕获和冒泡
+ /*    var divs=document.getElementsByTagName('div');
+     divs[0].addEventListener('click',function(){alert('a')},true)
+     divs[1].addEventListener('click',function(){alert('b')},true)
+     divs[2].addEventListener('click',function(){alert('c')},true)
+     divs[3].addEventListener('click',function(){alert('d')},true)
+     function a(){
+     if(divs[0].attachEvent){
+     divs[0].attachEvent("onclick",function(){
+     alert(1)
+     },false)
+     }else if(divs[0].addEventListener){
+     divs[0].addEventListener("click",function(){
+     alert("a")
+     },false)
+     }
+     }
+     a()*/
+
+
+</script>
+</body>
+</html>

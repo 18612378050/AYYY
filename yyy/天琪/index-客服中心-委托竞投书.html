@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>index-客服中心-委托竞投书</title>
+<style type="text/css">
+*{margin: 0;padding: 0}
+#zong{
+	margin: 0 auto;
+	width: 1100px;
+	height: 2640px;
+	position: relative;
+    }
+#tou{
+   width: 1100px;
+   height: 150px;
+   background: url(tq/14.png);
+   color: rgb(221,195,3);
+    }
+   #logo{position: absolute;left: 20px;top: 15px;}
+   #flag1,#flag2,#flag3{height: 35px;width: 57px;top: 0;}
+     #flag1{position: absolute;right: 172px;}
+     #flag2{position: absolute;right: 98px;}
+     #flag3{position: absolute;right: 20px;}
+   #tou span{position: absolute;
+   	   font:bold 50px "隶书";
+   	   left: 150px;top: 50px;
+       }
+   #tou p{position: absolute;
+   	   font:bold 20px "隶书";
+   	   left: 140px;
+   	   top: 110px;
+   	   word-spacing:-8px;
+       }
+   #tou ul{position: absolute;
+       right: 20px;
+       top: 65px;
+       font-size: 20px;
+       }
+   #tou li{
+   	   list-style: none;
+   	   float: left;
+   	   margin-left: 15px;
+       }
+   #tou #keywd{position: absolute;
+   	   border: 1px solid white;
+   	   color:rgb(221,195,3);
+   	   font-size: 15px;
+   	   width: 135px;
+   	   height: 25px;
+   	   left: 832px;
+   	   top: 100px;
+   	   line-height: 25px;
+       }
+   #tou select{position: absolute;
+   	   border: 1px solid white;
+   	   top: 100px;
+   	   height: 28px;
+   	   width: 60px;
+   	   right:68px;
+   	   background: url(tq/14.png);
+   	   color: rgb(221,195,3);
+       }
+   #tou button{position: absolute;
+   	  height: 28px;
+   	  width: 50px;
+   	  top: 100px;
+   	  right: 20px;color:rgb(165,153,65);}
+#daohang{position: absolute;
+   background: rgb(240,240,240);
+   height: 60px;
+   width: 1100px;
+   top: 150px;
+   list-style: none;
+   line-height: 60px;
+   }
+   #daohang li{
+    text-align: center;
+
+    float: left;
+    width: 120px;
+    color:black; 
+    }
+
+   #daohang li:hover{
+    background-image: url(tq/15.png);
+    background-size: 110px 35px;
+    background-position: center;
+    background-repeat:no-repeat; 
+    }
+#hand{position: absolute;
+	top: 210px;
+	height: 320px;
+	width: 1100px;
+    background: url(tq/1.png) 176px 0 no-repeat;
+    }
+   #hand span{position: absolute;
+   	   font:bold 50px "隶书";
+   	   left: 70px;
+   	   top: 110px;
+   	   color: rgb(108,0,3);
+   	   letter-spacing: -4px;
+       }
+   #hand p{position: absolute;
+   	   font:bold 20px "隶书";
+   	   right: 745px;
+   	   top: 180px;
+   	   letter-spacing:-1px;
+   	   color: rgb(221,195,3);
+   	   word-spacing: -8px;
+   	}
+  	#hand div{position: absolute;
+  	   color: gray;
+  	   left:360px;
+  	   top: 110px; 
+  	   border-left: 1px solid black;
+  	   padding-left: 18px;
+  	}
+#zong #tab{position: absolute;
+   left: 30px;
+   top: 570px;
+   background: white;
+   height: 245px;
+   width: 300px;
+   text-align: center;
+   }
+   #tab li{
+   	list-style: none;
+
+  	height: 71px;
+   	line-height: 71px;
+   	border: 1px solid white;
+   	display:block;
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(119,119,119);
+    background: rgb(220,220,220);
+   }
+   #tab .li1{
+   	height: 100px;
+   	line-height: 100px;
+    background: rgb(108,0,3);
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+   }
+.zhu{position: absolute;
+   top: 570px;
+   right: 30px;
+   height: 1820px;
+   width: 720px;
+   }
+   #yulan{position: absolute;
+  	 /*display: none;*/
+  	 top: 30px;
+  	 height: 1807px;
+  	 width: 720px;
+     }
+     #yulan p{
+     position: relative;
+     top: 70px;
+     width: 640px;
+     text-indent: 20px;
+     -webkit-transform:scale(0.75);
+     margin-top: -12px;
+     margin-left:-70px;
+     }
+      #yulan .xiazai{position: absolute;
+     height: 26px;
+     width: 108px;
+     background: rgb(108,0,3);
+     left: 320px;
+     top: 80px;
+     color: white;
+     line-height: 26px;
+     text-align: center;
+     -webkit-transform:scale(0.96);
+      }
+     h1{position: absolute;
+     left: 255px;
+     top: 30px;
+     }
+     #yulan .ding{
+     text-indent: 0;
+     }
+     #yulan .shu1{position: absolute;
+     height: 830px;
+     width: 645px;
+     top: 130px;
+     left: 30px;
+     background: rgb(239,239,239);
+     }
+    .shang{position: absolute;
+      height: 577px;
+      width: 488px;
+      left: 82px;
+      top: 30px;
+      }
+     .shang h1{position: absolute;
+       top: 0;
+       left: 140px;
+       } 
+     .shang hr{position: absolute;
+       width: 370px;
+       top: 50px;
+       border-top: 1px solid gray;
+       left: 50px;
+       }
+     .shang #biaoge{position: absolute;
+       width: 470px;
+       height: 127px;
+       top: 315px;
+       left: 10px;
+       border-width: 1px 0px 0px 1px;
+      border-style: solid;
+      border-color: gray;
+      border-collapse:collapse
+      }
+    .shang #biaoge th,.shang #biaoge td{
+      border-width: 0px 1px 1px 0px;
+      border-style: solid;
+      border-color: gray;
+      position: relative;
+      width: 156px;
+      text-align: center;
+      }
+    .shang #biaoge th{
+      height: 35px;
+      font-size: 12px;
+    }
+    .shang #biaoge td{
+      height:17px;
+      }
+    .shang #biaoge tr{
+      position: relative;
+      }
+    .shang #biaodan{position: absolute;
+      height: 127px;
+      width: 480px;
+      left: 3px;
+      bottom: 3px;
+      display: block;
+      }
+    #biaodan #bd1{position: absolute;
+     -webkit-transform:scale(0.8);
+      left: -10px;
+      }
+    #biaodan #bd2{position: absolute;
+      border: 1px solid gray;
+      right: -5px;
+      -webkit-transform:scale(0.8);
+      }
+    #biaodan #bd3{position: absolute;
+      -webkit-transform:scale(0.75);
+      width: 350px;
+      height: 140px;
+      left: -35px;
+      bottom: -45px;
+      line-height: 18px;
+      }  
+    #biaodan #bd4{position: absolute;
+      height: 50px;
+      width: 330px;
+      -webkit-transform:scale(0.75);
+      right: -55px;
+      bottom: 60px;
+      line-height:16px;
+      }
+    #biaodan #bd5{position: absolute;
+      -webkit-transform:scale(0.75);
+      color: rgb(108,0,3);
+      right: -35px;
+      bottom: -50px;
+      }
+   #xia{position: absolute;
+       height: 180px;
+       width: 645px;
+       border-top:1px solid #D0D0D0;
+       bottom: 0;
+       }
+       #xia p{
+       -webkit-transform:scale(0.60);
+       }
+       #xia span{
+       font-weight: bold;
+        }
+       #xia .xs1{position: absolute;
+        left: 79px;
+        top: 10px;
+        font-size: 9px;
+        -webkit-transform:scale(0.90);
+       }
+       #xia .xs2{position: absolute;
+       left: 28px;
+       top: 30px;
+       text-indent: 0;
+       }        
+       #xia .xs3{position: absolute;
+       top: -35px;
+       left: 190px;
+       text-indent: 0;
+       } 
+       #xia .xs4{position: absolute;
+       top: -80px;
+       left: 370px;
+       text-indent: 0;
+       } 
+   #yulan .shu2{position: absolute;
+      height: 830px;
+      width: 645px;
+      left: 30px;
+      bottom:0;
+      background: rgb(239,239,239);
+      border-width: 1px 0px 0px 1px;
+      }
+  
+  .shu2 #biaodan_2{position: absolute;
+      height: 127px;
+      width: 480px;
+      left: 80px;
+      top: 665px;
+      display: block;
+
+      }
+    #biaodan_2 #bd1_2{position: absolute;
+     -webkit-transform:scale(0.8);
+      left: -10px;
+      }
+    #biaodan_2 #bd2_2{position: absolute;
+      border: 1px solid gray;
+      right: -10px;
+      -webkit-transform:scale(0.8);
+      }
+    #biaodan_2 #bd3_2{position: absolute;
+      -webkit-transform:scale(0.75);
+      width: 350px;
+      height: 140px;
+      left: -35px;
+      bottom: -45px;
+      line-height: 18px;
+      }  
+    #biaodan_2 #bd4_2{position: absolute;
+      height: 50px;
+      width: 330px;
+      -webkit-transform:scale(0.70);
+      right: -55px;
+      bottom: 60px;
+      line-height:16px;
+      }
+    #biaodan_2 #bd5_2{position: absolute;
+      -webkit-transform:scale(0.70);
+      color: rgb(108,0,3);
+      right: -35px;
+      bottom: -50px;
+      }
+
+    #shqsh{position: absolute;
+      width: 470px;
+      border-collapse: collapse;
+      top: 85px;
+      left: 90px;
+      font-size: 12px;
+      }
+    #shqsh tr{
+      position: relative;
+      }
+    #shqsh th{
+      height: 35px;
+      position: relative;
+      border-width: 0px 1px 1px 0px;
+      border: 1px solid gray;
+      }
+    #shqsh td{
+      position: relative;
+      border-width: 0px 1px 1px 0px;
+      border: 1px solid gray;
+      height: 17px;
+      width: 156px;
+      }
+  #yulan .shu2 #wts{position: absolute;
+    top: 60px;
+    left: 265px;
+    font-weight: bold;
+    }
+   .zhu #daoh span{
+  	position: relative;
+    color: rgb(108,0,3);
+    font-weight: bold;
+    }
+    hr{position: absolute;
+  	border-top: 1px dashed gray;
+  	width: 718px;
+  	top: 30px;
+    }
+#di{position: absolute;
+	bottom: 0;
+	height: 188px;
+	width: 1100px;
+	background: rgb(42,42,42);
+    }
+   #di ul{position: absolute;
+     list-style: none;
+     left: 30px;
+     top: 13px;
+     color: white;
+     }
+   #di li{
+ 
+     float: left;
+     margin-left: 20px;
+     }
+   #di p{position: absolute;
+      color: rgb(202,201,115);
+      font-weight: bold;
+      right: 10px;
+      top: 125px;
+      word-spacing: -5px;
+     }
+    #di .did{position: absolute;
+      height: 47px;
+      line-height: 50px;
+      width: 1100px;
+      background: black;
+      bottom: 0;
+      color: rgb(138,138,138);
+      }
+    #di .did img{
+      position: relative;
+      height: 20px;
+      width: 20px;
+      top: 6px;
+      }
+    #di .did span{
+      padding-left: 420px;
+      }
+   #di .disp1{position: absolute;
+     left: 50px;
+     top: 40px;
+     color: rgb(138,138,138);
+     line-height: 25px;
+     }
+   .disp2{position: absolute;
+     height: 40px;
+     width: 189px;
+     background:rgb(203,201,201);
+     color: rgb(108,0,3);
+     top: 78px;
+     left: 455px;
+     line-height: 40px;
+     text-align: center;
+     box-shadow: 5px 5px 5px black;
+     }
+   .disp3{position: absolute;
+      top: 25px;
+      right: 412px;
+      height: 80px;
+      width: 20px;
+      font-size: 18px;
+      color: rgb(201,202,118);
+      font-size: 9px;
+      -webkit-transform:scale(0.96);
+      }
+   .disp4{position: absolute;
+      top: 25px;
+      right: 294px;
+      height: 80px;
+      width: 20px;
+      font-size: 18px;
+      color: rgb(201,202,118);
+      font-size: 9px;
+      -webkit-transform:scale(0.96);
+      }
+   .dii1{position: absolute;
+      top: 25px;
+      right: 328px;
+      }
+   .dii2{position: absolute;
+      top: 25px;
+      right: 210px;
+     }
+   .dii3{position: absolute;
+    right: 75px;
+    top: 5px;
+    }
+#daohang a{
+    color: black;
+}
+a{
+    text-decoration: none;
+}
+#tab a{
+    color: rgb(199,195,200);
+}
+#tou a{
+    color: yellow;
+}
+</style>
+</head>
+<body>
+<div id="zong">
+<div id="tou">
+		<img src="tq/13.png" alt="" id="logo">
+		<span>香港天騏拍賣</span>
+		<p>HONG KONG DAY THESTRALS AUCTION</p>
+		<img src="tq/69.png" alt="" id="flag1">
+		<img src="tq/9.png" alt="" id="flag2">
+		<img src="tq/8.png" alt="" id="flag3"> 
+	 <ul>
+         <li>登錄</li>
+	 <li>注册</li>
+	 <li>會員專區</li>
+     </ul>
+	 <span id="keywd">請輸入關鍵字</span>
+	 <select>
+	     <option selected="selected">拍品</option>
+	     <option>2</option>
+	     <option>3</option>
+	     </select>
+     <button>搜索</button>
+	 </div><!-- tou end-->
+<ul id="daohang">
+    <li><a href="中文首页-公司简介.html">公司簡介</a></li>
+    <li><a href="新闻中心-新闻.html">新聞中心</a></li>
+    <li><a href="index-客服中心-如何委托.html">客服中心</a></li>
+    <li><a href="业务联系 -业务部门专区-专区详情.html">業務聯繫</a></li>
+    <li><a href="index-拍卖广告-拍卖公告.html">拍賣廣告</a></li>
+    <li><a href="index-拍卖结果-全部拍卖会.html">拍賣結果</a></li>
+    <li><a href="精品回顾.html">精品回顧</a></li>
+    <li><a href="天琪艺术空间.html">天騏藝術空間</a></li>
+    <li><a href="天琪珠宝.html">天騏珠寶</a></li>
+    </ul>
+<div id="hand">
+	<span>香港天騏拍賣</span>
+	<p>HONG KONG DAY THESTRALS AUCTION</p>
+	<div>STRONG TECHNICAL FORCE<br>ADVANCED EQUIPMENT<br>STRICT QUALITY MANAGEMENT SYSTEM<br>PROFESSIONAL SERVICES<br>COMPETITIVE PRICE</div>
+  </div><!-- hand end -->
+<ul id="tab">
+    <li class="li1">客服中心</a></li>
+    <li><a href="index-客服中心-如何委托.html">如何委託</a></li>
+    <li><a href="index-客服中心-委托送拍.html" >委託送拍</a></li>
+    <li><a href="index-客服中心-委托竞投书.html"> 委託競投書</a></li>
+    <li><a href="index-客服中心-拍賣圖錄預購.html"> 拍賣圖録預購</a></li>
+    <li><a href="客服中心——拍卖法规.html"> 拍賣法規</a></li>
+    <li><a href="会员中心.html"> 會員專區</a></li>
+    </ul>
+<div class="zhu" name="zhu">
+	<p id="daoh">你當前所處的位置：<span>首頁</span>&nbsp;<span>&gt;</span>&nbsp;<span>客服中心</span>&nbsp;<span>&gt;</span>&nbsp;<span>委託競投書</span></p>
+	<hr>
+  <div id="yulan">
+   <h1>委託競投授權書</h1>
+   <span class="xiazai">下載委託競投書</span>
+   <div class="shu1">
+     <div class="shang">
+      <h1>委託競投授權書</h1><hr>
+      <p>茲申請并委託北京保利國際拍賣有限公司就下列編號拍賣標的按列表委託價格進行競投，并同意如下條款：</p>
+      <p>一、若競投成功，委託人須自拍賣成交日起7日內向北京保利國際拍賣有限公司一次性支付落槌價及相當於落槌價15%的佣金及其他各項費用，此後領取拍賣標的（包裝及搬運費用、運輸保險費用、出境鑒定費用自理）；</p>
+      <p>二、委託人知悉並且認可北京保利國際拍賣有限公司的拍賣標的的真價及/或品質不承擔瑕疵擔保責任；</p>
+      <p>三、北京保利國際拍賣有限公司《拍賣規則》之“委託競投之免責”條款為不可爭議之條款。委託人不追究北京保利國際拍賣有限公司及其工作人員競投未成功、競投有過失或未能代為競投的相關責任；</p>
+      <p>四、委託人須最後在拍賣日前三天向北京保利國際拍賣有限公司出具本委託授權書并繳納相當於列表委託價格30%的保證金。為使委託人能順利獲得拍賣品，請在拍賣日之前與北京保利國際拍賣有限公司聯繫付款方式，如在拍賣日之前三天北京保利國際拍賣有限公司尚未收到前述保證金，則本委託競投書不生效；</p>
+      <p>五、委託人承諾已仔細閱讀刊于本次拍賣圖録上的北京保利國際拍賣有限公司的《拍賣規則》，並同意遵守該《拍賣規則》中的一切條款。</p>
+      <p>如北京保利國際拍賣有限公司決定接受上述委託，將本着從客戶利益出發的原則，以盡可能低的價格為委託人代為競投，成交價格不得高於表列委託價格：</p>
+      <table id="biaoge">
+        <tr>
+        <th>拍賣標的<br>圖錄號</th>
+        <th>拍賣標的<br>名稱</th>
+        <th>委託價格<br>（人民幣元）</th></tr>
+        <tr><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td></tr>
+      </table>
+      <div id="biaodan">
+         <span id="bd1">拍賣會時間：&nbsp;年&nbsp;月&nbsp;日</span>
+         <span id="bd2">此表單複印有效</span>
+         <span id="bd3">委託人姓名：___________________________<br>
+                        身份證/證照號碼：______________________<br>
+                        開戶銀行及賬、信用卡信息               <br>
+                        _______________________________________<br>
+                        地址：_________________________________<br>
+                        __________________郵編：_______________<br>
+                        電話：_____________傳真：______________<br>
+                        委託人簽字：__________日期：___________<br></span>
+         <span id="bd4">
+           敬請注意：<br>填寫此表時，須填寫所有項目，包括拍賣品序號、名稱、出價等，否則無效。如果有兩個以上（包括兩人）出價相同，先委託者先獲得拍賣品。如果委託人以電話方式委託本公司競投，請用信件或傳真確認。
+           </span>
+         <span id="bd5">
+            海外人士辦理競投或委託拍賣手續：<br>一、提供銀行賬戶。<br>二、提供信用卡號及註冊銀行電話。<br>三、由本公司信譽客戶填寫擔保書。<br>詳情請致電海外專線：（86-10）6408 3325
+         </span>
+       </div><!-- biaodan end -->
+      </div><!-- shang end --> 
+      <div id="xia">
+           <span class="xs1">請將本委託競投單郵寄或傳真至：</span>
+           <p class="xs2"><span>北京保利國際拍賣有限公司</span><br>中國北京市東城區朝陽門北大街1號<br>新保利大廈寫字樓3層<br>電話：（86-10）6408-3188<br>傳真：（86-10）6408-3186（公司）<br>&nbsp;&nbsp;&nbsp;（86-10）6408-3150（財務）<br>郵編：100010</p>
+           <p class="xs3"><span>匯款請至</span><br>開戶名稱：北京保利國際拍賣有限公司<br>開戶銀行：中信銀行北京富華大廈支行<br>人民幣匯款賬號：7110310182300140117</p>
+           <p class="xs4">
+           開戶名稱：北京保利國際拍賣有限公司<br>開戶銀行：交通銀行北京天壇支行<br>人民幣匯款賬號110060841018170164412</p>
+         </div><!-- xia end -->
+     </div><!-- shu1 end -->
+ <div class="shu2">
+       <span id="wts">委託競投授權書</span>
+       <table id="shqsh"><tr><th>拍賣品<br>序號</th>
+       <th>拍賣品<br>名稱</th><th>出價（人民幣元）</th></tr>
+       <tr><td></td><td></td><td></td></tr><tr><td></td><td></td>
+       <td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr></table>
+   <div id="biaodan_2">
+         <span id="bd1_2">拍賣會時間：&nbsp;年&nbsp;月&nbsp;日</span>
+         <span id="bd2_2">此表單複印有效</span>
+         <span id="bd3_2">委託人姓名：___________________________<br>
+                        身份證/證照號碼：______________________<br>
+                        開戶銀行及賬、信用卡信息               <br>
+                        _______________________________________<br>
+                        地址：_________________________________<br>
+                        __________________郵編：_______________<br>
+                        電話：_____________傳真：______________<br>
+                        委託人簽字：__________日期：___________<br></span>
+         <span id="bd4_2">
+           敬請注意：<br>填寫此表時，須填寫所有項目，包括拍賣品序號、名稱、出價等，否則無效。如果有兩個以上（包括兩人）出價相同，先委託者先獲得拍賣品。如果委託人以電話方式委託本公司競投，請用信件或傳真確認。
+           </span>
+         <span id="bd5_2">
+            海外人士辦理競投或委託拍賣手續：<br>一、提供銀行賬戶。<br>二、提供信用卡號及註冊銀行電話。<br>三、由本公司信譽客戶填寫擔保書。<br>詳情請致電海外專線：（86-10）6408 3325
+            </span>
+       </div><!-- biaodan_2 end -->
+     </div><!-- shu2 end -->
+    </div><!-- yulan end -->
+   </div><!-- zhu end -->
+
+<div id="di">
+  <ul>
+    <li>圖録訂購</li>
+    <li>聯系我們</li>
+    <li>加入我們</li>
+    <li>員工郵箱</li>
+    <li>誠信經營示範單位</li></ul>
+  <span class="disp1">地址：北京東城區朝陽門北大街1號新保利大廈三層 100010<br>電話：（86-10）64083188 傳真：（86-10）64083186<br>京ICP備06017645號<br>網站ip量</span>
+  <span class="disp2">建議反饋</span>
+  <span class="disp3">北京天騏微信</span>
+  <span class="disp4">香港天騏微信</span>
+  <img src="tq/11.png" class="dii1"><img src="tq/11.png" class="dii2">
+  <p>HONG KONG DAY THESTRALS AUCTION</p>
+  <img src="tq/13.png" class="dii3">
+  <div class="did"><span><img src="tq/12.png">&nbsp;京公網安備   1101289190000092號</span></div>
+   </div><!-- di end -->
+
+ </div><!-- zong end-->
+
+<script type="text/javascript">
+
+/*左侧红色导航条点击切换效果*/
+   var tab=document.getElementById("tab")
+   var li=tab.getElementsByTagName("li")
+   var zhu=document.getElementsByName("zhu")
+   var waibu=document.getElementById("waibu")
+ // console.log(window.getComputedStyle(zhu[0],null)["height"])
+   for (var i = 1; i < li.length; i++) {
+      li[i].onmouseover=function(){
+   	 for (var i = 1; i < li.length; i++) {
+   		li[i].style.backgroundColor="rgb(220,220,220)"
+   		li[i].style.color="rgb(119,119,119)"
+   		 }
+   	   this.style.backgroundColor="rgb(173,129,130)" 
+   	   this.style.color="white";
+   	   }//onmouseover end 
+    }//for i end 
+
+
+
+
+
+</script>
+</body>
+</html>

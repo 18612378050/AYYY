@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<input type="text"/>
+<input type="button" value="点击获取验证码"/>
+<input type="button" value="确定"/>
+<input type="text"/>
+<script>
+    var ipt=document.getElementsByTagName('input');
+    var arr=[0,1,2,3,4,5,6,7,8,9,"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+    var code='';
+
+ipt[1].onclick=function() {
+    code='';
+    for (var i = 0; i < 4; i++) {
+        // debugger;
+        var sj = Math.floor(Math.random() *36);
+        code += arr[sj];
+    }
+    ipt[1].value=code;
+}
+    ipt[2].onclick=function(){
+        if(ipt[0].value===ipt[1].value){
+            ipt[3].value="正确"
+        }
+        else{
+            ipt[3].value="错误"
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,285 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>ZJY动漫</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link href="/templets/default/style/dedecms.css" rel="stylesheet" media="screen" type="text/css" />
+    <script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+    <script language="javascript" type="text/javascript" src="/images/js/j.js" ></script>
+    <script language="javascript" type="text/javascript" src="/templets/default/js/pic_scroll.js"></script>
+    <script language="javascript" type="text/javascript">
+        <!--
+        $(function(){
+            $("a[_for]").mouseover(function(){
+                $(this).parents().children("a[_for]").removeClass("thisclass").parents().children("dd").hide();
+                $(this).addClass("thisclass").blur();
+                $("#"+$(this).attr("_for")).show();
+            });
+            $("a[_for=uc_member]").mouseover();
+            $("a[_for=flink_1]").mouseover();
+        });
+
+        function CheckLogin(){
+            var taget_obj = document.getElementById('_userlogin');
+            myajax = new DedeAjax(taget_obj,false,false,'','','');
+            myajax.SendGet2("/member/ajax_loginsta.php");
+            DedeXHTTP = null;
+        }
+        -->
+    </script>
+</head>
+<body class="index">
+<div class="header_top">
+    <div class="w960 center">
+        <span id="time" class="time">织梦CMS - 轻松建站从此开始！</span>
+        <div class="toplinks"><a href="/plus/heightsearch.php" target="_blank">高级搜索</a>|<a href="/data/sitemap.html" target="_blank">网站地图</a>|<a href="/tags.php">TAG标签</a><a href="/data/rssmap.html" class="rss">RSS订阅</a><span>[<a href=""onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://m953665625.140.zuji333.com');">设为首页</a>] [<a href="javascript:window.external.AddFavorite('http://m953665625.140.zuji333.com','ZJY动漫')">加入收藏</a>]</span></div>
+    </div>
+</div>
+<div class="header">
+    <div class="top w960 center">
+        <div class="title">
+            <h1><a href="http://m953665625.140.zuji333.com"><img src="/templets/default/images/logo.gif" height="54" width="216" alt="ZJY动漫"/></a> </h1>
+        </div>
+
+
+    </div><!-- //top -->
+    <!-- //菜单 -->
+    <div class="module blue mT10 wrapper w963">
+        <div class="top">
+            <!-- //如果不使用currentstyle，可以在channel标签加入 cacheid='channeltoplist' 属性提升性能 -->
+            <div id="navMenu">
+                <ul>
+                    <li><a href="http://tieba.baidu.com/f?kw=%E5%A6%96%E7%B2%BE%E7%9A%84%E5%B0%BE%E5%B7%B4&ie=utf-8"><span>精贴</span></a></li>
+                    <li><a href='/'><span>图片</span></a></li>
+                    <li><a href='/'><span>视频</span></a></li>
+
+                </ul>
+            </div>
+            <div class="search">
+                <form  name="formsearch" action="/plus/search.php">
+                    <div class="form">
+                        <h4>搜索</h4>
+                        <input type="hidden" name="kwtype" value="0" />
+                        <input name="q" type="text" class="search-keyword" id="search-keyword" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}"  onblur="if(this.value==''){this.value='在这里搜索...';}" />
+                        <select name="searchtype" class="search-option" id="search-option">
+                            <option value="title" selected='1'>检索标题</option>
+                            <option value="titlekeyword">智能模糊</option>
+                        </select>
+                        <button type="submit" class="search-submit">搜索</button>
+                    </div>
+                </form>
+                <div class="tags">
+                    <h4>热门标签:</h4>
+                    <ul>
+
+                    </ul>
+                </div>
+            </div><!-- //search -->
+        </div>
+    </div>
+</div><!-- //header -->
+
+<!-- /header -->
+<div class="w960 center clear mt1">
+    <div class="pleft">
+        <div class="bignews">
+            <!--头条-->
+            <div class="onenews">  </div>
+            <!-- /onenews -->
+            <div class="d1">  </div>
+            <!--/头条-->
+            <div class='newarticle'>最新文章</div>
+            <ul class="c2 ico1">
+                <!--最新文档-->
+
+                <!--//最新文档-->
+            </ul>
+        </div>
+        <!-- /bignews -->
+        <div class="flashnews">
+            <!-- size: 280px * 192px -->
+            <script language='javascript'>
+                linkarr = new Array();
+                picarr = new Array();
+                textarr = new Array();
+                var swf_width=280;
+                var swf_height=192;
+                //文字颜色|文字位置|文字背景颜色|文字背景透明度|按键文字颜色|按键默认颜色|按键当前颜色|自动播放时间|图片过渡效果|是否显示按钮|打开方式
+                var configtg='0xffffff|0|0x3FA61F|5|0xffffff|0xC5DDBC|0x000033|2|3|1|_blank';
+                var files = "";
+                var links = "";
+                var texts = "";
+                //这里设置调用标记
+
+                for(i=1;i<picarr.length;i++){
+                    if(files=="") files = picarr[i];
+                    else files += "|"+picarr[i];
+                }
+                for(i=1;i<linkarr.length;i++){
+                    if(links=="") links = linkarr[i];
+                    else links += "|"+linkarr[i];
+                }
+                for(i=1;i<textarr.length;i++){
+                    if(texts=="") texts = textarr[i];
+                    else texts += "|"+textarr[i];
+                }
+                document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="'+ swf_width +'" height="'+ swf_height +'">');
+                document.write('<param name="movie" value="/templets/default/images/bcastr3.swf"><param name="quality" value="high">');
+                document.write('<param name="menu" value="false"><param name=wmode value="opaque">');
+                document.write('<param name="FlashVars" value="bcastr_file='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'&bcastr_config='+configtg+'">');
+                document.write('<embed src="/templets/default/images/bcastr3.swf" wmode="opaque" FlashVars="bcastr_file='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'&bcastr_config='+configtg+'&menu="false" quality="high" width="'+ swf_width +'" height="'+ swf_height +'" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />'); document.write('</object>');
+            </script>
+        </div>
+        <!-- /flashnews -->
+        <div class="latestnews">
+            <dl class="tbox light">
+                <dt class="light"><strong>特别推荐</strong></dt>
+                <dd class="light">
+                    <ul class="d2 ico2">
+                        <img src="22.gif">
+
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+        <!-- /latestnews -->
+        <div class="picnews">
+            <dl class="tbox light">
+                <dt class='light'><strong>图文资讯</strong></dt>
+                <dd class='light'>
+                    <div class="infiniteCarousel">
+                        <div class="wrapper">
+                            <ul id='imgscroll'>
+                                <li>cvbjoac</li>
+                                <li>qwergehbvfd</li>
+                                <li>ARSTHDJNBF</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </dd>
+            </dl>
+        </div>
+        <div id="leftAD1" style="margin:10px auto"><script type="text/javascript" src="http://ad.dedecms.com/adsview/?action=single&key=indexleftbanner&charset=gbk"></script></div>
+        <!-- /picnews -->
+        <div class="listbox">  </div>
+        <!-- /listbox -->
+    </div>
+    <!-- /pleft -->
+    <div class="pright">
+        <div class="usercenter">
+            <dl class="tbox light">
+                <dt class='light'> <strong>互动中心</strong> <span class="label"> <a href="#" _for="uc_digg">踩踩</a> <a href="#" _for="uc_comment">评论</a> <a href="#" _for="uc_member">会员</a> </span> </dt>
+                <dd id="loading"> 正在载入,请稍候... </dd>
+                <dd id="uc_digg">
+                    <ul class="f1">
+
+                    </ul>
+                </dd>
+                <!-- /uc_digg -->
+                <dd id="uc_comment">
+                    <ul class="f2">
+
+                    </ul>
+                </dd>
+                <!-- /uc_comment -->
+                <dd id="uc_member" >
+                    <div id="_userlogin">
+                        <div class="userlogin">
+                            <form name="userlogin" action="/member/index_do.php" method="POST">
+                                <input type="hidden" name="fmdo" value="login" />
+                                <input type="hidden" name="dopost" value="login" />
+                                <input type="hidden" name="keeptime" value="604800" />
+                                <div class="fb"><span>用户名:</span>
+                                    <input type="text" name="userid" size="20" class="ipt-txt" />
+                                </div>
+                                <div class="fb"><span>密码:</span>
+                                    <input type="password" name="pwd" size="20" class="ipt-txt" />
+                                </div>
+
+                                <div class="submit">
+                                    <button type="submit" class="btn-1">登录</button>
+                                    <a href="/member/index_do.php?fmdo=user&dopost=regnew" >注册帐号</a> <a href="/member/resetpassword.php">忘记密码?</a> </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- /userlogin -->
+                    <script language="javascript" type="text/javascript">CheckLogin();</script>
+                    <div class="latestlogin"> <strong>最近登陆的会员</strong>
+                        <ul class="e7">
+
+                        </ul>
+                    </div>
+                    <!-- /latestlogin -->
+                </dd>
+                <!-- /uc_member -->
+            </dl>
+        </div>
+        <!-- /usercenter -->
+        <div id="rightAD1" style="margin:10px auto"></div>
+        <div class="commend mt1">
+            <dl class="tbox light">
+                <dt class='light'><strong>推荐内容</strong></dt>
+                <dd class='light'>
+                    <ul class="c1 ico2">
+
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+        <!-- /commend -->
+        <div id="rightAD1" style="margin:10px auto"></div>
+        <div class="hot mt1">
+            <dl class="tbox light">
+                <dt class='light'><strong>本月热点</strong></dt>
+                <dd class='light'>
+                    <ul class="c1 ico2">
+
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+        <div class="vote mt1">
+            <dl class="tbox light">
+                <dt class='light'><strong>投票调查</strong></dt>
+                <script language="javascript" src="/data/vote/vote_1.js"></script>
+            </dl>
+        </div>
+        <!-- /vote -->
+        <div style="margin:10 auto"></div>
+    </div>
+    <!-- /pleft -->
+</div>
+<div class="flink w960 center clear">
+    <dl class="tbox">
+        <dt> <strong>友情链接</strong>
+	<span class="linklabel">
+
+	</span>
+            <span class="more"> <a href="plus/flink.php">所有链接</a> | <a href="plus/flink_add.php">申请加入</a> </span> </dt>
+
+    </dl>
+</div>
+<!-- /flink -->
+<div id="footAD" style="margin:10px auto; width:726px"></div>
+<!-- //底部模板 -->
+<div class="footer w960 center mt1 clear">
+    <!--
+
+    -->
+    <div class="footer_left"></div>
+    <div class="footer_body">
+        <p class="powered">
+            Powered by <a href="http://www.dedecms.com" title="卓新智趣--国内最专业的PHP网站管理系统，轻松建站的首选利器。" target="_blank"><strong>DedeCMS_V57_UTF8_SP1</strong></a> © 2004-2011 <a href="http://www.desdev.cn/" target="_blank">DesDev</a> Inc.<br /><div class="copyright">Copyright &copy; 2002-2011 DEDECMS. 织梦科技 版权所有 <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a>  </div></p>
+        <!-- /powered -->
+    </div>
+    <div class="footer_right"></div>
+</div>
+<!-- /footer -->
+</body>
+</html>
+

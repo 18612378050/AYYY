@@ -1,0 +1,1 @@
+1:spring.jpg;2:summer.jpg;3:autumn.jpg;4:winter.jpg;

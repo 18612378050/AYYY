@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>index-拍卖广告-图片预览</title>
+<style type="text/css">
+*{margin: 0;padding: 0}
+#zong{
+	margin: 0 auto;
+	width: 1100px;
+	height: 1476px;
+	position: relative;
+    }
+
+#tou{position: absolute;
+   width: 1100px;
+   height: 150px;
+   background: url(tq/14.png);
+   color: rgb(221,195,3);
+    }
+   #logo{left: 20px;top: 15px;position: absolute;}
+   #flag1,#flag2,#flag3{position: absolute;height: 35px;width: 57px;top: 0;}
+     #flag1{position: absolute;right: 172px;}
+     #flag2{position: absolute;right: 98px;}
+     #flag3{position: absolute;right: 20px;}
+   #tou span{position: absolute;
+   	   font:bold 50px "隶书";
+   	   left: 150px;top: 50px;
+       }
+   #tou p{position: absolute;
+   	   font:bold 20px "隶书";
+   	   left: 140px;
+   	   top: 110px;
+   	   word-spacing:-8px;
+       }
+   #tou ul{position: absolute;
+       right: 20px;
+       top: 65px;
+       font-size: 20px;
+       }
+   #tou li{
+   	   list-style: none;
+   	   float: left;
+   	   /*position: relative;*/
+   	   margin-left: 15px;
+       }
+   #tou #keywd{position: absolute;
+   	   border: 1px solid white;
+   	   color:rgb(221,195,3);
+   	   font-size: 15px;
+   	   width: 135px;
+   	   height: 25px;
+   	   left: 832px;
+   	   top: 100px;
+   	   line-height: 25px;
+       }
+   #tou select{position: absolute;
+   	   border: 1px solid white;
+   	   top: 100px;
+   	   height: 28px;
+   	   width: 60px;
+   	   right:68px;
+   	   background: url(tq/14.png);
+   	   color: rgb(221,195,3);
+       }
+   #tou button{position: absolute;
+   	height: 28px;
+   	width: 50px;
+   	top: 100px;
+   	right: 20px;color:rgb(165,153,65);}
+#daohang{position: absolute;
+   background: rgb(240,240,240);
+   height: 60px;
+   width: 1100px;
+   top: 150px;
+   list-style: none;
+   line-height: 60px;
+   }
+   #daohang li{
+    text-align: center;
+    /*position: relative;*/
+    float: left;
+    width: 120px;
+    color:black; 
+    }
+   #daohang li:hover{
+    background-image: url(tq/15.png);
+    background-size: 110px 35px;
+    background-position: center;
+    background-repeat:no-repeat; 
+    }
+#hand{position: absolute;
+	top: 210px;
+	height: 320px;
+	width: 1100px;
+    background: url(tq/1.png) 176px 0 no-repeat;
+    }
+   #hand span{position: absolute;
+   	   font:bold 50px "隶书";
+   	   left: 70px;
+   	   top: 110px;
+   	   color: rgb(108,0,3);
+   	   letter-spacing: -4px;
+       }
+   #hand p{position: absolute;
+   	   font:bold 20px "隶书";
+   	   right: 745px;
+   	   top: 180px;
+   	   letter-spacing:-1px;
+   	   color: rgb(221,195,3);
+   	   word-spacing: -8px;
+   	}
+  	#hand div{position: absolute;
+  	   color: gray;
+  	   left:360px;
+  	   top: 110px; 
+  	   border-left: 1px solid black;
+  	   padding-left: 18px;
+  	}
+#tab{position: absolute;
+   left: 30px;
+   top: 570px;
+   background: white;
+   height: 245px;
+   width: 300px;
+   text-align: center;
+   }
+   #tab li{
+   	list-style: none;
+   	/*position: relative;*/
+  	height: 71px;
+   	line-height: 71px;
+   	border: 1px solid white;
+   	display:block;
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(119,119,119);
+    background: rgb(220,220,220);
+   }
+   #tab .li1{
+   	height: 100px;
+   	line-height: 100px;
+    background: rgb(108,0,3);
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    }
+.zhu{position: absolute;
+   top: 570px;
+   right: 30px;
+   height: 684px;
+   width: 720px;
+   }
+   #yulan{position: absolute;
+  	 /*display: none;*/
+  	 top: 60px;
+  	 height: 630px;
+  	 width: 720px;
+     }
+     #yulan div{position: absolute;
+       height: 190px;
+       width: 220px;
+       box-shadow:0px 0px 10px gray;
+       position: relative;
+       float: left;
+       margin: 10px;
+      }
+     #yulan div p{position: absolute;
+      bottom: 10px;
+      left: 10px;
+      font-size: 18px;
+     }
+     #yulan div span{
+       font-size: 8px;
+       -webkit-transform:scale(0.8);
+       position: relative;
+     }
+   #yulan div img{position: absolute;
+  	left: 15px;
+  	top: 15px;
+  	height: 130px;
+  	width: 188px;
+    }
+   .zhu #daoh span{
+  	position: relative;
+    color: rgb(108,0,3);
+    font-weight: bold;
+    }
+   .zhu hr{position: absolute;
+  	border-top: 1px dashed gray;
+  	width: 718px;
+  	top: 30px;
+    }
+
+#di{position: absolute;
+	bottom: 0;
+	height: 188px;
+	width: 1100px;
+	background: rgb(42,42,42);
+    }
+   #di ul{position: absolute;
+     list-style: none;
+     left: 30px;
+     top: 13px;
+     color: white;
+     }
+   #di li{
+     /*position: relative;*/
+     float: left;
+     margin-left: 20px;
+     }
+   #di p{position: absolute;
+      color: rgb(202,201,115);
+      font-weight: bold;
+      right: 10px;
+      top: 125px;
+      word-spacing: -5px;
+     }
+    #di .did{position: absolute;
+      height: 47px;
+      line-height: 50px;
+      width: 1100px;
+      background: black;
+      bottom: 0;
+      color: rgb(138,138,138);
+      }
+    #di .did img{
+      position: relative;
+      height: 20px;
+      width: 20px;
+      top: 6px;
+      }
+    #di .did span{
+      padding-left: 420px;
+      }
+   #di .disp1{position: absolute;
+     left: 50px;
+     top: 40px;
+     color: rgb(138,138,138);
+     line-height: 25px;
+     }
+   .disp2{position: absolute;
+     height: 40px;
+     width: 189px;
+     background:rgb(203,201,201);
+     color: rgb(108,0,3);
+     top: 78px;
+     left: 455px;
+     line-height: 40px;
+     text-align: center;
+     box-shadow: 5px 5px 5px black;
+     }
+   .disp3{position: absolute;
+      top: 25px;
+      right: 412px;
+      height: 80px;
+      width: 20px;
+      font-size: 18px;
+      color: rgb(201,202,118);
+      font-size: 9px;
+      -webkit-transform:scale(0.96);
+     }
+   .disp4{position: absolute;
+      top: 25px;
+      right: 294px;
+      height: 80px;
+      width: 20px;
+      font-size: 18px;
+      color: rgb(201,202,118);
+      font-size: 9px;
+      -webkit-transform:scale(0.96);
+      }
+   .dii1{position: absolute;
+      top: 25px;
+      right: 328px;
+      }
+   .dii2{position: absolute;
+      top: 25px;
+      right: 210px;
+     }
+   .dii3{position: absolute;
+    right: 75px;
+    top: 5px;
+    }
+</style>
+</head>
+<body>
+<div id="zong">
+<div id="tou">
+		<img src="tq/13.png" alt="" id="logo">
+		<span>香港天騏拍賣</span>
+		<p>HONG KONG DAY THESTRALS AUCTION</p>
+		<img src="tq/69.png" alt="" id="flag1">
+		<img src="tq/9.png" alt="" id="flag2">
+		<img src="tq/8.png" alt="" id="flag3"> 
+	 <ul><li>登錄</li>
+	 <li>注册</li>
+	 <li>會員專區</li></ul>
+	 <span id="keywd">請輸入關鍵字</span>
+	 <select>
+	     <option selected="selected">拍品</option>
+	     <option>2</option>
+	     <option>3</option>
+	     </select>
+     <button>搜索</button>
+	 </div><!-- tou end-->
+<ul id="daohang">
+    <li><a href="">公司簡介</a></li>
+    <li>新聞中心</li>
+    <li>客服中心</li>
+    <li>業務聯繫</li>
+    <li>拍賣廣告</li>
+    <li>拍賣結果</li>
+    <li>精品回顧</li>
+    <li>天騏藝術空間</li>
+    <li>天騏珠寶</li>
+    </ul>
+<div id="hand">
+	<span>香港天騏拍賣</span>
+	<p>HONG KONG DAY THESTRALS AUCTION</p>
+	<div>STRONG TECHNICAL FORCE<br>ADVANCED EQUIPMENT<br>STRICT QUALITY MANAGEMENT SYSTEM<br>PROFESSIONAL SERVICES<br>COMPETITIVE PRICE</div>
+  </div><!-- hand end -->
+<ul id="tab">
+    <li class="li1">拍賣廣告</li>
+    <li><a href="">拍賣公告</a></li>
+    <li>圖片預覽</li>
+    </ul>
+
+<div class="zhu" name="zhu">
+	<p id="daoh">你當前所處的位置：<span>首頁</span>&nbsp;<span>&gt;</span>&nbsp;<span>拍賣廣告</span>&nbsp;<span>&gt;</span>&nbsp;<span>圖片預覽</span></p>
+	<hr>
+  <div id="yulan">
+	<div><img src="tq/3.png" alt=""><p>現代藝術部<span>（雕塑、油畫）</span></p></div>
+	<div><img src="tq/2.png" alt=""><p>現代藝術部<span>（雕塑、油畫）</span></p></div>
+	<div><img src="tq/4.png" alt=""><p>現代藝術部<span>（雕塑、油畫）</span></p></div>
+	<div><img src="tq/6.png" alt=""><p>現代藝術部<span>（雕塑、油畫）</span></p></div>
+	<div><img src="tq/5.png" alt=""><p>現代藝術部<span>（雕塑、油畫）</span></p></div>
+	<div><img src="tq/7.png" alt=""><p>現代藝術部<span>（雕塑、油畫）</span></p></div>
+	<div><img src="tq/18.png" alt=""><p>現代藝術部<span>（雕塑、油畫）</span></p></div>
+	<div><img src="tq/64.png" alt=""><p>現代藝術部<span>（雕塑、油畫）</span></p></div>
+	<div><img src="tq/17.png" alt=""><p>現代藝術部<span>（雕塑、油畫）</span></p></div></div><!-- yulan end -->
+      </div><!-- zhu end -->
+
+<div id="di">
+  <ul>
+    <li>圖録訂購</li>
+    <li>聯系我們</li>
+    <li>加入我們</li>
+    <li>員工郵箱</li>
+    <li>誠信經營示範單位</li></ul>
+  <span class="disp1">地址：北京東城區朝陽門北大街1號新保利大廈三層 100010<br>電話：（86-10）64083188 傳真：（86-10）64083186<br>京ICP備06017645號<br>網站ip量</span>
+  <span class="disp2">建議反饋</span>
+  <span class="disp3">北京天騏微信</span>
+  <span class="disp4">香港天騏微信</span>
+  <img src="tq/11.png" class="dii1"><img src="tq/11.png" class="dii2">
+  <p>HONG KONG DAY THESTRALS AUCTION</p>
+  <img src="tq/13.png" class="dii3">
+  <div class="did"><span><img src="tq/12.png">&nbsp;京公網安備   1101289190000092號</span></div>
+   </div><!-- di end -->
+
+</div><!-- zong end-->
+
+<script type="text/javascript">
+
+/*左侧红色导航条点击切换效果*/
+   var tab=document.getElementById("tab")
+   var li=tab.getElementsByTagName("li")
+   var zhu=document.getElementsByName("zhu")
+   var waibu=document.getElementById("waibu")
+ // console.log(window.getComputedStyle(zhu[0],null)["height"])
+   for (var i = 1; i < li.length; i++) {
+      li[i].onmouseover=function(){
+   	 for (var i = 1; i < li.length; i++) {
+   		li[i].style.backgroundColor="rgb(220,220,220)"
+   		li[i].style.color="rgb(119,119,119)"
+   		 }
+   	   this.style.backgroundColor="rgb(173,129,130)" 
+   	   this.style.color="white";
+   	   }//onmouseover end 
+    }//for i end
+
+
+
+
+
+</script>
+</body>
+</html>

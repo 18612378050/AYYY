@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        img{
+            width: 800px;
+            height: 500px;
+            float: left;
+        }
+        #max{
+            width:800px;
+            height: 500px;
+            border: 1px solid black;
+            margin: 100px auto;
+            position: relative;
+            overflow: hidden;
+        }
+        #max span{
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-color: rgba(255,255,255,0.3);
+            z-index: 2;
+            display: none;
+        }
+        #min{
+            border: 1px solid black;
+            width: 4800px;
+            height: 500px;
+            position: absolute;
+
+        }
+        #but{
+            position: absolute;
+            top: 580px;
+            left: 570px;
+        }
+        #but span{
+            display: block;
+            width: 15px;
+            height: 15px;
+            background-color: #333;
+            float: left;
+            margin-left: 30px;
+            border-radius: 50%;
+
+        }
+        #but .on{
+            background-color: deeppink;
+        }
+        #sp1{
+            font-size: 50px;
+            font-weight: bold;
+            line-height: 50px;
+            position: fixed;
+            top: 330px;
+
+        }
+        #sp2{
+            font-size: 50px;
+            font-weight: bold;
+            line-height: 50px;
+            position: fixed;
+            top: 330px;
+            left: 1025px;
+            text-align: end;
+
+        }
+        #max:hover span{
+             display: block;
+        }
+        #max span:hover{
+            background-color: rgba(255,255,255,0.5);
+        }
+
+    </style>
+
+</head>
+<body>
+ <div id="max">
+     <div id="min" style="left:-800px;">
+         <img src="img/14.jpg" alt=""/>
+         <img src="img/11.jpg" alt=""/>
+         <img src="img/12.jpg" alt=""/>
+         <img src="img/13.jpg" alt=""/>
+         <img src="img/14.jpg" alt=""/>
+         <img src="img/11.jpg" alt=""/>
+     </div>
+     <span id="sp1"> < </span>
+     <span id="sp2"> > </span>
+ </div>
+ <div id="but">
+     <span a="1" class="on"></span>
+     <span a="2"></span>
+     <span a="3"></span>
+     <span a="4"></span>
+ </div>
+ <script>
+     var max=document.getElementById("max");
+     var sps=max.getElementsByTagName('span');
+     var min=document.getElementById("min");
+     var but=document.getElementById("but").getElementsByTagName("span");
+     var imgq=document.getElementsByTagName("img");
+     var indx=1;
+     var time=null;
+     var time2=null;
+     var num=0;
+     time=setInterval(ass,17)
+     function ass(){
+         max.scrollLeft+=10;
+         if(max.scrollLeft>3200){
+             console.log(1)
+             clearInterval(time);
+             clearInterval(time2);
+             max.scrollLeft=0
+         }
+         if(max.scrollLeft%imgq[0].offsetWidth==0){
+             console.log(1)
+             clearInterval(time);
+             clearInterval(time2);
+             time2=setInterval("time=setInterval(ass,17)",2000)
+         }
+         for(var i=0;i<but.length;i++){
+
+         }
+         num=parseInt(max.scrollLeft/imgq[0].offsetWidth);
+         for(var i=0;i<but.length;i++){
+             but[i].className="";
+         }but[num].className="on";
+
+     }
+     /*time=setInterval(ass,17)
+     function ass(){
+         debugger;
+         var n2= parseInt(min.style.left)
+         n2-=50;
+
+         if(n2<-4000){
+             clearInterval(time);
+             clearInterval(time2);
+             n2=-800
+         }
+         if(n2%imgq[0].offsetWidth==0){
+             clearInterval(time);
+             clearInterval(time2);
+             time2=setInterval("time=setInterval(ass,17)",2000)
+         }
+         min.style.left=n2+'px';
+         *//*num=parseInt(div1.scrollLeft/imgs[0].offsetWidth);
+         if(num==5){
+             num=0
+         }
+         for(var i=0;i<but.length;i++){
+             but[i].style.backgroundColor="pink";
+         }but[num].style.backgroundColor="blue"*//*
+
+     }*/
+
+     function sbut(){
+         for(var i=0;i<but.length;i++){
+                 if(but[i].className=="on"){
+                     but[i].className=""
+                     break;
+                 }
+             }
+             but[indx-1].className="on";
+     }
+     function all(leftss){
+         var nl= parseInt(min.style.left)+ leftss;
+         min.style.left = nl + 'px';
+         if(nl>-800){
+             min.style.left=-3200+'px';
+         }
+         if(nl<-3200){
+             min.style.left=-800+'px';
+         }
+          console.log(min.style.left)
+     }
+     for(var i=0;i<but.length;i++){
+         but[i].onclick=function(){
+             var mya=parseInt(this.getAttribute('a'));
+             var of=-800*(mya-indx)
+             all(of);
+             indx=mya;
+             sbut()
+         }
+     }
+
+     sps[1].onclick=function(){
+         if(indx==4){
+             indx=1
+         }else{
+             indx+=1;
+         }
+         sbut();
+            all(-800)
+
+     }
+     sps[0].onclick=function(){
+         if(indx==1){
+             indx=4
+         }else{
+             indx-=1;
+         }
+         sbut();
+        all(800)
+     }
+     max.onmouseover=function(){
+         clearInterval(time);
+         clearInterval(time2);
+     }
+     max.onmouseout=function(){
+         time=setInterval(ass,17)
+     }
+
+ </script>
+
+
+
+
+ <!--<script>
+     var max=document.getElementById("max");
+     var sps=max.getElementsByTagName('span');
+     var min=document.getElementById("min");
+     var but=document.getElementById("but").getElementsByTagName("span");
+     var imgq=document.getElementsByTagName("img");
+     var time=null;
+     var time2=null;
+     var n=0;
+     min.innerHTML+=min.innerHTML;
+
+     function zgd(){
+         max.scrollLeft+=10;
+         if(max.scrollLeft==min.clientWidth/2){
+             clearInterval(time);
+             clearInterval(time2);
+             max.scrollLeft=0;
+
+         }
+         if(max.scrollLeft%imgq[0].offsetWidth==0){
+             clearInterval(time);
+             clearInterval(time2);
+             time2=setInterval(function(){time=setInterval(zgd,17)},1000)
+         }
+         n=parseInt(max.scrollLeft/imgq[0].offsetWidth);
+         for(var i=0;i<but.length;i++){
+             but[i].style.backgroundColor="pink";
+         }but[n].style.backgroundColor="coral";
+     };
+     time=setInterval(zgd,17);
+     function ygd(){
+         max.scrollLeft-=10;
+         if(max.scrollLeft==0){
+             clearInterval(time);
+             clearInterval(time2);
+             max.scrollLeft=min.clientWidth/2;
+
+         }
+         if(max.scrollLeft%imgq[0].offsetWidth==0){
+             clearInterval(time);
+             clearInterval(time2);
+             time2=setInterval(function(){time=setInterval(ygd,17)},1000)
+         }
+         n=parseInt(max.scrollLeft/imgq[0].offsetWidth);
+         if(n==4){
+             n=0
+         }
+         for(var i=0;i<but.length;i++){
+             but[i].style.backgroundColor="pink";
+         }but[n].style.backgroundColor="coral";
+     }
+     sps[0].onclick=function(){
+         clearInterval(time);
+         clearInterval(time2);
+         time=setInterval(zgd,17);
+     }
+     sps[1].onclick=function(){
+         clearInterval(time);
+         clearInterval(time2);
+         time=setInterval(ygd,17);
+     }-->
+
+
+
+
+
+
+
+
+
+   <!-- /* max.onmouseover=function(){
+         if(max.scrollLeft%imgq[0].offsetWidth==0){
+             clearInterval(time);
+             clearInterval(time2);
+         }
+     }
+     max.onmouseout=function(){
+         clearInterval(time);
+         clearInterval(time2);
+         time=setInterval(gd,17);
+     }*/-->
+<!-- </script>-->
+</body>
+</html>

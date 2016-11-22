@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>线性渐变</title>
+<style type="text/css">
+.box{
+	width: 300px;
+	height: 200px;
+	margin: 10px auto;
+}
+.box1{
+    background: -webkit-linear-gradient(red,blue,green);
+    background: -moz-linear-gradient(red,blue,green);
+    background: -o-linear-gradient(red,blue,green);
+    background: -ms-linear-gradient(red,blue,green);
+    background: linear-gradient(red,blue,green);
+
+}
+.box2{
+	background: -webkit-linear-gradient(right,red,blue,green);
+    background: -moz-linear-gradient(right,red,blue,green);
+    background: -o-linear-gradient(right,red,blue,green);
+    background: -ms-linear-gradient(right,red,blue,green);
+    background: linear-gradient(right, red,blue,green);
+}
+.box3{
+	background: -webkit-linear-gradient(-90deg,red,blue,green);
+    background: -moz-linear-gradient(-90deg,red,blue,green);
+    background: -o-linear-gradient(-90deg,red,blue,green);
+    background: -ms-linear-gradient(-90deg,red,blue,green);
+    background: linear-gradient(-90deg, red,blue,green);
+}
+.box4{
+	background: -webkit-linear-gradient(90deg,red,blue,green);
+    background: -moz-linear-gradient(90deg,red,blue,green);
+    background: -o-linear-gradient(90deg,red,blue,green);
+    background: -ms-linear-gradient(90deg,red,blue,green);
+    background: linear-gradient(90deg, red,blue,green);
+}
+/*.box5{
+	background: -webkit-linear-gradient(180deg,red,blue,green);
+    background: -moz-linear-gradient(180deg,red,blue,green);
+    background: -o-linear-gradient(180deg,red,blue,green);
+    background: -ms-linear-gradient(180deg,red,blue,green);
+    background: linear-gradient(180deg, red,blue,green);
+}*/
+.box5{
+	background: -webkit-linear-gradient(90deg,red 0%,blue 40%,green 60%);
+    background: -moz-linear-gradient(90deg,red 0%,blue 40%,green 60%);
+    background: -o-linear-gradient(90deg,red 0%,blue 40%,green 60%);
+    background: -ms-linear-gradient(90deg,red 0%,blue 40%,green 60%);
+    background: linear-gradient(90deg,red 20%,blue 60%,green 80%);
+}
+.box6{
+	background: -webkit-linear-gradient(right bottom,red 0%,blue 40%,green 60%);
+    background: -moz-linear-gradient(right bottom,red 0%,blue 40%,green 60%);
+    background: -o-linear-gradient(right bottom,red 0%,blue 40%,green 60%);
+    background: -ms-linear-gradient(right bottom,red 0%,blue 40%,green 60%);
+    background: linear-gradient(right bottom,red 20%,blue 60%,green 80%);
+}
+.box7{
+	background: -webkit-repeating-linear-gradient(red 10%,yellow 20%,blue 30%);
+}
+</style>
+</head>
+<body>
+	<div class="box box1">box1</div>
+	<div class="box box2">box2</div>
+	<div class="box box3">box3</div>
+	<div class="box box4">box4</div>
+	<div class="box box5">box5</div>
+	<div class="box box6">box6</div>
+	<div class="box box7">box7</div>
+</body>
+</html>

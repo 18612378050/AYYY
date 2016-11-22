@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin: 0px;
+            padding:0px;
+        }
+        .a{
+            width: 50px;
+            height: 50px;
+            background-color: gray;
+            font-size: 50px;
+            position: absolute;
+            left: 600px;
+            z-index: 2;
+        }
+        .b{
+            position: absolute;
+            left: 350px;z-index: 1;
+            top: -200px;
+            opacity: 0.3;
+        }
+        .c{
+            width: 1366px;
+            height: 668px;
+            background-color: antiquewhite;
+            background-image: url("img/11.jpg");
+        }
+    </style>
+</head>
+<body>
+<div class="a">
+    LA
+</div>
+<div class="b">
+    <img src="img/11.jpg" alt="" style="height:200px;width:200px;"/>
+    <img src="img/12.jpg" alt="" style="height:200px;width:200px;"/>
+    <img src="img/13.jpg" alt= "" style="height:200px;width:200px;"/>
+</div>
+<div class="c">
+    
+</div>
+<script>
+    /*console.log(body)*/
+
+    var divs=document.getElementsByTagName('div');
+    var imgs=document.getElementsByTagName('img');
+    var time=null;
+  //方案1
+   /* divs[0].onmouseover=function(){
+        LA(10,50);
+    }
+    divs[0].onclick=function(){
+        LA(-10,-200);
+    }
+    function LA(x,s){//传参
+          time=setInterval(function(){//计时器
+              if(divs[1].offsetTop==s){//
+                 clearInterval(time)
+              }else{
+                  divs[1].style.top=divs[1].offsetTop+x+'px'
+              }
+          },10)
+    }
+        for(var i=0;i<imgs.length;i++){
+            imgs[i].index=i;
+           imgs[i].onclick=function(){
+               divs[2].style.backgroundImage='url(img/1'+(this.index+1)+'.jpg)';
+           }
+        }*/
+
+
+
+    //方案2
+    var X=true;//标示量
+     divs[0].onclick=function(){
+         if(X){
+             LA(10,50);
+             X=false;
+         }else{
+             LA(-10,-200);
+             X=true;
+         }
+     };
+     function LA(x,s){
+     time=setInterval(function(){
+     if(divs[1].offsetTop==s){
+     clearInterval(time)
+     }else{
+           divs[1].style.top=divs[1].offsetTop+x+'px'
+         }
+       },10)
+     };
+     for(var i=0;i<imgs.length;i++) {
+         imgs[i].index = i;
+         imgs[i].onclick = function () {
+             divs[2].style.backgroundImage = 'url(img/1' + (this.index + 1) + '.jpg)';
+         }
+     };
+
+</script>
+</body>
+</html>

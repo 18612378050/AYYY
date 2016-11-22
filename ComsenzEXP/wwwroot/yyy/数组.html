@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    /*Array.prototype.max=function(){
+        var i;
+        var max=this[0];
+        for(i=1;i<this.length;i++){
+            if(max<this[i])
+            max=this[i]
+        }
+        return max;
+    }
+    var x=new Array(1,2,3,4,5,6);
+    var y= x.max();
+    alert(y);*/
+var a=new Array(1,2,3,4,5,6,7,8,9,0);//建立一组数组!!
+    var b=new Array();//声明一个空数组！！
+    var c=new Array();//声明一个空数组！！
+for(var i = 0; i< a.length; i++){//获取每个数组的下标
+        if(a[i]%2==0){//判定条件获取偶数
+            b.push(a[i])//push给b添加新数组
+           // console.log(b)
+        }else{
+            c.push(a[i])//push给c添加新数组
+           // console.log(c)
+        }
+    }
+    b.sort(function(a,b){return a-b});//让数组按大小排序
+    console.log(b);
+    c.sort(function(a,b){return a-b});
+    console.log(c)
+</script>
+</body>
+</html>

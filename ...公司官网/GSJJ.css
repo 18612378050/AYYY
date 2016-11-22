@@ -1,0 +1,280 @@
+body{
+    background-color: #dcdcdc;
+}
+a{
+    text-decoration: none;
+}
+#da{
+    width: 1100px;
+    height: 2200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+#head{
+    width: 1100px;
+    height: 60px;
+    margin: auto;
+    background-color:#ffffff;
+    position: relative;
+}
+#head ul{
+    position: absolute;
+    right: 200px;
+    top: 0px;
+}
+#head ul li{
+    list-style: none;
+    float: left;
+    font-size: 15px;
+    margin-left: 20px;
+}
+#head ul li a{
+    color: black;
+}
+#head ul li a:hover{
+    color: #ff0000;
+}
+#head img{
+    width: 160px;
+    height: 35px;
+    margin-top: 15px;
+    margin-left: 200px;
+}
+#bar{
+    width: 1100px;
+    height: 70px;
+    overflow: hidden;
+    position: relative;
+
+}
+#bar img{
+    width: 1100px;
+    height: 400px;
+    position: absolute;
+    top: -320px;
+    z-index: 1;
+}
+#bar span{
+    z-index: 5;
+    font-size: 40px;
+    position: absolute;
+    right: 200px;
+    color: #b8c2d4;
+    font-family: 微软雅黑;
+}
+#body{
+    width: 800px;
+    height: 2000px;
+    margin-left: 150px;
+    position: relative;
+}
+#body #body1{
+    font-size: 25px;
+    font-weight: bolder;
+    margin-left: 20px;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+}
+#body hr{
+    width: 798px;
+    position: absolute;
+    top: 60px;
+}
+#b1{
+    width: 100px;
+    height: 5px;
+    background: #ff0000;
+    position: absolute;
+    top: 68px;
+    left: 40px;
+}
+#bt{
+    width: 120px;
+    height:30px;
+    background-color: #b82a2f;
+    border-left: 10px solid #343434;
+    border-right: 10px solid #343434;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    position: absolute;
+    top: 100px;
+}
+#jj{
+    position: absolute;
+    top: 130px;
+}
+#jj p{
+    text-indent: 30px;
+    line-height: 25px;
+    font-size: 12px;
+    color: grey;
+}
+#bar1{
+    width: 800px;
+    height: 300px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    position: absolute;
+    top: 300px;
+    background-image: url("img/32.png");
+    background-size: cover;
+    padding: 10px;
+    background-clip: content-box;
+}
+#bt2{
+    width: 120px;
+    height:30px;
+    background-color: #b82a2f;
+    border-left: 10px solid #343434;
+    border-right: 10px solid #343434;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    position: absolute;
+    top: 650px;
+}
+#qy{
+    width: 800px;
+    height: 630px;
+    position: absolute;
+    top: 700px;
+    border: 1px solid black;
+    border-radius: 20px;
+
+}
+#qy1{
+    width: 760px;
+    height: 500px;
+    margin: 20px;
+    background-color: #f5f5f5;
+}
+#qy1 img{
+    width: 380px;
+    height: 200px;
+}
+#qy1 div{
+    width: 380px;
+    height: 200px;
+    float: left;
+    position: relative;
+}
+#qy1 div span{
+    font-size: 20px;
+    font-weight: bolder;
+    position: absolute;
+    left: 30px;
+}
+#qy1 div ul{
+    position: absolute;
+    top: 20px;
+
+}
+#qy1 div ul li{
+    line-height: 25px;
+}
+#mes{
+    width: 800px;
+    height: 550px;
+    position: relative;
+    top: 1350px
+}
+#mes1{
+    width: 120px;
+    height:30px;
+    background-color: #b82a2f;
+    border-left: 10px solid #343434;
+    border-right: 10px solid #343434;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+}
+#dituContent1{
+    width: 700px;
+    height:320px;
+    margin: 50px;
+    border:1px solid black;
+    border-radius: 20px;
+}
+#dituContent{
+    margin-top: 10px;
+    margin-left:20px;
+    width:660px;
+    height:300px;
+    border:#ccc solid 1px;
+}
+#s1{
+    font-size: 25px;
+    color: red;
+    position: absolute;
+    top: 420px;
+    left: 30px;
+}
+#s2{
+     position: absolute;
+    top: 460px;
+    left: 30px;
+}
+#s3{
+     position: absolute;
+    top: 460px;
+    left: 70px;
+}
+#s4{
+     position: absolute;
+    top: 500px;
+    left: 30px;
+}
+#s5{
+     position: absolute;
+    top: 500px;
+    left: 70px;
+}
+#foot{
+    width: 1100px;
+    height: 150px;
+    background-color: #2b2b2b;
+    color: white;
+    font-size: 20px;
+    position: relative;
+}
+#foot a{
+    color: white;
+}
+#foot ul li{
+    list-style: none;
+    width: 120px;
+    height: 20px;
+    float: left;
+    border-left: 1px solid white;
+    text-align: center;
+}
+#foot ul{
+    position: absolute;
+    top: 10px;
+    left: 50px;
+}
+#foot .fota{
+    font-size: 15px;
+    line-height: 20px;
+    position:absolute;
+    top: 80px;
+    left: 50px;
+}
+.fotb{
+    position: absolute;
+    top: 20px;
+    right: 250px;
+}
+#foot img{
+    position: absolute;
+    top: 50px;
+    right: 200px;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>事件</title>
+<style>
+*{
+	padding:0;
+	margin:0;
+}
+button{
+	background:#3498db;
+	color:#fff;
+	font-size:14px;
+	text-align:center;
+	width:100px;
+	line-height:34px;
+	border:none 0;
+	cursor:pointer;
+	float:left;
+	margin:20px;
+}
+.win_wrap{
+	position:absolute;
+	left:50%;
+	top:50%;
+	width:500px;
+	height:300px;
+	margin-left:-250px;
+	margin-top:-150px;
+	border:1px solid #3498db;
+}
+.title{
+	height:34px;
+	line-height:34px;
+	padding:0 3px 0 10px;
+	background:#3498db;
+	color:#fff;
+}
+.title a{
+	float:right;
+	cursor:pointer;
+}
+.title h2{
+	font-size:14px;
+}
+.content{
+	padding:10px;
+	
+}
+</style>
+
+<script>
+ 
+window.onload = function(){
+	var oBtn = document.getElementById("myBtn");
+	var oWin = document.getElementById("win");
+	var oTitle = document.getElementById("winTitle");
+	var oClose = document.getElementById("close");
+	//拖拽
+	oTitle.onmousedown = function(ev){
+		var ev = ev || window.event;
+		var disX = ev.clientX - oWin.offsetLeft;
+		var disY = ev.clientY - oWin.offsetTop;
+		oWin.style.cursor = "all-scroll";
+		document.onmousemove = function (ev){
+			
+			var ev = ev || window.event;
+			oWin.style.left = (ev.clientX - disX + 250) + 'px';
+			oWin.style.top = (ev.clientY - disY +150) + 'px';
+		};
+		
+		document.onmouseup = function (){
+			oWin.style.cursor = "default";
+			document.onmousemove = null;
+			document.onmouseup = null;
+		};
+		return false;
+	}
+	
+	//关闭弹窗
+	oClose.onclick = function(){
+		oWin.style.display = "none";
+	}
+	//打开弹窗
+	oBtn.onclick = function(){
+		oWin.removeAttribute("style");
+		oWin.style.display = "block";
+	}
+	
+}
+
+</script>
+
+</head>
+
+<body>
+    <button id="myBtn">弹窗</button>
+    
+    <div class="win_wrap" id="win">
+    	<div class="title" id="winTitle"><a id="close">&times;</a><h2>弹窗</h2></div>
+        <div class="content">这是一个弹窗</div>
+    </div>
+</body>
+</html>

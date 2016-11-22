@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+       .wb{
+           width: 800px;
+           height: 600px;
+           border: 1px solid gray;
+           margin: 0px auto;
+           position: relative;
+       }
+        .k{
+            width: 50px;
+            height: 50px;
+            position: absolute;
+        }
+
+    </style>
+</head>
+<body>
+<div class="wb" id="wb">
+    <div class="k" id="k"><img src="img/qe.png" alt=""/></div>
+
+</div>
+<script>
+    var wb=document.getElementById('wb');
+    var k=document.getElementById('k');
+
+    var posX=375;
+    var posY=275;
+    var time=null;
+    var moveX=true;
+    var moveY=true;
+
+   /* window.onload=pos;
+    function pos(){
+        k.style.left=posX+'px';
+        k.style.top=posY+'px';
+    }*/
+    function move(){
+            if(moveX){
+                if(posX>0){
+                    posX--;
+                    k.style.left=posX+'px';
+                }else{
+                    moveX=false;
+                }
+            }else{
+                if(posX<wb.clientWidth-k.offsetWidth){
+                    posX++;
+                    k.style.left=posX+'px';
+                }else{
+                    moveX=true;
+                }
+            }
+
+        if(moveY){
+            if(posY>0){
+                posY--;
+                k.style.top=posY+'px';
+            }else{
+                moveY=false;
+            }
+        }else{
+
+                if(posY<wb.clientHeight- k.offsetHeight){
+                    posY++;
+                    k.style.top=posY+'px';
+                }else{
+                    moveY = true;
+                }
+            }
+    }
+    time=setInterval(move,1);
+
+
+
+
+   /* var main=document.getElementById('main');
+    var tu1=document.getElementById('tu1');
+    var tu2=document.getElementById('tu2');
+    var posX1=0;
+    var posY1=0;
+    var posX2=375;
+    var posY2=175;
+    var maxlength1=main.clientWidth-tu1.offsetWidth;
+    var maxlength2=main.clientHeight-tu1.offsetHeight;
+    var x1=1;
+    var y1=1;
+    var x2=1;
+    var y2=1;
+    var timer=setInterval(function(){
+        if (posX1>maxlength1||posX1<0) {
+            x1*=-1;
+        }
+        if (posY1>maxlength2||posY1<0) {
+            y1*=-1;
+        }
+        posX1+=x1*2;
+        posY1+=y1*2;
+        tu1.style.left=posX1+'px';
+        tu1.style.top=posY1+'px';
+    },10)
+    var maxlengtha=main.clientWidth-tu2.offsetWidth;
+    var maxlengthb=main.clientHeight-tu2.offsetHeight;
+    var timer=setInterval(function(){
+        if (posX2>maxlengtha||posX2<0) {
+            x2*=-1;
+        }
+        if (posY2>maxlengthb||posY2<0) {
+            y2*=-1;
+        }
+        posX2+=x2*5;
+        posY2+=y2*5;
+        tu2.style.left=posX2+'px';
+        tu2.style.top=posY2+'px';
+    },20)*/
+
+
+
+</script>
+</body>
+</html>

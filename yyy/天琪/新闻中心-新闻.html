@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	#zhengti{
+		width: 1100px;
+		height:1300px ;
+		margin: 0 auto;
+	}
+	#zhezao{
+		background-color: black;
+		width: 1100px;
+		height: 1300px;
+		opacity: 0.75;
+		position: absolute;
+		left: 125px;
+		z-index: 100;
+		display: none;
+		
+
+	}
+	.head{
+		width: 1100px;
+		height: 150px;
+		float: left;
+		background-image: url(tq/14.png);
+	}
+	.head1{
+		width: 120px;
+		height: 120px;
+		margin-top: 15px;
+		float: left;	
+	}
+	.head2{
+		float: left;
+		font-size: 40px;
+		margin-left: 30px;
+		color: #cccc00;
+		font-weight: bolder;
+		margin-top: 40px;
+	}
+	.head3{
+		float: left;
+		font-size: 18px;
+		margin-left: -260px;
+		color: #cccc00;
+		font-weight: bolder;
+		margin-top:90px;
+	}
+	.head4{
+		width: 220px;
+		height: 37px;
+		float: left;
+		margin-left: 450px;
+	}
+	.head4 img{
+		width: 59px;
+		height: 37px;
+		margin-left: 5px;
+	}
+	#head5{
+		font-size: 20px;
+		color:#cccc00;
+		font-weight: bolder; 
+		float: left;
+		margin-left: 480px;
+		margin-top: 20px;
+		cursor: pointer;
+	}
+	.head6{
+		width: 260px;
+		height: 40px;
+		float: left;
+		margin-left: 440px;
+		margin-top: 10px;
+	}
+	.head7{
+		width: 150px;
+		height: 30px;
+		float: left;
+	}
+	.head8{
+		width: 40px;
+		height: 32px;
+		float: left;
+	}
+	.head9{
+		width: 60px;
+		height: 32px;
+		float: left;
+	}
+
+	#denglv{
+		width: 450px;
+		height: 350px;
+		background-color:white;
+	    position: fixed;
+	    z-index: 101;
+           top: 250px;
+           left: 500px;
+	}
+	#guanbi{
+		width: 30px;
+		height: 15px;
+		font-size: 25px;
+		font-weight: bolder;
+		float: left;
+		position: absolute;
+		left: 400px;
+		top: 5px;
+		cursor: pointer;
+
+	}
+	#denglv span{
+		font-size: 25px;
+		margin-left: 130px;
+		float: left;
+		margin-top: 10px;
+		font-weight: bolder;
+		cursor: pointer;
+	}
+	.denglv1{
+		float: left;
+		margin-left: 80px;
+		margin-top: 20px;
+		border-radius: 7px;
+		width: 300px;
+		height: 40px;
+	}
+	.denglv2{
+		float: left;
+		margin-left: 80px;
+		margin-top: 20px;
+		border-radius: 7px;
+		width: 300px;
+		height: 40px;
+	}
+	.denglv3{
+		float: left;
+		margin-left: 80px;
+		margin-top: 20px;
+		border-radius: 7px;
+		width: 130px;
+		height: 40px;
+	}
+	.denglv4{
+		float: left;
+		margin-left: 30px;
+		margin-top: 20px;
+		border-radius: 7px;
+		width: 130px;
+		height: 40px;
+		cursor: pointer;
+	}
+	.denglv5{
+		float: left;
+		margin-left: 80px;
+		margin-top: 20px;
+		border-radius: 7px;
+		width: 150px;
+		height: 40px;
+		background-color: #ff9900;
+		cursor: pointer;
+		box-shadow:2px 2px 5px rgba(0,0,0,0.5);
+	}
+	#denglv6{
+		float: left;
+		font-size: 20px;
+		margin-top: 70px;
+		margin-left: -150px;
+		border:2px solid ;
+		width: 200px;
+		height: 30px;
+		text-align: center;
+		color: red;
+		display: none;
+	}
+	#nav{
+		width: 1100px;
+		height:70px;
+		background-color: white;
+		float: left;
+		
+	}
+	#nav1 li{
+		width: 120px;
+		height: 30px;
+		list-style: none;
+		float: left;
+		font-size: 19px;
+		margin-left: 0px;
+		margin-top: 20px;
+		font-weight: bolder;
+		cursor: pointer;
+		text-align: center;
+		line-height: 35px;
+	}
+	
+	#nav1 li:hover{
+		background-image: url(tq/85.png);
+	}
+	.banner{
+		width: 1100px;
+		height: 300px;
+		float: left;
+		background-image: url(tq/111.png);
+		background-color: white;
+	}
+	.banner1{
+		display: block;
+		width: 250px;
+		height: 100px;
+		font-weight: bolder;
+		font-size: 40px;
+		font-family: 微软雅黑;
+		color: #660000;
+		margin-top: 100px;
+		margin-left: 20px;
+	}
+	.banner2{
+		display: block;
+		color: #cccc33;
+		font-size:15px;
+		margin-left: ;
+		margin-top: -30px;
+		font-weight: bolder;
+	}
+	.banner3{
+		display: block;
+		width:3px;
+		height: 80px;
+		background-color:#660000;
+		float: left;
+		margin-left: 270px;
+		margin-top: -80px;
+	}
+	.banner4{
+		display: block;
+		width: 400px;
+		height:300px;
+		color: #660000;
+		float: left;
+		margin-left: 300px;
+		margin-top: -80px; 
+	}
+	#content{
+		width: 1100px;
+		height: 600px;
+		background-color: white;
+		float: left;
+	}
+	#content1{
+		width: 300px;
+		height: 400px;
+		float: left;
+		
+
+	}
+	#content2{
+		width: 300px;
+		height: 130px;
+		background-color: #660000;
+		color: white;
+		font-size: 30px;
+		font-weight: bolder;
+		text-align: center;
+		line-height: 130px;
+	}
+	#content3{
+		width: 300px;
+		height: 60px;
+		background-color: #cccccc;
+		margin-top: 5px;
+		color: white;
+		font-size: 25px;
+		text-align: center;
+		font-weight: bolder;
+		line-height: 60px;
+		float: left;
+	}
+	#content3:hover{
+		background-color: #996666;
+	}
+	.contr{
+		display: block;
+		font-size: 20px;
+		float: left;
+		margin-top: 10px;
+		font-weight: bolder;
+		margin-left: 10px;
+	}
+	.contr1{
+		color: #990000;
+		font-size: 15px;
+		margin-top: 10px;
+		float: left;
+		margin-left: 5px;
+		cursor: pointer;
+		font-weight: bolder;
+	}
+	.contr2{
+		width: 800px;
+		height:500px;
+		float: left;
+		font-size: 20px;
+		line-height: 25px;
+		margin-top: 5px;
+	}
+	#cont3{
+		width: 1100px;
+		height: 40px;
+		border-bottom: 1px dashed;
+	}
+	.contr3{
+		width: 130px;
+		height: 100px;
+		float: left;
+		margin-left: 20px;
+
+	}
+	
+	.contr4{
+		display: block;
+	    margin-left: 20px;
+		float: left;
+		font-size: 20px;
+		font-weight: bolder;
+		margin-top: 5px;
+	    
+	}
+	.contr5{
+		width: 700px;
+		height: 85px;
+		font-size: 15px;
+		margin-left: 20px;
+		margin-top: 5px;
+		float: left;
+		border-bottom: 1px solid gray;
+	}
+	.contr6{
+		width: 80px;
+		height: 30px;
+		font-size: 15px;
+		font-weight: bolder;
+		background-color: #660000;
+		color: white;
+		border-radius: 5px;
+		margin-top: 20px;
+		float: left;
+		margin-left: -120px;
+
+	}
+	.contrr{
+		width: 800px;
+		height: 600px;
+		float: left;
+	}
+	.contr7 li{
+		list-style: none;
+		float: left;
+		margin-left: 20px;
+		margin-top: 10px;
+		width: 20px;
+		height: 20px;
+	}
+	.contr7 li:hover{
+		background-color: #660000;
+		color: white;
+		text-align: center;
+	}
+	.contr8{
+		width: 80px;
+		height: 40px;
+		background-color: #660000;
+		color: white;
+		font-weight: bolder;
+		font-size: 15px;
+		float: left;
+		margin-left: 15px;
+	}
+
+	.foot{
+		width: 1100px;
+		height: 200px;
+		background-color: #333333;
+		float: left;
+	}
+	.foot1{
+		display: block;
+		float: left;
+		color: white;
+		margin-top: 15px;
+		margin-left: 10px;
+	}
+	.foon{
+		width: 450px;
+		height: 150px;
+		float: left;
+	}
+	.foot2{
+		display: block;
+		color: white;
+		margin-left: 10px;
+		margin-top: 15px;
+		float: left;
+	}
+	.foot3{
+		width: 150px;
+		height:40px;
+		color: #990000;
+		font-size: 20px;
+		float: left;
+		margin-top: 100px;
+		margin-left: 10px;
+	}
+	.foot4{
+		width: 480px;
+		height: 150px;
+		float: left;	
+	}
+	.foot5{
+		display: block;
+		color: #ffff99;
+		width: 10px;
+		height: 80px;
+		float: left;
+		margin-top: 20px;
+		margin-left: 20px;
+	}
+	.foot6{
+		margin-left: 20px;
+		margin-top: 35px;
+		float: left;
+	}
+	.foot7{
+		margin-left: 50px;
+		margin-top: 10px;
+		float: left;
+	}
+	.foot8{
+		display: block;
+		color: #cccc00;
+		font-weight: bolder;
+		margin-left: 250px;
+	}
+	.foot9{
+		width: 1100px;
+		height: 50px;
+		background-color: #000000;
+		float: left;
+	}
+	.foon1{
+		margin-left: 400px;
+		margin-top: 15px;
+	}
+    .foon2{
+    	color: #cccccc;
+
+    }
+	a{
+		text-decoration: none;
+	}
+	#head5 a{
+		color: yellow;
+	}
+	#nav1 a{
+		color: #2b2e36;
+	}
+	</style>
+</head>
+<body>
+	<div id="zhengti">
+
+	<div class="head">
+		<img class="head1" src="tq/13.png" alt="这是一个图片">
+		<h6 class="head2">香港天琪拍賣</h6>
+		<h4 class="head3">HONGKONGDAYTHESTRALSAUCTION</h4>
+		<div class="head4">
+		<img  src="tq/19.jpg">
+		<img  src="tq/8.png" alt="这是一个图片">
+		<img  src="tq/9.png" alt="这是一个图片">
+		</div>
+		<div id="head5">
+			<span><a href="dl.html" target="_blank">登錄</a></span>
+			<span><a href="注册.html">註冊</a></span>
+			<span><a href="会员中心.html">會員專區</a></span>
+		</div>
+		<div class="head6">
+			<input class="head7" type="text" placeholder="輸入關鍵字">
+				<select name="" id="" class="head9" style="color: #660000;">
+					<option value="" >拍品</option>
+					<option value="">拍品</option>
+				</select>
+			<button class="head8">搜索</button>
+		</div>
+
+
+<div id="denglv" style="display:none">
+        <span>登录</span>
+		<span>注册</span>
+		
+	<div>
+		<form>
+		<input class="denglv1" type="text" placeholder="手机号/登录名">
+		<input class="denglv2" type="text" placeholder="请输入密码">
+		<input class="denglv3" type="text" placeholder="输入验证码">
+		<input class="denglv4" type="text"  value="点击获取验证码">
+		<input class="denglv5" type="reset"  value="登录">
+        <input id="denglv6" type="text" value="用户名或密码错误">
+        </form>
+	</div>
+	<div id="guanbi">×</div>
+	</div>
+
+
+
+	<div id="nav">
+	<ul id="nav1">
+		<li><a href="中文首页-公司简介.html">公司簡介</a></li>
+		<li><a href="新闻中心-新闻.html">新聞中心</a></li>
+		<li><a href="index-客服中心-如何委托.html">客服中心</a></li>
+		<li><a href="业务联系 -业务部门专区-专区详情.html">業務聯繫</a></li>
+		<li><a href="index-拍卖广告-拍卖公告.html">拍賣廣告</a></li>
+		<li><a href="index-拍卖结果-全部拍卖会.html">拍賣結果</a></li>
+		<li><a href="精品回顾.html">精品回顧</a></li>
+		<li><a href="天琪艺术空间.html">天騏藝術空間</a></li>
+		<li><a href="天琪珠宝.html">天騏珠寶</a></li>
+	</ul>
+	</div>
+	<div class="banner">
+	<span class="banner1">香港天琪拍賣</span>
+	<span class="banner2">HONG KONG DAY THESTRALS AUCTION</span>
+	<span class="banner3"></span>
+	<span class="banner4">
+		STRONG TECHNICAL FORCE<br>
+		ADVANCED EQUIPMENT<br>
+		STRICT QUALITY MANAGEMENT SYSTEM<br>
+		PROFESSIONAL SERVICES<br>
+		COMPETITIVE PRICE
+	</span>	
+	</div>
+     
+	<div id="content">
+		<div id="content1">
+     	<div id="content2">新闻中心</div>
+     	<div id="content3"><a href="">新聞</a></div>
+     	<div id="content3"><a href="新闻中心-视频.html">视频</a></div>
+     	<div id="content3"><a href="新闻中心-杂志.html">雜志</a></div>
+     	<div id="content3"><a href="新闻中心-新闻 - 图片.html">圖書</a></div>
+     </div>
+
+
+    <div id="cont3">
+    	<span class="contr">你當前所處的位置:</span>
+    	<span class="contr1">首頁>新聞中心></span>
+    	<span class="contr1">視頻</span>
+    </div>
+
+<div class="contrr">
+    <div class="contr2">
+    <span class="contr4">十年，新起點｜藝術航母再創佳績</span><br>
+    <div class="contr5">隨著全球藝術市場發展的日益深化，傳統的拍賣業務已經無法滿足客戶的多樣需求，爭需出現新的業務類型興大的一級市場進行直接對接。因此，為順應全球藝術市場和拍賣業的未來趨勢，保利藝術空間于2012年8月正式成立。
+    </div>
+   
+   <span class="contr4">十年，新起點｜藝術航母再創佳績</span><br>
+    <div class="contr5">隨著全球藝術市場發展的日益深化，傳統的拍賣業務已經無法滿足客戶的多樣需求，爭需出現新的業務類型興大的一級市場進行直接對接。因此，為順應全球藝術市場和拍賣業的未來趨勢，保利藝術空間于2012年8月正式成立。
+    </div>
+
+     <span class="contr4">十年，新起點｜藝術航母再創佳績</span><br>
+    <div class="contr5">隨著全球藝術市場發展的日益深化，傳統的拍賣業務已經無法滿足客戶的多樣需求，爭需出現新的業務類型興大的一級市場進行直接對接。因此，為順應全球藝術市場和拍賣業的未來趨勢，保利藝術空間于2012年8月正式成立。
+    </div>
+
+     <span class="contr4">十年，新起點｜藝術航母再創佳績</span><br>
+    <div class="contr5">隨著全球藝術市場發展的日益深化，傳統的拍賣業務已經無法滿足客戶的多樣需求，爭需出現新的業務類型興大的一級市場進行直接對接。因此，為順應全球藝術市場和拍賣業的未來趨勢，保利藝術空間于2012年8月正式成立。
+    </div>
+
+
+   
+    </div>
+
+ 
+    <button class="contr8">上一页</button>
+    <ul class="contr7">
+    	<li>1</li>
+    	<li>2</li>
+    	<li>3</li>
+    	<li>4</li>
+    	<li>5</li>
+    	<li>6</li>
+    	<li>7</li>
+    	<li>8</li>
+    	<li>9</li>
+    </ul>
+    <button class="contr8">下一页</button>
+
+ </div> 
+
+
+	</div>
+	<div class="foot">
+	<div class="foon">
+	<span class="foot1">國訂貨地點 聯系我們 加入我們 員工郵箱 誠信經營示范單位</span>
+	<span class="foot2">地址：北京東城區朝陽門北大街1號新保利大廈三層100010<br>電話：（86-10）64083188 傳真：（86-10）64083186<br>
+	京ICP權06017645號<br>
+	網站ip量</span>
+	</div>
+	<button class="foot3">建議反饋</button>
+	<div class="foot4">
+	<div>
+		<span class="foot5">北京天琪微信</span>
+		<img class="foot6" src="tq/11.png" alt="">
+		</div>
+		<div>
+		<span class="foot5">北京天琪微信</span>
+		<img class="foot6" src="tq/11.png" alt="">
+		</div>
+		<img  class="foot7" src="tq/13.png">
+		<span class="foot8">HONGKONGDAYTHESTRALSAUCTION</span>
+	</div>
+	<div class="foot9">
+		<img class="foon1" src="tq/12.png" alt="">
+		<span class="foon2">京公網安1101289190000092號</span>
+	</div>
+	</div>
+	<div id="zhezao"></div>
+	</div>
+	<script type="text/javascript">
+	var cont3=document.getElementById("cont3")
+	var xingwen=cont3.getElementsByTagName("span")[2];
+	var content1=document.getElementById("content1");
+	var shipin=content1.getElementsByTagName("div");
+	for (var i = 0; i < shipin.length; i++) {
+		shipin[i].onclick=function(){
+			for (var i = 0; i < shipin.length; i++) {
+				if (this==shipin[i]) {
+					xingwen.innerHTML=shipin[i].innerHTML
+				};
+			};
+			
+		}
+	};
+
+
+
+
+	var denglv=document.getElementById('denglv');
+	var divs=denglv.getElementsByTagName('div')[1];
+	var sps=denglv.getElementsByTagName("span");
+	var inps=denglv.getElementsByTagName("input");
+	var head5=document.getElementById("head5");
+	var spas=head5.getElementsByTagName("span");
+	var zhezao=document.getElementById("zhezao");
+    var re1=/^(13|15|17|18)[0-9]{9}$/;   // /^(13|15|17|18)[0-9]{9}$/
+	var re2=/^[a-zA-Z0-9_]{6,16}$/;     ///^[a-zA-Z0-9_]{6,16}$/;
+	
+
+
+
+	spas[0].onclick=function(){
+		denglv.style.display="block"
+		zhezao.style.display="block"
+	}
+
+
+	spas[1].onclick=function(){
+		denglv.style.display="block"
+		inps[4].value="注册"
+		zhezao.style.display="block"
+
+	};
+	divs.onclick=function(){
+		denglv.style.display="none";
+		zhezao.style.display="none"
+
+	}
+
+
+    //改变登录，注册事件
+     sps[1].onclick=function(){
+     	inps[4].value="注册";
+     }
+      sps[0].onclick=function(){
+     	inps[4].value="登录";
+     }
+    //手机号错误提示事件
+    inps[0].onblur=function(){
+    	if (re1.test(inps[0].value)==false) {
+    		inps[5].style.display="block";
+    	};
+    }
+    //密码错误事件
+    inps[0].onblur=function(){
+    	if (re2.test(inps[0].value)==false) {
+    		inps[5].style.display="block";
+    	};
+    }
+    //点击登录的时候错误提示隐藏
+     inps[4].onclick=function(){
+    	inps[5].style.display="none";
+    }
+
+    //获取验证码事件
+    inps[3].onclick=function(){
+    	var code="";
+    	var arr=[0,1,2,3,4,5,6,7,8,9,"a","b","c","d","e","f","g","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","h","i"];
+    	for (var i = 0; i <4; i++) {
+    		var num=Math.floor(Math.random()*36);//for循环随机从36位里取整
+    		code+=arr[num]
+    	};
+    	inps[3].value=code;
+    }
+
+
+    
+	</script>
+</body>
+</html>

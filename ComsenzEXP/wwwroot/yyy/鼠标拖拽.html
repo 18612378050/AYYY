@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .a{
+            width:500px;
+            height:500px;
+            border: 1px solid black;
+            position: relative;
+        }
+        .b{
+            width:100px;
+            height:100px;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            border:1px solid black
+
+        }
+    </style>
+</head>
+<body>
+<div class="a">
+    <div class="b">
+        <!--<img src="img/m1.jpg" alt="" width="50" height="70"/>-->
+    </div>
+</div>
+<script>
+    var time=null;
+    var divs=document.getElementsByTagName('div');
+
+    //鼠标按下的事件
+    divs[1].onmousedown=function(event){
+        clearInterval(time);
+        var event=event||window .event;//兼容
+        //x=鼠标相对于网页的x坐标-带移动对象的左边距
+        var tmpX=event.clientX-divs[1].offsetLeft;
+        //y=鼠标相对于网页的y坐标-带移动对象的上边距
+        var tmpY=event.clientY-divs[1].offsetTop;
+        //取消默认行为
+        if(event.preventDefault){
+            event.preventDefault()
+        }else{
+            event.returnValue=false
+        }
+        //鼠标按下并移动的事件
+        document.onmousemove=function(event){
+
+            var event=event||window.event;
+            var enx=event.clientX-tmpX;
+            var eny=event.clientY-tmpY;
+            var mouseX = divs[0].clientWidth - divs[1].offsetWidth;
+            var mouseY = divs[0].clientHeight - divs[1].offsetHeight;
+            if(enx>=mouseX){
+                enx=mouseX;
+            }
+            if(enx<=0){
+                enx=0
+            }
+            if(eny>=mouseY){
+                eny=mouseY
+            }
+            if(eny<=0){
+                eny=0
+            }
+            divs[1].style.left=enx+'px';
+            divs[1].style.top=eny+'px';
+            console.log(enx);
+        }
+    }
+    document.onmouseup=function(){
+        clearInterval(time);
+        console.log(11);
+        time=setInterval(move,1);
+        document.onmousemove=null;
+    }
+
+
+
+
+
+
+
+    var posX=375;
+    var posY=275;
+
+    var moveX=true;
+    var moveY=true;
+
+    /* window.onload=pos;
+     function pos(){
+     k.style.left=posX+'px';
+     k.style.top=posY+'px';
+     }*/
+    function move(){
+        debugger;
+        if(moveX){
+            if(posX>0){
+                posX--;
+                divs[1].style.left=posX+'px';
+            }else{
+                moveX=false;
+            }
+        }else{
+            if(posX<divs[0].clientWidth-divs[1].offsetWidth){
+                posX++;
+                divs[1].style.left=posX+'px';
+            }else{
+                moveX=true;
+            }
+        }
+
+        if(moveY){
+            if(posY>0){
+                posY--;
+                divs[1].style.top=posY+'px';
+            }else{
+                moveY=false;
+            }
+        }else{
+
+            if(posY<divs[0].clientHeight- divs[1].offsetHeight){
+                posY++;
+                divs[1].style.top=posY+'px';
+            }else{
+                moveY = true;
+            }
+        }
+    }
+    time=setInterval(move,1);
+
+    /*var div=document.getElementsByTagName('div');
+    div[0].onmousedown=function(ev) {
+        var ev = event || window.event;
+        var x = evas.clientX -div[0].offsetLeft;
+        var y = ev.clientY -div[0].offsetTop;
+        document.onmousemove=function(ev){
+            var ev = event || window.event;zZZ
+            var lefts=ev.clientX-X;
+            var tops=ev.clientY-Y;
+            if(lefts<=0){
+                lefts=0;
+            }
+            if(lefts>=document.documetElenemt.clientWidth-div[0].offsetWidth){
+                lefts=document.documetElenemt.clientWidth-div[0].offsetWidth
+            }
+            if(tops<=0){
+                tops=0
+            }
+            if(tops>=document.ddocument.documetElenemt.clientHeight-div[0].offsetHeight){
+                tops=document.ddocument.documetElenemt.clientHeight-div[0].offsetHeight
+            }
+            div[0].style=lefts+'px';
+            div[0].style=yops+'px';
+        }
+    }
+    document.onmouseup=function(){
+        document.onmousemove=null;
+    }
+*/
+</script>
+
+</body>
+</html>

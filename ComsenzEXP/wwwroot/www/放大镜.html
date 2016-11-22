@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div{
+            width:500px;
+            height: 500px;
+            background-color: black;
+            border-radius: 20%;
+        }
+        .a{
+            border: 1px solid black;
+            display: inline-block;
+            background-color: aliceblue;
+            width: 200px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;;
+            margin: 80px 150px;
+        }
+        button{
+            height: 50px;
+            width: 60px;
+            font-size: 20px;
+            margin-left: 120px;
+        }
+
+    </style>
+</head>
+<body>
+   <div>
+       <span class="a" id="name"></span>
+       <button id="btn1">开始</button>
+       <button id="btn2">结束</button>
+   </div>
+   <script>
+       var ipt=document.getElementsByTagName('span');
+       var but=document.getElementsByTagName('button');
+       var time=null;
+       var b = ["小呆","许萌","老陈","薛丹","孙维","师东路","马思琪","郭美琳","赵亮","汪浩"];
+           function jsq(){
+               var a=Math.floor(Math.random()* b.length);
+               ipt[0].innerHTML=b[a];
+       }
+       but[0].onclick=function(){
+
+           clearInterval(time)
+          time = setInterval(jsq,20);
+       }
+       but[0].onkeydown=function(){
+           if(event.keyCode==13){
+               var ieKey=event.keyCode;//获得键值，数字形式的
+               var realkey=String.fromCharCode(ieKey) //将数字形式的键值转化为真实的按键
+                realkey
+               time = setInterval(jsq,20);
+           }
+       }
+
+       but[1].onclick=function(){
+           clearInterval(time)
+       }
+   </script>
+</body>
+</html>

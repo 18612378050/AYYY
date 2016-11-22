@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+<div>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+<script>
+    var spa = document.getElementsByTagName('span');
+    function djs() {
+        //debugger;
+        var dp = new Date();
+        var jz = new Date(2017, 3, 29, 00, 00, 00)
+        var hm = jz.getTime() - dp.getTime();
+        var t = parseInt(hm/(1000*60*60*24));
+        var st=hm%(1000*60*60*24);
+        var xs=parseInt(st/(1000*60*60));
+        var sxs=st%(1000*60*60);
+        var fz = parseInt(sxs/(1000*60));
+        var sfz = sxs%(1000*60);
+        var m = parseInt(sfz/1000);
+        var sm= sfz%1000;
+        if(t>10&&t<100){
+            spa[0].innerHTML="0"+t+"天";
+        }else if(t<10){
+            spa[0].innerHTML="00"+t+"天";
+        }else{
+            spa[0].innerHTML=t+"天"
+        }
+
+        if(xs<10){
+            spa[1].innerHTML="0"+xs+"小时";
+        }else{
+            spa[1].innerHTML=xs+"小时"
+        }
+
+        if(fz<10){
+            spa[2].innerHTML="0"+fz+"分";
+        }else{
+            spa[2].innerHTML=fz+"分"
+        }
+
+        if(m<10){
+            spa[3].innerHTML="0"+m+"秒";
+        }else{
+            spa[3].innerHTML=m+"秒"
+        }
+
+        if(true){
+
+            spa[4].innerHTML=sm+"毫秒"
+        }
+    }
+setInterval(djs,1)
+
+    //获取时间
+    /*setInterval(date,1000);
+    function date(){
+        //debugger;
+        s++;
+        if(s==60){
+            s=0;
+            m++;
+        }
+        if(m==60){
+            m=0;
+            h++;
+        }
+        if(h==24){
+            h=0;
+        }
+        spa[0].innerHTML=h;
+        spa[2].innerHTML=m;
+        spa[4].innerHTML=s;
+    }*/
+
+
+</script>
+
+</body>
+</html>

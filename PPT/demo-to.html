@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+	// function Me(){
+	// 	this.name='人名';
+	// 	this.address='地点';
+	// 	this.saying=function(){
+	// 		return "Hello World"
+	// 	}
+	// }
+	// var aa=new Me()
+	// alert(aa.name)
+	// Date();
+	// var bb=new Date();
+	// alert(bb.getHours())
+	// function(){
+	// 	var test=1;
+	// 	alert(test)
+	// }
+	// var f=function(){
+	// 	var test=1;
+	// 	alert(test)
+	// }
+	// f()
+	// function Me(){
+	// 	this.name='人名';
+	// 	this.address='地址';
+	// 	this.saying=function(){
+	// 		return 'Hello World';
+	// 	}
+	// }
+	// var testA=new Me();
+	// var testB=new Me();
+	// var testC=new Me();
+	// function f(){
+	// 	f.prototype.a=1;
+	// 	this.b='字符串';
+	// }
+	// var e=new f();
+	// var g=new f();
+	// alert('实例化函数e的属性a的值:'+e.a)
+	// alert('实例化函数e的属性b的值:'+e.b)
+	// alert('实例化函数g的属性a的值:'+g.a)
+	// alert('实例化函数g的属性b的值:'+g.b);
+	// f.b='更改';
+	// alert('更改构造函数中的b之后，e的属性b的值:'+e.b)
+	// f.prototype.a=1000;
+	// alert('更改构造函数中的a之后，g的属性a的值:'+g.a)
+
+
+	// function a(x){
+	// 	this.x=x;
+	// }
+	// a.prototype.x=0;
+	// function b(x){
+	// 	this.x=x;
+	// }
+	// b.prototype=new a(1);
+	// function c(x){
+	// 	this.x=x;
+	// }
+	// c.prototype=new b(2);
+	// var d=new c(3);
+	// alert(d.x);
+	// delete d.x;
+	// alert(d.x);
+	// delete c.prototype.x;
+	// alert(d.x);
+	// delete b.prototype.x;
+	// alert(d.x);
+	// delete a.prototype.x;
+	// alert(d.x)
+
+
+	function Person(name,age,job){
+		this.name=name;
+		this.age=age;
+		this.job=job;
+	}
+	Person.prototype.type='灵长类';
+	Person.prototype.saying='我能干体力活，就是这么屌'
+	var Per=new Person('张建迎',88,'搬砖的');
+	alert(Per.type)
+	alert(Per.saying);
+	alert(Per.name)
+	alert(Per.age)
+	alert(Per.job)
+	</script>
+</body>
+</html>

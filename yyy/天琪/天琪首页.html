@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .head{
+            height: 150px;
+            width: 1100px;
+            background-color: antiquewhite;
+            background-image: url("tq/14.png");
+            margin: 0px auto;
+            position: relative;
+            top: 0px;
+            z-index: 2;
+        }
+        .head span{
+            color: yellow;
+        }
+        #bt1{
+            font-size: 50px;
+            position: absolute;
+            top: 40px;
+        }
+        #bt2{
+            font-size: 20px;
+            position: absolute;
+            top: 100px;
+            left: 150px;
+        }
+        #rx{
+            font-size: 22px;
+            color: yellow;
+            text-align: end;
+            position: absolute;
+            right: 350px;
+            top: 40px;
+        }
+        #wx1{
+            font-size: 20px;
+            color: yellow;
+            width: 25px;
+            position: absolute;
+            right: 300px;
+            top: 10px;
+        }
+        #wx2{
+            position: absolute;
+            right: 190px;
+            top: 25px;
+        }
+        #wx3{
+            font-size: 20px;
+            color: yellow;
+            width: 25px;
+            position: absolute;
+            right: 140px;
+            top: 10px;
+        }
+        #wx4{
+            position: absolute;
+            right: 30px;
+            top: 25px;
+        }
+        #jdt{
+            width: 1100px;
+            height: 500px;
+            margin: 0px auto;
+            background-color: black;
+            position: relative;
+            z-index: 1;
+        }
+        #jdt a{
+            text-decoration: none;
+            margin-left: 20px;
+            color: aliceblue;
+        }
+        #jdt1{
+            font-size: 20px;
+            position: absolute;
+            top: 20px;
+            left: 50px;
+        }
+        #jdt2{
+            background-color:rgba(0,0,0,0);
+            width: 150px;
+            height: 20px;
+        }
+        #jdt3{
+            background-color:rgba(0,0,0,0);
+            margin-left: -8px;
+            height: 25px;
+        }
+        #jdt4{
+            width:20px;
+            height: 20px;
+            position: absolute;
+            top: 25px;
+            left:220px;
+        }
+        #dh{
+            width: 100px;
+            position: absolute;
+            top: 60px;
+            left: 300px;
+            font-size: 20px;
+
+            z-index: 3;
+        }
+        #dh span{
+            list-style: none;
+            line-height: 30px;
+            color: aliceblue;
+        }
+        #li1{
+             position: absolute;
+             top: 10px;
+            left: -10px;
+         }
+        #li2{
+            position: absolute;
+            top: 50px;
+            left: -30px;
+        }
+        #li3{
+            position: absolute;
+            top: 90px;
+            left: -50px;
+        }
+        #li4{
+            position: absolute;
+            top: 130px;
+            left: -70px;
+        }
+        #li5{
+            position: absolute;
+            top: 170px;
+            left: -90px;
+        }
+        #li6{
+            position: absolute;
+            top: 210px;
+            left: -110px;
+        }
+        #li7{
+            position: absolute;
+            top: 250px;
+            left: -130px;
+        }
+        #li8{
+             position: absolute;
+             top: 290px;
+            left: -190px;
+         }
+        #li9{
+              position: absolute;
+              top: 330px;
+            left: -170px;
+          }
+        .jdyt{/*轮播图大div*/
+             position: absolute;
+            top: 0px;
+            right: 0px;
+            width: 750px;
+            height: 500px;
+            z-index: -1;
+            overflow: hidden;
+
+        }
+        .jdyx{/*轮播图小div*/
+            width: 3000px;
+            height: 500px;
+
+        }
+        .jdyx1{/*存放山水图的div*/
+            width: 750px;
+            height: 500px;
+            position: relative;
+            overflow: hidden;
+            float: left;
+
+         }
+        .jdyx2{/*存放宝石图的div*/
+            width: 750px;
+            height: 500px;
+            background-color: black;
+            position: relative;
+            overflow: hidden;
+            float: left;
+        }
+        .jdt1{/*山水图*/
+            position: absolute;
+            top: -15px;
+            left: -15px;
+            width: 790px;
+            height: 560px;
+        }
+        .jdt2{/*宝石图*/
+            position: absolute;
+            top: 80px;
+            left: 220px;
+        }
+        .jdt3{/*宝石图到影*/
+            position: absolute;
+            top: 400px;
+            left: 220px;
+            opacity: 0.3;
+        }
+        #dhb{
+            width: 100px;
+            position: absolute;
+            top: 60px;
+            left: 300px;
+            font-size: 20px;
+            text-align: end;
+        }
+        .tri{
+            width: 65px;
+            height: 0px;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            border-bottom:15px solid #ebd373;
+            position: relative;
+            z-index: 1;
+        }
+        .tri:after{
+            width:65px;
+            height: 0px;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            border-top:15px solid #ebd373;
+            position: absolute;
+            content: "";
+            top: 15px;
+            left: -25px;
+            z-index: -1;
+        }
+        .tri1{
+            width: 105px;
+            height: 0px;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            border-bottom:15px solid #ebd373;
+            position: relative;
+            z-index: 1;
+        }
+        .tri1:after{
+            width:105px;
+            height: 0px;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            border-top:15px solid #ebd373;
+            position: absolute;
+            content: "";
+            top: 15px;
+            left: -25px;
+            z-index: -1;
+        }
+        #dhb div{
+            display: none;
+        }
+
+        .box{
+            width: 200px;
+            height:100px;
+            background-color: #ccc;
+            border-radius: 100px;
+            box-shadow: 0px 0px 30px #900 inset;
+            position:absolute;
+            top: 8px;
+            left: 29px;
+            z-index: 2;
+            line-height: 100px;
+            text-align: center;
+            font-size: 20px;
+        }
+        .gq{
+            width: 1100px;
+            height: 100px;
+            border-bottom: 3px solid red;
+            margin: 0px auto;
+            position: relative;
+        }
+        .gq img{
+            width: 60px;
+            height: 40px;
+            margin-left: 10px;
+
+        }
+       .gq1{
+           position: absolute;
+           top: 25px;
+           left: 30px;
+       }
+        .gq2{
+            position: absolute;
+            top: 10px;
+            left: 350px;
+        }
+        .gq3{
+            position: absolute;
+            top: 50px;
+            left: 300px;
+        }
+        .xinw{
+            width: 1100px;
+            height: 650px;
+            margin: 0px auto;
+            position: relative;
+        }
+        .x1{
+            width: 240px;
+            height: 320px;
+            position: absolute;
+            top: 60px;
+            left: 20px;
+
+        }
+        .x2{
+            width: 440px;
+            height: 320px;
+            position: absolute;
+            top: 60px;
+            left: 275px;
+            position: relative;
+        }
+        .x3{
+            width: 350px;
+            height: 320px;
+            position: absolute;
+            top: 60px;
+            left: 730px;
+        }
+        .x21{
+            position:absolute;
+            top:0px;
+            left: 0px;
+            font-size: 30px;
+            color:#b42128 ;
+        }
+        .x22{
+            position:absolute;
+            top:35px;
+            left: 0px;
+            font-size: 18px;
+            color:#b42128 ;
+        }
+        .x23{
+            position:absolute;
+            top:25px;
+            left: 170px;
+            font-size: 18px;
+            color:gray ;
+        }
+        .x24{
+            position:absolute;
+            top:45px;
+            left: 170px;
+            font-size: 18px;
+            color:gray ;
+        }
+        .x25{
+            position:absolute;
+            top:35px;
+            right: 0px;
+            font-size: 20px;
+            color:#b42128 ;
+        }
+        .x26{
+            width: 440px;
+            background-color: #b42128;
+            position: absolute;
+            top: 75px;
+        }
+        .x27{
+            position:absolute;
+            top:80px;
+            left: 100px;
+            font-size: 23px;
+            color:gray ;
+        }
+        .x28{
+            position:absolute;
+            top:110px;
+            left: 10px;
+            color:gray ;
+        }
+        .x29{
+            width: 438px;
+            position:absolute;
+            top:165px;
+
+        }
+        .x291{
+            position:absolute;
+            top: 170px;
+            left: -45px;
+            color: gray;
+            font-size: 14px;
+
+        }
+        .x291 li{
+            list-style: none;
+            line-height: 40px;
+        }
+        .x30{
+            font-size: 30px;
+            color:gray;
+        }
+        .x31{
+            color:gray;
+        }
+        .x32{
+            font-size: 30px;
+            color:#b42128;
+        }
+        .x33{
+            font-size: 18px;
+            color:#b42128;
+            position:absolute;
+            top: 200px;
+            left: 20px;
+        }
+        .x34{
+            font-size: 20px;
+            color:gray;
+        }
+        .x35{
+            position:absolute;
+            top: 200px;
+            left: 150px;
+            color:gray;
+        }
+        .x36{
+            color: gray;
+            width:348px;
+            position: absolute;
+            top: 220px;
+        }
+        .x37{
+            color: gray;
+            position:absolute;
+            top: 230px;
+            line-height: 30px;
+            font-size: 18px;
+            list-style: none;
+        }
+        .x41{
+            width: 200px;
+            height: 150px;
+            border: 1px solid black;
+            overflow: hidden;
+            position:absolute;
+            top:430px;
+            left: 20px;
+        }
+        .x411{
+            width: 200px;
+            height: 750px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        .x413{
+            font-size: 15px;
+            line-height: 40px;
+            display: block;
+            width: 200px;
+            height: 40px;
+            background-color: red;
+            opacity: 0.3;
+            color: white;
+            position: absolute;
+            top: 110px;
+        }
+        .x412{
+            width: 200px;
+            height: 750px;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+        }
+        .x42{
+            width: 200px;
+            height: 150px;
+            border: 1px solid black;
+            overflow: hidden;
+            position:absolute;
+            top:430px;
+            left: 235px;
+        }
+        .x43{
+            width: 200px;
+            height: 150px;
+            border: 1px solid black;
+            overflow: hidden;
+            position:absolute;
+            top:430px;
+            left: 450px;
+        }
+        .x44{
+            width: 200px;
+            height: 150px;
+            border: 1px solid black;
+            overflow: hidden;
+            position:absolute;
+            top:430px;
+            left: 665px;
+        }
+        .x45{
+            width: 200px;
+            height: 150px;
+            border: 1px solid black;
+            overflow: hidden;
+            position:absolute;
+            top:430px;
+            left: 880px;
+        }
+        .x451{
+            position: absolute;
+            top: -50px;
+        }
+        .ywb{
+            width: 1100px;
+            height: 50px;
+            /*background-color: aqua;*/
+            margin: 0px auto;
+            position: relative;
+        }
+        .ywb1{
+            font-size: 30px;
+            color: #b42128;
+            line-height: 50px;
+            margin-left: 20px;
+        }
+        .ywb2{
+            color: #b42128;
+        }
+        .ywb3{
+            color: #3f3f3f;
+            font-size: 20px;
+            position: absolute;
+            right: 10px;
+            line-height: 50px;
+        }
+        .ywz{
+            width: 1100px;
+            height: 280px;
+            margin: 0px auto;
+            background-color: white;
+            position: relative;
+        }
+        .ywz3{
+           margin-top: -30px;
+        }
+        .ywz4{
+            margin-top: -70px;
+        }
+        .ywz div{
+            overflow: hidden;
+            width: 250px;
+            height: 180px;
+            margin-left: 18px;
+            float: left;
+        }
+        .ywz5{
+            width: 1100px;
+            position: absolute;
+            top: 180px;
+            left: 125px;
+
+        }
+        .ywz5 div{
+            overflow: hidden;
+            width: 250px;
+            height: 40px;
+            margin-left: 18px;
+            float: left;
+            background-color: gray;
+            text-align: center;
+        }
+        .ywz5 span{
+            font-size: 30px;
+            color: #4a4a4a;
+        }
+        .met{
+            width: 1100px;
+            height: 130px;
+            margin: 0px auto;
+        }
+        .met a{
+            color: #676666;
+        }
+        .met div{
+            width: 140px;
+            height: 100px;
+            float: left;
+            background-color: #cfcbcb;
+            margin-left:15px;
+            margin-top: 15px;
+            color: #676666;
+            position: relative;
+        }
+        .met div:hover{
+            background-color: gray;
+        }
+        .met1{
+            font-size: 20px;
+            position: absolute;
+            top: 25px;
+            left: 20px;
+        }
+        .met2{
+            display: block;
+            width: 140px;
+            font-size: 14px;
+            position: absolute;
+            top: 55px;
+            text-align: center;
+        }
+        .meta{
+            line-height: 45px;
+            font-size: 30px;
+            text-align: center;
+            overflow: hidden;
+            background-repeat: no-repeat;
+             display: block;
+             width: 140px;
+             height:45px;
+             position: absolute;
+             top: 0px;
+            background-color: rgba(255,0,0,0.3);
+         }
+        .metb{
+            line-height: 45px;
+            font-size: 30px;
+            text-align: center;
+            overflow: hidden;
+            display: block;
+            width: 140px;
+            height:45px;
+            position: absolute;
+            top: 55px;
+            background-color: rgba(255,0,0,0.3);
+        }
+        .hz{
+            background: -webkit-linear-gradient(white, #d7d6d5, #b0afaf);
+            width: 1100px;
+            height: 160px;
+            margin: 0px auto;
+            background-color: blanchedalmond;
+        }
+        .hz div{
+            background: -webkit-linear-gradient(#b8b8b7, #8f8f8e, #5b5959);
+            margin-top: 40px;
+            width: 240px;
+            height: 60px;
+            margin-left:20px;
+            float: left;
+            background-color: #737172;
+            line-height: 60px;
+            font-size: 14px;
+            color: aliceblue;
+        }
+        .hz div span{
+            font-size: 18px;
+        }
+        .du{
+            width: 1100px;
+            height: 140px;
+            background-color: #2b2b2b;
+            margin: 0px auto;
+            position: relative;
+        }
+        .du1{
+             font-size: 18px;
+             color: white;
+             position: absolute;
+             top: 10px;
+             left: 20px;
+         }
+        .du2{
+            color:#b8b8b7;
+            position: absolute;
+            top: 60px;
+            left: 20px;
+        }
+        .du3{
+            color: #611f21;
+            font-size: 25px;
+            width: 180px;
+            height: 40px;
+            background-color: #c3c1c1;
+            text-align: center;
+            line-height: 40px;
+            position: absolute;
+            top: 80px;
+            left: 450px;
+        }
+        #wx5{
+            font-size: 12px;
+            color: yellow;
+            width: 20px;
+            position: absolute;
+            right: 420px;
+            top: 30px;
+        }
+        #wx6{
+            position: absolute;
+            right: 330px;
+            top: 30px;
+        }
+        #wx7{
+            font-size: 12px;
+            color: yellow;
+            width: 20px;
+            position: absolute;
+            right: 300px;
+            top: 30px;
+        }
+        #wx8{
+            position: absolute;
+            right: 200px;
+            top: 30px;
+        }
+        .du4{
+            position: absolute;
+            right: 60px;
+            top: 10px;
+        }
+        .du5{
+            font-size: 14px;
+            color: #ebea82;
+            position: absolute;
+            right: 10px;
+            top: 120px;
+        }
+        .gh{
+            width: 1100px;
+            height: 50px;
+            background-color: black;
+            margin: 0px auto;
+            position: relative;
+        }
+        .gh1{
+            width: 300px;
+            height: 20px;
+            color: white;
+            position: absolute;
+            top: 20px;
+            left: 400px;
+        }
+        .gh2{
+            font-size: 12px;
+            position: absolute;
+            top: 0px;
+        }
+        #xinw1 span {
+            display: none;
+        }
+
+
+
+    </style>
+</head>
+<body style="background-color: #e6e6e6;font-weight: bold;">
+    <div class="head">
+        <img src="tq/13.png " alt="" style="margin: 15px"/>
+        <span id="bt1">
+            香港天琪拍賣
+        </span>
+        <br/>
+        <span id="bt2">
+            <b>HONG KONG DAY THESTRALS AUCTION</b>
+        </span>
+        <div id="rx">
+            服務熱線<br/>
+            08852-52612710(香港)<br/>
+            <span style="letter-spacing: 1px;">010-53393177(北京)</span>
+        </div>
+        <div id="wx1">
+            北京天騏微信
+        </div>
+        <div id="wx2">
+            <img src="tq/11.png" alt="" style="width: 100px;height: 100px;"/>
+        </div>
+        <div id="wx3">
+            香港天騏微信
+        </div>
+        <div id="wx4">
+            <img src="tq/11.png" alt="" style="width: 100px;height: 100px;"/>
+        </div>
+    </div>
+    <div id="jdt">
+        <img src="tq/69.png" alt=""/>
+        <div id="jdt1">
+            <a href="dl.html" target="_blank">登錄</a>
+            <a href="注册.html">註冊</a>
+            <a href="会员中心.html">會員專區</a>
+            <br/>
+            <input type="text" id="jdt2"/>
+            <select name="" id="jdt3">
+                <option value="">拍賣</option>
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+            <img src="tq/70.png" alt="" id="jdt4"/>
+        </div>
+        <div id="dh">
+                <span id="li1"><a href="中文首页-公司简介.html" target="_blank">公司簡介</a></span>
+                <span id="li2"><a href="新闻中心-新闻.html" target="_blank">新聞中心</a></span>
+                <span id="li3"><a href="index-客服中心-如何委托.html" target="_blank">客服中心</a></span>
+                <span id="li4"><a href="业务联系 -业务部门专区-专区详情.html" target="_blank">業務聯繫</a></span>
+                <span id="li5"><a href="index-拍卖广告-拍卖公告.html" target="_blank">拍賣廣告</a></span>
+                <span id="li6"><a href="index-拍卖结果-全部拍卖会.html" target="_blank">拍賣結果</a></span>
+                <span id="li7"><a href="精品回顾.html" target="_blank">精品回顧</a></span>
+                <span id="li8"><a href="天琪艺术空间.html" target="_blank">天騏藝術空間</a></span>
+                <span id="li9"><a href="天琪珠宝.html" target="_blank">天騏珠寶</a></span>
+        </div>
+        <div id="dhb">
+            <div class="tri" id="li1"></div>
+            <div class="tri" id="li2"></div>
+            <div class="tri" id="li3"></div>
+            <div class="tri" id="li4"></div>
+            <div class="tri" id="li5"></div>
+            <div class="tri" id="li6"></div>
+            <div class="tri" id="li7"></div>
+            <div class="tri1" id="li8"></div>
+            <div class="tri" id="li9"></div>
+        </div>
+        <script>
+            var dh=document.getElementById('dh');
+            var sps=dh.getElementsByTagName('span');
+            var dhb=document.getElementById('dhb');
+            var divs=dhb.getElementsByTagName('div');
+            for(var i=0;i<sps.length;i++) {
+                sps[i].onmouseover = function () {
+                    for (var i = 0; i < divs.length; i++) {
+                        if (this == sps[i]) {
+                            divs[i].style.display = "block";
+                        }
+                        else{
+                            divs[i].style.display = "none";
+                        }
+                    }
+                }
+            }
+        </script>
+        <div class="jdyt" id="lbt"><!--轮播图--><!--大div-->
+            <div class="jdyx" id="lbtx"><!--小div-->
+                <div class="jdyx1" id="lbt1">
+                    <img src="tq/57.png" alt="" class="jdt1"/>
+                </div>
+                <div class="jdyx2">
+                    <img src="tq/45.png" alt="" class="jdt2"/>
+                    <img src="tq/46.png" alt="" class="jdt3"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        //焦点轮播图的JS
+        var lbt=document.getElementById('lbt');//获取轮播图 的大DIV的ID；
+        var lbtx=document.getElementById('lbtx');//获取轮播图 的小DIV的ID；
+        var time1=null,time2=null;//设置两个空值
+        lbtx.innerHTML+=lbtx.innerHTML;//填充空白部分
+        time1=setInterval(all,15);//调用计时器
+        function all(){
+            if(lbt.scrollLeft==lbtx.offsetWidth/2){
+                lbt.scrollLeft=0;
+            }
+            else{
+                lbt.scrollLeft+=5;
+            }
+            if(lbt.scrollLeft%750==0){
+                clearInterval(time1);
+                clearInterval(time2);
+                time2=setTimeout("time1=setInterval(all,15)",2000);
+            }
+        }
+        lbt.onmouseover=function(){
+            clearInterval(time1);
+            clearInterval(time2);
+        }
+        lbt.onmouseout=function() {
+            time1 = setInterval(all, 15);
+        }
+    </script>
+    <div class="gq">
+    <div class="gq1">
+        <img src="tq/71.png" alt=""/>
+        <img src="tq/8.png" alt=""/>
+        <img src="tq/9.png" alt=""/>
+    </div>
+    <span class="gq2" style="font-size: 30px;color: #b42128;">
+        <b>香港天騏2016秋季拍賣會拍品征集中</b>
+    </span>
+    <span class="gq3" style="font-size: 25px;color: #b42128;">
+        HONG KONG DAY THESTRALS 2016 AUTUMN AUCTION ITEMS
+    </span>
+</div >
+    <div class="xinw" id="xinw" style="background-color: white">
+        <div class="x1">
+            <img src="tq/42.png" style="width: 240px;height: 320px;" alt=""/>
+        </div>
+        <div class="x2">
+            <span class="x21"><b>天騏新聞</b></span>
+            <span class="x22">DAY THESTRALS NEWS</span>
+            <span class="x23">重要通知</span>
+            <span class="x24">IMPORTANT NOTICE</span>
+            <span class="x25">更多</span>
+            <hr class="x26"/>
+            <span class="x27">北京保利2016秋拍全球征集</span>
+            <span class="x28">日本站，東京，征集範圍： 中國近代、近當代書畫、古董雜項、古書籍、古錢。
+                郵票征集時間：7月29日-31日。
+                征集地點：日本辦事處（東京都中央區銀座2丁目12-4-601室）
+            </span>
+            <hr class="x29" size="1"  style="color:gray;border:1px dashed" />
+            <span class="x291">
+                <ul>
+                    <li><b>【天骐新闻】 新十年，新起点！艺术航母再创佳绩... [查看详情]</b></li>
+                    <li><b>【天骐新闻】 新十年，新起点！艺术航母再创佳绩... [查看详情]</b></li>
+                    <li><b>【天骐新闻】 新十年，新起点！艺术航母再创佳绩... [查看详情]</b></li>
+                    <li><b>【天骐新闻】 新十年，新起点！艺术航母再创佳绩... [查看详情]</b></li>
+                </ul>
+            </span>
+        </div>
+        <div class="x3">
+            <span class="x30">天騏拍賣</span>
+            <span class="x31">DAY THESTRALSAUCTION</span>
+            <img src="tq/52.png" alt="" style="width: 350px;height: 130px"/>
+            <span class="x32"><b>新聞視頻</b></span>
+            <span class="x33">NEWS VIDEO</span>
+            <span class="x34"><b>專題視頻</b></span>
+            <span class="x35">SPECIAL VIDEO</span>
+            <hr class="x36"/>
+            <ul class="x37">
+                <li><b>《英雄獨立》--萬類霜天競自由</b></li>
+                <li><b>《英雄獨立》--萬類霜天競自由</b></li>
+                <li><b>《英雄獨立》--萬類霜天競自由</b></li>
+            </ul>
+        </div>
+       <div id="xinw1">
+           <div class="x41">
+               <img src="tq/48.png" class="x411" alt=""/>
+               <span class="x413">天騏香港2016全球拍品征集中</span>
+           </div>
+           <div class="x42">
+               <img src="tq/48.png" class="x412" alt=""/>
+               <span class="x413">天騏香港2016全球拍品征集中</span>
+           </div>
+           <div class="x43">
+               <img src="tq/21.png" style="width: 200px;height: 150px;" alt=""/>
+               <span class="x413">天騏香港2016全球拍品征集中</span>
+           </div>
+           <div class="x44">
+               <img src="tq/40.png" style="width: 200px;height: 150px;" alt=""/>
+               <span class="x413">天騏香港2016全球拍品征集中</span>
+           </div>
+           <div class="x45">
+               <img src="tq/43.png" class="x451" style="width: 200px;height: 250px;" alt=""/>
+               <span class="x413">天騏香港2016全球拍品征集中</span>
+           </div>
+       </div>
+    </div>
+    <script>
+        var xinw1=document.getElementById('xinw1');
+        var xinwd=xinw1.getElementsByTagName('div');
+        var xinws=xinw1.getElementsByTagName('span');
+        for(var i=0;i<xinwd.length;i++){
+            xinwd[i].onmouseover=function(){
+                //debugger;
+                for(var i=0;i<xinws.length;i++){
+                    if(this==xinwd[i]){
+                        xinws[i].style.display="block";
+                    }else{
+                        xinws[i].style.display="none";
+                    }
+
+                }
+            }
+        }
+    </script>
+    <div class="ywb">
+        <span class="ywb1">
+            <b>業務專區</b>
+        </span>
+        <span  class="ywb2">BUSINESS SECTION</span>
+        <span  class="ywb3">【更多業務部門】</span>
+    </div>
+    <div style="position: relative">
+        <div class="ywz">
+            <div>
+                <img src="tq/49.png" style=" width: 250px;height: 180px;" alt=""/>
+            </div>
+            <div>
+                <img src="tq/41.png"  class="ywz3"  style=" width: 250px;height: 300px;" alt=""/>
+            </div>
+            <div>
+                <img src="tq/56.png"  style=" width: 250px;height: 300px;" alt=""/>
+            </div>
+            <div>
+                <img src="tq/51.png" class="ywz4" style=" width: 250px;height: 300px;" alt=""/>
+            </div>
+        </div>
+        <div class="ywz5">
+            <div>
+                <span>精品玉器</span>
+            </div>
+            <div>
+                <span>精品玉器</span>
+            </div>
+            <div>
+                <span>精品玉器</span>
+            </div>
+            <div>
+                <span>精品玉器</span>
+            </div>
+        </div>
+    </div>
+    <div class="met">
+        <div style="position: relative;">
+            <span class="meta"><img src="tq/13.png" style="width:150px;margin-top: -40px;" alt=""/></span>
+            <span class="metb"><img src="tq/11.png" style="width:140px;margin-top: -40px;" alt=""/></span>
+            <span class="meta">天騏拍賣</span>
+            <span class="metb">官方微信</span>
+        </div>
+        <div>
+            <a href="index-媒体下载.html ">
+            <span class="met1">媒體下載</span>
+            <span class="met2">The media download</span>
+            </a>
+        </div>
+        <div>
+            <a href="新闻中心-视频.html">
+            <span class="met1">視頻專區</span>
+            <span class="met2">Video zone</span>
+            </a>
+        </div>
+        <div>
+            <a href="新闻中心-杂志.html">
+            <span class="met1">天騏刊物</span>
+            <span class="met2">Day thesrals publication</span>
+            </a>
+        </div>
+        <div>
+            <a href="新闻中心-杂志.html">
+            <span class="met1">網上書店</span>
+            <span class="met2">Online bookstore</span>
+            </a>
+        </div>
+        <div>
+            <a href="客服中心——拍卖法规.html">
+            <span class="met1">拍賣指南</span>
+            <span class="met2">Auction guidelines</span>
+            </a>
+        </div>
+        <div>
+            <a href="专家团队.html">
+            <span class="met1">專家團隊</span>
+            <span class="met2">Experl team</span>
+            </a>
+        </div>
+    </div>
+    <div class="hz">
+        <div><span>精品回顧</span> Quality Review</div>
+        <div><span>天騏企業</span> Day Thestrals </div>
+        <div><span>合作媒體</span> Media partners</div>
+        <div><span>合作機構</span> Cooperation Agency</div>
+    </div>
+    <div class="du">
+            <span class="du1">圖錄訂購地點  聯繫我們  加入我們
+          員工郵箱    誠信經營示範單位</span><br/>
+            <span class="du2">
+                地址：北京東城區朝陽門北大街1號新保利大廈3層 100010<br/>
+                電話：（86-10）64083188 傳真（86-10）64083186<br/>
+                京ICP浦06017645號<br/>
+                網站ip量
+            </span>
+        <div class="du3">
+            建議反饋
+        </div>
+        <div id="wx5">
+            北京天騏微信
+        </div>
+        <div id="wx6">
+            <img src="tq/11.png" alt="" style="width: 80px;height: 80px;"/>
+        </div>
+        <div id="wx7">
+            香港天騏微信
+        </div>
+        <div id="wx8">
+            <img src="tq/11.png" alt="" style="width: 80px;height: 80px;"/>
+        </div>
+        <img src="tq/13.png" alt="" class="du4" style="width: 100px;height: 100px;"/>
+        <div  class="du5">
+            HONG KONG DAY THESTRALS AUCTION
+        </div>
+    </div>
+    <div class="gh">
+        <div class="gh1">
+            <img src="tq/12.png" alt=""/>
+            <span class="gh2">
+               京公網安備1101289190000092號
+            </span>
+        </div>
+    </div>
+</body>
+</html>

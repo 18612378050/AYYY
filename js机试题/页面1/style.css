@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0; padding:0;}
+#clear{clear:both;}
+img{ border:none 0;}
+body{font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:14px;  color: #6D6F76; background-color: #FFF; }
+.header{width:1140px; margin:0 auto; border-bottom:1px solid #231f20;  padding: 27px 0px 27px; line-height:14px; display:block; }
+.header .logo{width:236px; height:50px; float:left; }
+.header .logo a:hover img {opacity: 0.6;}
+.header .nav{width:611px; height:50px; float:right; line-height:50px;}
+.header .nav ul{list-style:none;}
+.header .nav ul li{float:left; }
+.header .nav ul li a {text-decoration:none; padding: 15px 25px 13px 25px; letter-spacing: 1px;  color: #231F20; text-transform: uppercase;  font-size:0.9em;}
+.header .nav ul li a:hover{color:#dc053c}	
+
+
+
+
+
+#banner{height:545px; overflow:hidden; margin: 0 auto;}
+
+#banner .container{height:545px; width:1140px; margin:0 auto; position:relative;}
+/*中间区域*/
+#banner .container .ulCenter{width:1140px; height:545px; margin:0 auto; position:relative; }
+#banner .container .ulCenter .ulCenter_img img{width:1140px; height:545px;}
+
+
+/*中间透明区域*/
+#banner .container .banner_right{width:570px; height: 545px; position:absolute; top:0px; left:570px; z-index:30;  background: none repeat scroll 0% 0% rgba(35, 31, 32, 0.5);  background:#231f20\9; filter:alpha(opacity=50)}
+#banner .container .ulCenter .banner_right P{position: absolute; bottom: 185px; left: 115px; font-size: 16px; letter-spacing: 2px; color: #fff; text-transform: uppercase; font-weight:400; z-index:40}
+#banner .container .ulCenter .banner_right a.nextpage{position: absolute;bottom: 0px;left:115px; display:block; width:47px; height: 40px; font-size: 15px;font-weight: 300;color: #FFF;text-align: center;vertical-align: middle;background-color: #DC0031;z-index:1000;}
+#banner .container .ulCenter .banner_right .nextpage img{padding-top:7px;}
+#banner .container .ulCenter .banner_right p span{ display:block; float:left; padding-top: 4px;}
+#banner .container .ulCenter .banner_right p .map{ display:block; float:left;width:20px; height:18px; background:url(image/map.png) left 2px no-repeat;}
+#banner .container .ulCenter .banner_right p .map:hover{ background:url(image/map_02.png) left 2px no-repeat;}
+#banner .container .ulCenter .banner_right h1{width:380px; position: absolute;left:115px; bottom:220px;  font-size:45px; font-weight:200; letter-spacing:8px; color:#F5F4F1; z-index:2000; line-height:1.4; }
+
+
+
+	
+
+.footer{width:1140px; margin:0 auto; height:106px; padding:55px 0px; background:#686766}
+.footer .footerMain .footerLogo{width:189px; float:left; padding-right:56px; padding-left:40px;}
+.footer .footerMain .footerLogo img:hover {opacity: 0.6;}
+.footer .footerMain .footerContact{float:left; font-size:11px;}
+.footer .f_4_1,.f_4_2,.f_4_3,.f_4_4{float:left; padding-right:45px;}
+.footer h2 {margin: 0px 0px 1em; font-size: 1.1em; font-weight:600; letter-spacing: 1px; color: #F5F4F1; }
+.footer .footerMain .footerContact p{margin: 0px; line-height:2; color: #F5F4F1; font-size:14px; }
+.footer .footerMain .footerContact p a{text-decoration:none; color:#F5F4F1;  }
+.footer .footerMain .footerContact p a:hover{ color:#bbbcbe;  }	
+	
+	
+		
+.footerLinks{width:1140px; padding:20px 0px 30px 0px; margin:0 auto; font-size:12px;  background-color: #686766;color:#F5F4F1;  border-top: 1px solid #777675;}
+.footerLinks .g-left{float:left;padding-left:10px;}
+.footerLinks .g-left .copyright{padding-right:1em; font-size:12px;color: #BBBCBE;}
+.footerLinks .g-left .privacy{padding:0 1em;  }
+.footerLinks .g-left .privacy a{text-decoration:none; color:#f5f4f1; text-transform:uppercase; }
+.footerLinks .g-right{float:right; padding-right:10px;}
+.footerLinks .g-right a{text-decoration:none; color:#d0d2d3}
+.footerLinks .g-right a:hover{color:#2e2c2c}
+.special a:hover{color:#bbbcbe;}
+
+
+
+
+
+

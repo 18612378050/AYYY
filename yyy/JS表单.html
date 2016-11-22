@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        .a{
+            background-image: url("img/reg_bg.gif");
+            background-repeat: repeat-x;
+            width: 1000px;
+            height: 500px;
+            margin: 10px auto;
+            position: relative;
+        }
+        #bda{
+            text-align: end;
+            line-height: 40px;
+            width: 120px;
+            position: absolute;
+            top: 100px;
+            left: 50px;
+        }
+        #bdb{
+            line-height: 40px;
+            width: 500px;
+            position: absolute;
+            top: 100px;
+            left:170px;
+        }
+        #btn{
+            position: absolute;
+            top: 520px;
+            left: 130px;
+            }
+        #ul1{
+            width: 30px;
+            z-index: 500;
+            list-style: none;
+            position: absolute;
+            top:475px;
+            left: 150px;
+        }
+        #ul2{
+            width: 30px;
+            z-index: 500;
+            list-style: none;
+            position: absolute;
+            top:475px;
+            left: 236px;
+        }
+        #ul3{
+            width: 30px;
+            z-index: 500;
+            list-style: none;
+            position: absolute;
+            top:475px;
+            left: 315px;
+        }
+        ul{
+            display: none;
+        }
+        .b{
+           position: absolute;
+            right: 350px;
+            top: 200px;
+        }
+
+        /*#z1{
+            position:absolute;
+            top:150px;
+            left: 550px;*/
+        }
+        #mma{
+            position:absolute;
+            top:280px;
+            left: 550px;
+        }
+        body{
+            height: 2000px;
+        }
+        #wz{
+            position:absolute;
+            top:100px;
+            left: 400px;
+            line-height: 40px;
+        }
+    </style>
+</head>
+<body>
+<div class="a">
+    <form action="">
+    <div id="bda">
+        名字：<br>
+        姓氏：<br>
+        登录名：<br>
+        密码：<br>
+        再次输入密码：<br>
+        电子邮件：<br>
+        性别：<br>
+        头像：<br>
+        爱好：<br>
+        出生日期：<br>
+    </div>
+    <div id="bdb">
+        <input type="text" maxlength="13"/><br>
+        <input type="text"/><br>
+        <input type="text"/> <br>
+        <input type="password" onmouseout="zf()";/><br>
+        <input type="password"/><br>
+        <input type="text" /><br>
+        <input type="radio" name="1"/><img src="img/Male.gif" alt=""/>男
+        <input type="radio" name="1"/><img src="img/Female.gif" alt=""/>女<br>
+        <input type="file"/><br>
+        <input type="checkbox"/>运动
+        <input type="checkbox"/> 唱歌
+        <input type="checkbox"/>LOL
+        <input type="button" value="全选"/><br>
+        <input type="text" size="3" id="nian"/>年
+        <input type="text" size="4" id="yue"/>月
+        <input type="text" size="3" id="ri"/>日
+    </div>
+        <div id="wz">
+            <div id="z1">您输入0了字符</div>
+            <br/>
+            <div id="z2">(可包含a-z  0-9 和下划线,6-12个字符)</div>
+            <div id="z3">（至少包含 6 个字符）</div>
+            <div id="mma">请再次输入!</div>
+            <div id="z4">（必须包含 @ 字符）</div>
+        </div>
+    <div id="btn">
+        <input type="submit"/>
+        <input type="reset"/>
+    </div>
+    </form>
+    <ul id="ul1">
+        <li>2012</li>
+        <li>2013</li>
+        <li>2014</li>
+        <li>2015</li>
+        <li>2016</li>
+    </ul>
+    <ul id="ul2">
+        <li>01</li>
+        <li>02</li>
+        <li>03</li>
+        <li>04</li>
+        <li>05</li>
+        <li>06</li>
+        <li>07</li>
+        <li>08</li>
+        <li>09</li>
+        <li>10</li>
+        <li>11</li>
+        <li>12</li>
+    </ul>
+    <ul id="ul3">
+        <li>01</li>
+        <li>02</li>
+        <li>03</li>
+        <li>04</li>
+        <li>05</li>
+        <li>06</li>
+        <li>07</li>
+        <li>08</li>
+        <li>09</li>
+        <li>10</li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li>23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li>27</li>
+        <li>28</li>
+        <li>29</li>
+        <li>30</li>
+    </ul>
+</div>
+<!--<div class="b">
+    <img src="img/read.gif" alt=""/>阅读翡翠网服务协议<br>
+    <textarea>欢迎阅读服务条款协议，本协议阐述之条款和条件适用于您使用Gmgw.com网站的各种工具和服务。
+  本服务协议双方为翡翠与翡翠网用户，本服务协议具有合同效力。
+  翡翠的权利和义务
+    1.翡翠有义务在现有技术上维护整个网上交易平台的正常运行，并努力提升和改进技术，使用户网上交易活动的顺利。
+    2.对用户在注册使用翡翠网上交易平台中所遇到的与交易或注册有关的问题及反映的情况，翡翠应及时作出回复。
+    3.对于在翡翠网网上交易平台上的不当行为或其它任何翡翠认为应当终止服务的情况，翡翠有权随时作出删除相关信息、终止服务提供等处理，而无须征得用户的同意。
+    4.因网上交易平台的特殊性，翡翠没有义务对所有用户的注册资料、所有的交易行为以及与交易有关的其他事项进行事先审查。 </textarea>
+</div>-->
+    <script type="text/javascript">
+        var ipt=document.getElementsByTagName('input');
+        var lis=document.getElementsByTagName('li');
+        var nia=document.getElementById('nian');
+        var uls=document.getElementsByTagName('ul');
+        var yue=document.getElementById('yue');
+        var ri=document.getElementById('ri');
+        var ula=document.getElementById('ul1');
+        var lia=ula.getElementsByTagName('li');
+        var ulb=document.getElementById('ul2');
+        var lib=ulb.getElementsByTagName('li');
+        var ulc=document.getElementById('ul3');
+        var lic=ulc.getElementsByTagName('li');
+        var z2=document.getElementById('z2');
+        var z3=document.getElementById('z3');
+        var z4=document.getElementById('z4');
+
+        var z1=document.getElementById('z1')
+        ipt[0].onkeyup=function(){
+            var tt=ipt[0].value.length;
+            z1.innerHTML="您输入"+tt+"了字符"
+            if(this.value.length>=13){
+                ipt[0].style.backgroundColor="red";
+                z1.innerHTML="超过了12个字符"
+            }else{
+                ipt[0].style.backgroundColor="";
+            }
+        }
+        var X=true;
+      ipt[2].onblur=function(){
+         // debugger;
+          var a=/^[a-z0-9_]{6,12}$/;
+         /* if(this.value.length>=12){
+             alert("超出字符长度");
+              this.maxLength=12;
+              X=false;
+          }else */
+          if(a.test(ipt[2].value)){
+              z2.innerHTML="登录名可以注册";
+              z2.style.color="green"
+          }else{
+              z2.innerHTML="超出长度或存在非法符号";
+              z2.style.color="red"
+          }
+      }
+
+        ipt[3].onblur=function(){
+
+
+            if(ipt[3].value.length<6){
+                z3.innerHTML="密码不得小于六位数";
+                z3.style.color="red";
+                this.maxLength=12;
+            }else if(ipt[3].value.length>=6&&ipt[3].value.length<=8){
+                z3.innerHTML="密码难度低";
+                z3.style.color="green";
+            }else if(ipt[3].value.length>8&&ipt[3].value.length<=12){
+                z3.innerHTML="密码难度高";
+                z3.style.color="green";
+            }
+        }
+        var mma=document.getElementById('mma')
+        ipt[4].onblur=function(){
+            if(ipt[3].value!==ipt[4].value){
+              // alert('密码不一致');
+                mma.innerHTML="密码不一致"
+                mma.style.color="red"
+            }else{
+                mma.innerHTML="密码正确"
+                mma.style.color="green"
+            }
+        }
+        nia.onmouseover=function(){
+            uls[0].style.display="block";
+            uls[0].onmouseover=function(){
+                uls[0].style.display="block";
+            }
+        }
+        nia.onmouseout=function(){
+            uls[0].style.display="none";
+            uls[0].onmouseout=function(){
+                uls[0].style.display="none";
+            }
+        }
+        yue.onmouseover=function(){
+            uls[1].style.display="block";
+            uls[1].onmouseover=function(){
+                uls[1].style.display="block";
+            }
+        }
+        yue.onmouseout=function(){
+            uls[1].style.display="none";
+            uls[1].onmouseout=function(){
+                uls[1].style.display="none";
+            }
+        }
+        ri.onmouseover=function(){
+            uls[2].style.display="block";
+            uls[2].onmouseover=function(){
+                uls[2].style.display="block";
+            }
+        }
+        ri.onmouseout=function(){
+            uls[2].style.display="none";
+            uls[2].onmouseout=function(){
+                uls[2].style.display="none";
+            }
+        }
+        for(var i=0;i<lia.length;i++){
+            lia[i].onclick=function(){
+                 nia.value=this.innerHTML;
+            }
+        }
+        for(var i=0;i<lib.length;i++){
+            lib[i].onclick=function(){
+                yue.value=this.innerHTML;
+            }
+        }
+        for(var i=0;i<lia.length;i++){
+            lic[i].onclick=function(){
+                ri.value=this.innerHTML;
+            }
+        }
+        ipt[12].onclick=function(){
+            ipt[9].checked=true;
+            ipt[10].checked=true;
+            ipt[11].checked=true;
+        }
+        ipt[12].ondblclick=function(){
+            ipt[9].checked=false;
+            ipt[10].checked=false;
+            ipt[11].checked=false;
+        }
+        ipt[5].onblur=function(){
+            var re=/^\w+@[a-z0-9]+\.[a-z]+$/i;
+            if(re.test(ipt[5].value)){
+                z4.innerHTML="邮箱可用";
+                z4.style.color="green";
+            }
+            else{
+                z4.innerHTML="邮箱地址不正确";
+                z4.style.color="red";
+            }
+        }
+    </script>
+</body>
+</html>

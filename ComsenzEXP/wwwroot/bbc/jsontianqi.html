@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	#beijing{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		background-image: url(img/bg1.png);
+		overflow-y:scroll; 
+		background-repeat: no-repeat;
+		
+	}
+	#chengdu{
+		color: white;
+		font-family: "微软雅黑";
+	}
+	#chengtou{
+		color: white;
+		font-family: "微软雅黑";
+		opacity: 0.5;
+
+	}
+	#zuoshang{
+		margin-top: 80px;
+		margin-left: 120px;
+		font-size: 30px;
+	}
+	#youshang{
+		position: absolute;
+		left: 798px;
+		top: 140px;
+		/*width: 100px;
+		height: 30px;*/
+		color: white;
+	}
+	#youshang span{
+		font-family: "微软雅黑";
+		text-align: center;
+	}
+	#youshang p{
+		font-family: "微软雅黑";
+		
+		margin-left: 85px;
+	}
+	#span{
+		position: absolute;
+		left: 63px;
+	}
+	 #uls{
+		position: absolute;
+		left: 87px;
+		top: 413px;
+	}
+	#uls li{	list-style: none;
+		float: left;
+		line-height: 20px;
+		color: white;
+		height: 20px;
+		font-size: 13px;
+		font-family: "微软雅黑";
+		padding-left: 26px;
+
+		
+	}
+	#uls li img{
+		vertical-align: middle;
+	}
+	#tiao{
+		position: absolute;
+		left: 67px;
+		top: 448px;
+	}
+	#tiao div{
+		float: left;
+	}
+	#huang{
+		width: 140px;
+		height: 7px;
+		background-color: #d7ac36;
+	}
+	#qing{
+		width: 140px;
+		height: 7px;
+		background-color: #5597d8;
+	}
+	#lan{
+		width: 140px;
+		height: 7px;
+		background-color: #55d4d8;
+	}
+	#uls2{
+		position: absolute;
+		left: 410px;
+		top: 455px;
+	}
+
+	#uls2 li{
+		float: left;
+		list-style: none;
+		width: 89px;
+		height: 163px;
+		border: 1px solid #827055;
+		border-top: none;
+		border-bottom: none;
+		border-right: none;
+	}
+	#uls2 li div{
+		color: white;
+		font-size: 12px;
+		text-align: center;
+		line-height: 22px;
+	}
+	#uls2 li img{
+		margin-left: 33px;
+		margin-top: 20px;
+		width: 22px;
+		height: 15px;
+	}
+	#uls2 li p{
+		color: white;
+		margin-top: 20px;
+		margin-left: 33px;
+		font-family: "微软雅黑";
+	}
+	#bantou{
+		opacity: 0.5;
+	}
+	#todaytian{
+		width: 107px;
+		height: 79px;
+		/*border: 1px solid black;*/
+		position: absolute;
+		left: 105px;
+		top: 480px;
+		font-size: 77px;
+		color: white;
+	}
+	#todaydate{
+		width: 107px;
+		height: 23px;
+		/*border: 1px solid black;*/
+		position: absolute;
+		left: 105px;
+		top:560px;
+		border-radius: 25px;
+		background-color: #816e4f;
+		color: white;
+		text-align: center;
+		font-family: "微软雅黑";
+		vertical-align:middle;
+	}
+	#datu{
+		position: absolute;
+		left: 230px;
+		top:457px;
+	}
+	#datu img{
+		width: 107px;
+		/*height: 79px;*/
+		/*border: 1px solid black;*/
+	}
+	#kongqi{
+		position: absolute;
+		left: 230px;
+		top: 560px;
+		/*border: 1px solid black;*/
+		width: 107px;
+		height: 18px;
+		text-align: center;
+		color: white;
+		font-family: "微软雅黑";
+
+	}
+	#xingqi{
+		margin-left: 25px;
+		margin-top: 33px;
+		width: 42px;
+		height: 22px;
+		background-color: #77694f;
+		border-radius: 22px;
+	}
+ 	</style>
+</head>
+<body>
+	<div id="beijing"> 
+		<div id="zuoshang">
+			<span id="chengdu">Cheng</span><span id="chengtou" >du,JIUZAI</span>
+		</div>
+		<!-- <img id="beijing" src="img/bg1.png" alt=""> -->
+		<div id="youshang">
+			<p></p>
+			<div id="span">
+				<span></span><span>:</span><span></span><span></span>
+			</div>
+		</div>
+		<ul id="uls">
+			<li>
+				<img src="img/qing.png">WEATHER
+			</li>
+			<li id="bantou">
+				<img src="img/mail.png">NEWS&EVENTS
+			</li>
+			<li id="bantou">
+				<img src="img/tianchong.png">GALLERY(30)
+			</li>
+		</ul>
+		<div id="tiao">
+		<div id="huang"></div>
+		<div id="qing"></div>
+		<div id="lan"></div>
+		</div>
+		<ul id="uls2">
+			<li>
+				<div id="xingqi"></div>
+				<img src="">
+				<p></p>
+			</li>
+			<li>
+				<div id="xingqi"></div>
+				<img src="">
+				<p></p>
+			</li>
+			<li>
+				<div id="xingqi"></div>
+				<img src="">
+				<p></p>
+			</li>
+			<li>
+				<div id="xingqi"></div>
+				<img src="">
+				<p></p>
+			</li>
+			<li>
+				<div id="xingqi"></div>
+				<img src="">
+				<p></p>
+			</li>
+			<li>
+				<div id="xingqi"></div>
+				<img src="">
+				<p></p>
+			</li>
+		</ul>
+		<div id="todaytian">
+			
+		</div>
+		<div id="todaydate"></div>
+		<div id="datu">
+			<img src="">
+		</div>
+		<div id="kongqi">
+			
+		</div>
+	</div>
+	<script type="text/javascript">
+	var kongqi=document.getElementById('kongqi');
+	var todaytian=document.getElementById('todaytian');
+	var uls=document.getElementById('uls');
+	var lis=uls.getElementsByTagName('li');
+	var uls2=document.getElementById('uls2')
+	var imgs2=uls2.getElementsByTagName('img');
+	var uldiv=uls2.getElementsByTagName('div');
+	var ulp=uls2.getElementsByTagName('p');
+	var youshang=document.getElementById('youshang');
+	var p=youshang.getElementsByTagName('p');
+	var shijian=youshang.getElementsByTagName('span');
+	var wendu=document.getElementById('wendu');
+	var xhr = new XMLHttpRequest();
+	var datu=document.getElementById('datu')
+	var imgs=document.getElementsByTagName('img');
+	xhr.open("get","GetWeatherByCityIdAndName.php",true);
+	xhr.send(null);
+	xhr.onload= function(){
+		// console.log(xhr.responseText);
+		console.log(JSON.parse(xhr.responseText))
+		
+	p[0].innerHTML=JSON.parse(xhr.responseText).city;
+	var wendu=JSON.parse(xhr.responseText).today.curTemp.substring(0,2)+"°";
+	todaytian.innerHTML=wendu;
+	var riqi=new Date().getDate();
+	todaydate.innerHTML=JSON.parse(xhr.responseText).today.week+" "+riqi+"th";
+	function tian(n){
+		
+	if(JSON.parse(xhr.responseText).today.type=="晴"){
+	
+		imgs[n].src="img/01"+".png";
+	}
+	else if(JSON.parse(xhr.responseText).today.type=="多云"){
+		imgs[n].src="img/02"+".png";
+	}
+	else if(JSON.parse(xhr.responseText).today.type=="阴"){
+		imgs[n].src="img/03"+".png";
+	}
+	else if(JSON.parse(xhr.responseText).today.type=="小雨"){
+		imgs[n].src="img/04"+".png";
+	}
+	else if(JSON.parse(xhr.responseText).today.type=="中雨"){
+		imgs[n].src="img/rains"+".png";
+	}
+	else if(JSON.parse(xhr.responseText).today.type=="大雨"){
+		imgs[n].src="img/05"+".png";
+	}
+	else if(JSON.parse(xhr.responseText).today.type=="雷阵雨"){
+		imgs[n].src="img/06"+".png";
+	}
+	else if(JSON.parse(xhr.responseText).today.type=="小雪"){
+		imgs[n].src="img/07"+".png";
+	}
+	else if(JSON.parse(xhr.responseText).today.type=="大雪"){
+		imgs[n].src="img/08"+".png";
+	}
+	}
+	tian(9);
+
+
+
+
+	function tian2(m){
+		
+	if(JSON.parse(xhr.responseText).other[m].type=="晴"){
+	
+		imgs2[m].src="img/1"+".png";
+	}
+	else if(JSON.parse(xhr.responseText).other[m].type=="多云"){
+		imgs2[m].src="img/duoyun"+".png";
+	}
+	else if(JSON.parse(xhr.responseText).other[m].type=="阴"){
+		imgs2[m].src="img/yin"+".png";
+	}
+	else if(JSON.parse(xhr.responseText).other[m].type=="小雨"){
+		imgs2[m].src="img/4"+".png";
+	}
+	else if(JSON.parse(xhr.responseText).other[m].type=="中雨"){
+		imgs2[m].src="img/rains"+".png";
+	}
+	else if(JSON.parse(xhr.responseText).other[m].type=="大雨"){
+		imgs2[m].src="img/rain"+".png";
+	}
+	else if(JSON.parse(xhr.responseText).other[m].type=="雷阵雨"){
+		imgs2[m].src="img/5"+".png";
+	}
+	else if(JSON.parse(xhr.responseText).other[m].type=="小雪"){
+		imgs2[m].src="img/6"+".png";
+	}
+	else if(JSON.parse(xhr.responseText).other[m].type=="大雪"){
+		imgs2[m].src="img/6"+".png";
+	}
+	return imgs2[m];
+	}
+
+	// imgs2[3] = tian2(2,3);
+	// console.log(imgs2[0]);
+	//  console.log(tian2(2));
+	tian2(0,2);
+	tian2(1,3);
+	tian2(2,4);
+	tian2(3,5);
+	tian2(4,0);
+	tian2(5,1);
+	// var data = JSON.parse(xhr.responseText);
+	
+	 kongqi.innerHTML=JSON.parse(xhr.responseText).today.aqi+"mph"+" / "+JSON.parse(xhr.responseText).today.lowtemp.substring(0,2)+"°";
+	 uldiv[0].innerHTML=JSON.parse(xhr.responseText).other[2].week;
+	 uldiv[1].innerHTML=JSON.parse(xhr.responseText).other[3].week;
+	 uldiv[2].innerHTML=JSON.parse(xhr.responseText).other[4].week;
+	 uldiv[3].innerHTML=JSON.parse(xhr.responseText).other[5].week;
+	 uldiv[4].innerHTML=JSON.parse(xhr.responseText).other[0].week;
+	 uldiv[5].innerHTML=JSON.parse(xhr.responseText).other[1].week;
+
+	 ulp[0].innerHTML=JSON.parse(xhr.responseText).other[0].hightemp.substring(0,2)+"°";
+		console.log(JSON.parse(xhr.responseText).other[1].hightemp.substring(0,2))
+	 ulp[1].innerHTML=JSON.parse(xhr.responseText).other[1].hightemp.substring(0,2)+"°";
+	 ulp[2].innerHTML=JSON.parse(xhr.responseText).other[2].hightemp.substring(0,2)+"°";
+	 ulp[3].innerHTML=JSON.parse(xhr.responseText).other[3].hightemp.substring(0,2)+"°";
+	 ulp[4].innerHTML=JSON.parse(xhr.responseText).other[4].hightemp.substring(0,2)+"°";
+	 ulp[5].innerHTML=JSON.parse(xhr.responseText).other[5].hightemp.substring(0,2)+"°";
+}	
+	var hours=new Date().getHours();
+	if(hours<10){
+		shijian[0].innerHTML=0+hours;
+	}
+	else{
+		shijian[0].innerHTML=hours;
+	}
+	var minutes=new Date().getMinutes();
+	
+	if(minutes<10){
+		shijian[2].innerHTML=0+minutes;
+	}
+	else{
+		shijian[2].innerHTML=minutes;
+	}
+	if(hours<12){
+		shijian[3].innerHTML="am";
+	}
+	else{
+		shijian[3].innerHTML="pm"
+	}
+	for(var i=0;i<lis.length;i++){
+		lis[i].onmouseover=function(){
+			for(var j=0;j<lis.length;j++){
+				if(this==lis[j]){
+					lis[j].style.opacity=1;
+				}
+				else{
+					lis[j].style.opacity=0.5;
+				}
+			}
+		}
+	}
+	</script>
+</body>
+</html>

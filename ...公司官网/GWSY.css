@@ -1,0 +1,518 @@
+
+body{
+    background-color: #dcdcdc;
+}
+a{
+    text-decoration: none;
+}
+#da{
+    width: 1100px;
+    height: 1500px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+#head{
+    width: 1100px;
+    height: 60px;
+    margin: auto;
+    background-color:#ffffff;
+    position: relative;
+}
+#head ul{
+    position: absolute;
+    right: 200px;
+    top: 0px;
+}
+#head ul li{
+    list-style: none;
+    float: left;
+    font-size: 15px;
+    margin-left: 20px;
+}
+#head ul li a{
+    color: black;
+}
+#head ul li a:hover{
+    color: #ff0000;
+}
+#head img{
+    width: 160px;
+    height: 35px;
+    margin-top: 15px;
+    margin-left: 200px;
+}
+#lbt{
+    width: 1100px;
+    height: 370px;
+    position: relative;
+    overflow: hidden;
+}
+#lbt img{
+    width: 1100px;
+    height: 370px;
+}
+#lbtx{
+    width: 4400px;
+    height: 370px;
+    color: #ffffff;
+    position: absolute;
+    left: 0px;
+}
+.lbtxx{
+    position: absolute;
+    left: 0px;
+    display: none;
+}
+.lbtmc{
+    width: 1100px;
+    height: 370px;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0px;
+}
+.lbtz{
+    position: absolute;
+    top: 80px;
+    left: 150px;
+    font-weight: bold;
+}
+.lbtxz{
+    font-size: 25px;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    line-height: 35px;
+}
+.lbtyd{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    float: left;
+    margin-left: 50px;
+
+}
+#an{
+    position: absolute;
+    top: 340px;
+    left: 400px;
+}
+#me{
+    width: 1100px;
+    height: 450px;
+    background-color: #00FFFF;
+    position: relative;
+}
+#mes0{
+    position: absolute;
+    top: 20px;
+    left: 500px;
+    font-size: 25px;
+}
+#mes1{
+    position: absolute;
+    top: 50px;
+    left: 510px;
+    font-size: 18px;
+}
+#me hr{
+    width: 700px;
+    position: absolute;
+    top: 60px;
+    left: 200px;
+}
+#me div{
+    position: absolute;
+    top: 77px;
+    left: 550px;
+    width: 10px;
+    height: 5px;
+    background: #ff0000;
+}
+#mes2{
+    position: absolute;
+    top: 50px;
+    right: 170px;
+    color: #ff0000;
+    font-size: 18px;
+}
+#mes3{
+    position: absolute;
+    top:150px;
+    left: 450px;
+    display: block;
+    width: 200px;
+    height: 100px;
+    font-size: 12px;
+}
+#me ul{
+    list-style: none;
+    font-size: 18px;
+    position: absolute;
+    top:320px;
+    left: 450px;
+
+}
+#me ul li{
+    line-height: 20px;
+}
+#me span{
+    margin-left: 20px;
+}#xim{
+    width: 1100px;
+    height: 600px;
+     background-color: #ffffff;
+    position: relative;
+ }
+#xim0{
+    position: absolute;
+    top: 20px;
+    left: 470px;
+    font-size: 25px;
+}
+#xim1{
+    position: absolute;
+    top: 50px;
+    left: 520px;
+    font-size: 18px;
+}
+#xim hr{
+    width: 700px;
+    position: absolute;
+    top: 60px;
+    left: 200px;
+}
+#xim #xim4{
+    position: absolute;
+    top: 77px;
+    left: 550px;
+    width: 10px;
+    height: 5px;
+    background: #ff0000;
+}
+#xim2{
+    position: absolute;
+    top: 50px;
+    right: 170px;
+    color: #ff0000;
+    font-size: 18px;
+}
+#xim3{
+    position: absolute;
+    top:150px;
+    left: 450px;
+    display: block;
+    width: 200px;
+    height: 100px;
+    font-size: 12px;
+}
+#xim5{
+    width: 1020px;
+    height: 500px;
+    position: absolute;
+    top: 100px;
+    left:40px;
+}
+#xim5 img{
+    width: 180px;
+    height: 100px;
+    position: absolute;
+    top: 20px;
+}
+.xim5a{
+    width: 485px;
+    height:150px;
+    float: left;
+    margin-left: 25px;
+    border-bottom: 1px dashed gray;
+    position: relative;
+}
+.ximz1{
+     font-size: 15px;
+    position: absolute;
+    top: 10px;
+    left: 180px;
+    font-weight: bolder;
+ }
+.ximz2{
+    font-size: 12px;
+    position: absolute;
+    top: 30px;
+    left: 180px;
+}
+.ximz3{
+    font-size: 12px;
+    position: absolute;
+    top: 50px;
+    left: 180px;
+}
+#al{
+    width: 1100px;
+    height:700px;
+background-color: #ffffff;
+    position: relative;
+}
+
+#al0{
+    position: absolute;
+    top: 20px;
+    left: 500px;
+    font-size: 25px;
+}
+#al1{
+    position: absolute;
+    top: 50px;
+    left: 525px;
+    font-size: 18px;
+}
+#al hr{
+    width: 700px;
+    position: absolute;
+    top: 60px;
+    left: 200px;
+}
+#al #al4{
+    position: absolute;
+    top: 77px;
+    left: 550px;
+    width: 10px;
+    height: 5px;
+    background: #ff0000;
+}
+#al2{
+    position: absolute;
+    top: 50px;
+    right: 170px;
+    color: #ff0000;
+    font-size: 18px;
+}
+#al3{
+    position: absolute;
+    top:150px;
+    left: 450px;
+    display: block;
+    width: 200px;
+    height: 100px;
+    font-size: 12px;
+}
+#al .alt{
+    height: 500px;
+    position: absolute;
+    left: 180px;
+    top: 200px;
+    z-index: 0;
+    display: none;
+}
+#alh{
+    width: 1100px;
+    position: absolute;
+    z-index:1;
+}
+.mc{
+    width: 750px;
+    height: 500px;
+}
+#mc{
+    width: 750px;
+    height: 500px;
+    background-color: #000099;
+    overflow: hidden;
+    position: absolute;
+    left: 180px;
+    top: 200px;
+    opacity: 0.5;
+
+}
+#btn{
+    width: 500px;
+    height: 50px;
+    font-size: 25px;
+    position: absolute;
+    top: 120px;
+    left: 350px;
+
+
+}
+.but{
+    width: 70px;
+    height: 30px;
+    border: 1px solid pink;
+    float: left;
+    margin-left: 30px;
+    border-radius: 20%;
+    text-align: center;
+    line-height: 30px;
+    position: relative;
+}
+.jt{
+    position:absolute;
+    top: 30px;
+    left: 30px;
+    display: none;
+}
+#zp{
+    width: 1100px;
+    height: 300px;
+    background-color: white;
+    position:relative;
+}
+.zph{
+    width: 80px;
+    display: block;
+    float: left;
+    margin-left: 20px;
+}#zph1{
+    position: absolute;
+    top: 200px;
+    left: 140px;
+ }
+ #zpaa{
+     width: 1000px;
+     height: 50px;
+     position: absolute;
+     top: 160px;
+     left: 110px;
+
+ }
+ .zpa{
+     width: 110px;
+     height: 50px;
+     position: relative;
+     text-align: center;
+     font-size: 15px;
+     float: left;
+     margin-left: 94px;
+ }
+ .zpa2{
+     display: block;
+     width: 20px;
+     height: 20px;
+     border-radius: 50%;
+     background-color: gray;
+     line-height:20px ;
+     position: absolute;
+     top: 20px;
+     left: 40px;
+ }
+ #zpb{
+     width: 800px;
+     height: 50px;
+     position: absolute;
+     top: 211px;
+     left: 155px;
+ }
+ #zpb span{
+     display: block;
+     width: 10px;
+     height: 10px;
+     border-radius: 50%;
+     background-color: gray;
+     float: left;
+     margin-left: 92px;
+ }
+ .zpca{
+    width: 110px;
+     height: 50px;
+     font-size: 15px;
+     position: relative;
+     text-align: center;
+     float: left;
+     margin-left: 95px;
+ }
+ .zpcb{
+     display: block;
+     width: 20px;
+     height: 20px;
+     border-radius: 50%;
+     background-color: gray;
+     line-height:20px ;
+     position: absolute;
+     top: -5px;
+     left: 40px;
+ }
+ #zpc{
+     width: 800px;
+     height: 50px;
+     position: absolute;
+     top: 238px;
+     left: 208px;
+ }
+#zp0{
+    position: absolute;
+    top: 20px;
+    left: 470px;
+    font-size: 25px;
+}
+#zp1{
+    position: absolute;
+    top: 50px;
+    left: 525px;
+    font-size: 18px;
+}
+#zp .zpf{
+    width: 700px;
+    position: absolute;
+    top: 60px;
+    left: 200px;
+}
+#zp #zp4{
+    position: absolute;
+    top: 77px;
+    left: 550px;
+    width: 10px;
+    height: 5px;
+    background: #ff0000;
+}
+#zp2{
+    position: absolute;
+    top: 50px;
+    right: 170px;
+    color: #ff0000;
+    font-size: 18px;
+}
+#foot{
+    width: 1100px;
+    height: 150px;
+    background-color: #2b2b2b;
+    color: white;
+    font-size: 20px;
+    position: relative;
+}
+#foot a{
+    color: white;
+}
+#foot ul li{
+    list-style: none;
+    width: 120px;
+    height: 20px;
+    float: left;
+    border-left: 1px solid white;
+    text-align: center;
+}
+#foot ul{
+    position: absolute;
+    top: 10px;
+    left: 50px;
+}
+#foot .fota{
+    font-size: 15px;
+    line-height: 20px;
+    position:absolute;
+    top: 80px;
+    left: 50px;
+}
+.fotb{
+    position: absolute;
+    top: 20px;
+    right: 250px;
+}
+#foot img{
+    position: absolute;
+    top: 50px;
+    right: 200px;
+}
+
+
+
+

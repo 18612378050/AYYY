@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>index-客服中心-委托送拍</title>
+<style type="text/css">
+*{margin: 0;padding: 0}
+#zong{
+	margin: 0 auto;
+	width: 1100px;
+	height: 1766px;
+	position: relative;
+    }
+
+#tou{position: absolute;
+   width: 1100px;
+   height: 150px;
+   background: url(tq/14.png);
+   color: rgb(221,195,3);
+    }
+   #logo{left: 20px;top: 15px;position: absolute;}
+   #flag1,#flag2,#flag3{height: 35px;width: 57px;top: 0;position: absolute;}
+     #flag1{position: absolute;right: 172px;}
+     #flag2{position: absolute;right: 98px;}
+     #flag3{position: absolute;right: 20px;}
+   #tou span{position: absolute;
+   	   font:bold 50px "隶书";
+   	   left: 150px;top: 50px;
+       }
+   #tou p{position: absolute;
+   	   font:bold 20px "隶书";
+   	   left: 140px;
+   	   top: 110px;
+   	   word-spacing:-8px;
+       }
+   #tou ul{position: absolute;
+       right: 20px;
+       top: 65px;
+       font-size: 20px;
+       }
+   #tou li{position: absolute;
+   	   list-style: none;
+   	   float: left;
+   	   /*position: relative;*/
+   	   margin-left: 15px;
+       }
+   #tou #keywd{position: absolute;
+   	   border: 1px solid white;
+   	   color:rgb(221,195,3);
+   	   font-size: 15px;
+   	   width: 135px;
+   	   height: 25px;
+   	   left: 832px;
+   	   top: 100px;
+   	   line-height: 25px;
+       }
+   #tou select{position: absolute;
+   	   border: 1px solid white;
+   	   top: 100px;
+   	   height: 28px;
+   	   width: 60px;
+   	   right:68px;
+   	   background: url(tq/14.png);
+   	   color: rgb(221,195,3);
+       }
+   #tou button{position: absolute;
+   	height: 28px;
+   	width: 50px;
+   	top: 100px;
+   	right: 20px;color:rgb(165,153,65);}
+#daohang{position: absolute;
+   background: rgb(240,240,240);
+   height: 60px;
+   width: 1100px;
+   top: 150px;
+   list-style: none;
+   line-height: 60px;
+   }
+   #daohang li{
+    text-align: center;
+    /*position: relative;*/
+    float: left;
+    width: 120px;
+    color:black; 
+    }
+   #daohang li:hover{
+    background-image: url(tq/15.png);
+    background-size: 110px 35px;
+    background-position: center;
+    background-repeat:no-repeat; 
+    }
+#hand{position: absolute;
+	top: 210px;
+	height: 320px;
+	width: 1100px;
+    background: url(tq/1.png) 176px 0 no-repeat;
+    }
+   #hand span{position: absolute;
+   	   font:bold 50px "隶书";
+   	   left: 70px;
+   	   top: 110px;
+   	   color: rgb(108,0,3);
+   	   letter-spacing: -4px;
+       }
+   #hand p{position: absolute;
+   	   font:bold 20px "隶书";
+   	   right: 745px;
+   	   top: 180px;
+   	   letter-spacing:-1px;
+   	   color: rgb(221,195,3);
+   	   word-spacing: -8px;
+   	}
+  	#hand div{position: absolute;
+  	   color: gray;
+  	   left:360px;
+  	   top: 110px; 
+  	   border-left: 1px solid black;
+  	   padding-left: 18px;
+  	}
+#tab{  position: absolute;
+   left: 30px;
+   top: 570px;
+   background: white;
+   height: 245px;
+   width: 300px;
+   text-align: center;
+   }
+   #tab li{
+   	list-style: none;
+   	/*position: relative;*/
+  	height: 71px;
+   	line-height: 71px;
+   	border: 1px solid white;
+   	display:block;
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(119,119,119);
+    background: rgb(220,220,220);
+   }
+   #tab .li1{
+   	height: 100px;
+   	line-height: 100px;
+    background: rgb(108,0,3);
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+   }
+.zhu{position: absolute;
+   top: 570px;
+   right: 30px;
+   height: 684px;
+   width: 720px;
+   }
+   #yulan{position: absolute;
+  	 /*display: none;*/
+  	 top: 30px;
+  	 height: 630px;
+  	 width: 720px;
+     }
+   #yulan p{
+     position: relative;
+     top: 20px;
+     text-indent: 20px;
+     -webkit-transform:scale(0.95);
+    }
+   #yulan .ding{
+    text-indent: 0;
+   }
+   .zhu #daoh span{
+  	/*position: relative;*/
+    color: rgb(108,0,3);
+    font-weight: bold;
+    }
+   .zhu hr{position: absolute;
+  	border-top: 1px dashed gray;
+  	width: 718px;
+  	top: 30px;
+    }
+#di{position: absolute;
+	bottom: 0;
+	height: 188px;
+	width: 1100px;
+	background: rgb(42,42,42);
+    }
+   #di ul{position: absolute;
+     list-style: none;
+     left: 30px;
+     top: 13px;
+     color: white;
+     }
+   #di li{position: absolute;
+     /*position: relative;*/
+     float: left;
+     margin-left: 20px;
+     }
+   #di p{position: absolute;
+      color: rgb(202,201,115);
+      font-weight: bold;
+      right: 10px;
+      top: 125px;
+      word-spacing: -5px;
+     }
+    #di .did{position: absolute;
+      height: 47px;
+      line-height: 50px;
+      width: 1100px;
+      background: black;
+      bottom: 0;
+      color: rgb(138,138,138);
+      }
+    #di .did img{
+      position: relative;
+      height: 20px;
+      width: 20px;
+      top: 6px;
+      }
+    #di .did span{
+      padding-left: 420px;
+      }
+   #di .disp1{position: absolute;
+     left: 50px;
+     top: 40px;
+     color: rgb(138,138,138);
+     line-height: 25px;
+     }
+   .disp2{position: absolute;
+     height: 40px;
+     width: 189px;
+     background:rgb(203,201,201);
+     color: rgb(108,0,3);
+     top: 78px;
+     left: 455px;
+     line-height: 40px;
+     text-align: center;
+     box-shadow: 5px 5px 5px black;
+     }
+   .disp3{position: absolute;
+      top: 25px;
+      right: 412px;
+      height: 80px;
+      width: 20px;
+      font-size: 18px;
+      color: rgb(201,202,118);
+      font-size: 9px;
+      -webkit-transform:scale(0.96);
+     }
+   .disp4{position: absolute;
+      top: 25px;
+      right: 294px;
+      height: 80px;
+      width: 20px;
+      font-size: 18px;
+      color: rgb(201,202,118);
+      font-size: 9px;
+      -webkit-transform:scale(0.96);
+      }
+   .dii1{position: absolute;
+      top: 25px;
+      right: 328px;
+      }
+   .dii2{position: absolute;
+      top: 25px;
+      right: 210px;
+     }
+   .dii3{position: absolute;
+    right: 75px;
+    top: 5px;
+    }
+#daohang a{
+    color: black;
+}
+a{
+    text-decoration: none;
+}
+#tab a{
+    color: rgb(199,195,200);
+}
+#tou a{
+    color: yellow;
+}
+</style>
+</head>
+<body>
+<div id="zong">
+<div id="tou">
+		<img src="tq/13.png" alt="" id="logo">
+		<span>香港天騏拍賣</span>
+		<p>HONG KONG DAY THESTRALS AUCTION</p>
+		<img src="tq/69.png" alt="" id="flag1">
+		<img src="tq/9.png" alt="" id="flag2">
+		<img src="tq/8.png" alt="" id="flag3"> 
+	 <ul><li>登錄</li>
+	 <li>注册</li>
+	 <li>會員專區</li></ul>
+	 <span id="keywd">請輸入關鍵字</span>
+	 <select>
+	     <option selected="selected">拍品</option>
+	     <option>2</option>
+	     <option>3</option>
+	     </select>
+     <button>搜索</button>
+	 </div><!-- tou end-->
+<ul id="daohang">
+    <li><a href="中文首页-公司简介.html">公司簡介</a></li>
+    <li><a href="新闻中心-新闻.html">新聞中心</a></li>
+    <li><a href="index-客服中心-如何委托.html">客服中心</a></li>
+    <li><a href="业务联系 -业务部门专区-专区详情.html">業務聯繫</a></li>
+    <li><a href="index-拍卖广告-拍卖公告.html">拍賣廣告</a></li>
+    <li><a href="index-拍卖结果-全部拍卖会.html">拍賣結果</a></li>
+    <li><a href="精品回顾.html">精品回顧</a></li>
+    <li><a href="天琪艺术空间.html">天騏藝術空間</a></li>
+    <li><a href="天琪珠宝.html">天騏珠寶</a></li>
+    </ul>
+<div id="hand">
+	<span>香港天騏拍賣</span>
+	<p>HONG KONG DAY THESTRALS AUCTION</p>
+	<div>STRONG TECHNICAL FORCE<br>ADVANCED EQUIPMENT<br>STRICT QUALITY MANAGEMENT SYSTEM<br>PROFESSIONAL SERVICES<br>COMPETITIVE PRICE</div>
+  </div><!-- hand end -->
+<ul id="tab">
+    <li class="li1">客服中心</li>
+    <li><a href="index-客服中心-如何委托.html">如何委託</a></li>
+    <li><a href="index-客服中心-委托送拍.html" >委託送拍</a></li>
+    <li><a href="index-客服中心-委托竞投书.html"> 委託競投書</a></li>
+    <li><a href="index-客服中心-拍賣圖錄預購.html"> 拍賣圖録預購</a></li>
+    <li><a href="客服中心——拍卖法规.html"> 拍賣法規</a></li>
+    <li><a href="会员中心.html"> 會員專區</a></li>
+    </ul>
+<div class="zhu" name="zhu">
+	<p id="daoh">你當前所處的位置：<span>首頁</span>&nbsp;<span>&gt;</span>&nbsp;<span>客服中心</span>&nbsp;<span>&gt;</span>&nbsp;<span>委托送拍</span></p>
+	<hr>
+  <div id="yulan">
+    <p class="ding">首先感謝各位藏家一直以來對北京保利國際拍賣有限公司的支持與關注！</p>
+    <p>北京保利國際拍賣有限公司自2005年成立以來，公司規模不斷壯大，分為以下業務部門部門：現當代藝術部、中國書畫藝術部、中國古董珍玩部、珠寶鐘錶尚品部、名酒及資產拍賣部、郵品錢幣銅鏡部、北美及國際征集聯絡部、海內外各代表處。</p>
+    <p>各部門基本業務流程詳情如下：</p>
+    <p class="ding">一、送拍</p>
+    <p>1、您可以直接携带作品原件來我公司洽談，我公司各部門有專業的業務人員接待。</p>
+    <p>工作時間：周一至周五9:30-17:30.遇節假日或拍賣會請留意網站通知（古董珍玩公開征集時間為每週五，其他時間古董珍玩不進行公開征集活動）</p>
+    <p>公司地址：北京東城區朝陽門北大街1號新保利大廈三層</p>
+    <p>聯繫電話：（86-10）64083188</p>
+    <p class="ding">大宗私洽及拍賣業務，請聯繫保利貴賓部。</p>
+    <p>網址：www.polyvip.com</p>
+    <p>郵箱：vip@polyvip.com</p>
+    <p>電話：（86-10）64083352</p>
+    <p>2、如您在外地或不方便前來，可先把作品電子圖片和您的聯繫方式發到相關部門電子郵箱。</p>
+    <p>現當代藝術部ddys@polyauction.com</p>
+    <p>中國書畫藝術部</p>
+    <p>中國古代書畫部gdsh@polyauction.com</p>
+    <p>中國近現代書畫部sh@polyauction.com</p>
+    <p>中國書畫季拍部sj@polyauction.com</p>
+    <p>中國當代水墨及現代工藝品部ddsh@polyauction.com</p>
+    <p>古籍文獻部gj@polyauction.com</p>
+    <p>中國古董珍玩部</p>
+    <p>中國古董珍玩部gd@polyauction.com</p>
+    <p>古董珍玩四季部gd@polyauction.com</p>
+    <p>珠寶鐘錶尚品部zb@polyauction.com</p>
+    <p>名酒及資產拍賣部zc@polyauction.com</p>
+    <p>郵品錢幣銅鏡部yp@polyauction.com</p>
+    <p>北美及國際征集聯絡部polyusa@polyauction.com</p>
+    <p>海內外各代表處</p>
+    <p>保利拍賣上海代表處shanghai@polyauction.com</p>
+    <p>保利拍賣台灣代表處havanajade@yahoo.com</p>
+    <p>保利拍賣日本代表處polyauction2005@gmail.com</p>
+    <p>保利拍賣美國代表處polyusa@polyauction.com</p>
+    <p>業務人員查閱郵箱后</p>
+    <p>a、如果作品適合上拍，我司會以電話方式約您前來我司詳談，所以郵件中請務必留下聯繫方式。</p>
+    <p>b、如果作品不適合上拍，我們會用電子郵件回復，請注意查收郵件，并期待你的再度支持。</p>
+    <p class="ding">二、上拍</p>
+    <p>如送拍作品經專家小組審定通過，我公司會與您簽訂委託合同，作品會保留在保利拍賣庫房中直至拍賣結束。</p>
+    <p>上拍作品費用問題：</p>
+    <p>1、拍賣之前我司不收取任何費用</p>
+    <p>2、拍賣之後</p>
+    <p>a、若拍品成交，我司會對委託方收取作品落槌價10%的佣金、1%的保險、3%的個人所得稅（代收）、以及1000元左右的圖録費（按圖録版式收取）</p>
+    <p>b、若拍品流標，我司不收取您任何費用，原件退還！敬請閣下放心。</p>
+    <p>具體細節歡迎垂詢（86-10）64083188</p>
+    <p class="ding">尊敬的貴賓、委託拍賣藝術品首選北京保利。重要或大宗拍品委託，保利藝術投資基金可提供資金支持，方式靈活。北京保利貴賓部長期為您提供私人洽購、藝術品投資收藏顧問、藝術品資產管理、藝術展覽出版及網絡推廣等VIP服務，方式靈活并保護客戶隱私。聯繫電話：（86-10）64083352</p>
+   </div><!-- yulan end -->
+    </div><!-- zhu end -->
+
+<div id="di">
+  <ul>
+    <li>圖録訂購</li>
+    <li>聯系我們</li>
+    <li>加入我們</li>
+    <li>員工郵箱</li>
+    <li>誠信經營示範單位</li></ul>
+  <span class="disp1">地址：北京東城區朝陽門北大街1號新保利大廈三層 100010<br>電話：（86-10）64083188 傳真：（86-10）64083186<br>京ICP備06017645號<br>網站ip量</span>
+  <span class="disp2">建議反饋</span>
+  <span class="disp3">北京天騏微信</span>
+  <span class="disp4">香港天騏微信</span>
+  <img src="tq/11.png" class="dii1"><img src="tq/11.png" class="dii2">
+  <p>HONG KONG DAY THESTRALS AUCTION</p>
+  <img src="tq/13.png" class="dii3">
+  <div class="did"><span><img src="tq/12.png">&nbsp;京公網安備   1101289190000092號</span></div>
+   </div><!-- di end -->
+
+ </div><!-- zong end-->
+
+<script type="text/javascript">
+
+/*左侧红色导航条点击切换效果*/
+   var tab=document.getElementById("tab")
+   var li=tab.getElementsByTagName("li")
+   var zhu=document.getElementsByName("zhu")
+   var waibu=document.getElementById("waibu")
+ // console.log(window.getComputedStyle(zhu[0],null)["height"])
+   for (var i = 1; i < li.length; i++) {
+      li[i].onmouseover=function(){
+   	 for (var i = 1; i < li.length; i++) {
+   		li[i].style.backgroundColor="rgb(220,220,220)"
+   		li[i].style.color="rgb(119,119,119)"
+   		 }
+   	   this.style.backgroundColor="rgb(173,129,130)" 
+   	   this.style.color="white";
+   	   }//onmouseover end 
+    }//for i end 
+
+
+
+
+
+</script>
+</body>
+</html>

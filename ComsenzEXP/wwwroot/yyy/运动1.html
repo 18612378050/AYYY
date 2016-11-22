@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+
+        #div1{
+            overflow:hidden;
+
+            width: 340px;
+            height: 220px;
+            border: 1px solid gray;
+            margin: 50px auto;
+        }
+        #div2{
+            width: 2040px;
+            height: 220px;
+        }
+        img{
+
+            width: 340px;
+            height: 220px;
+            float: left;
+        }
+        body{
+            background-image: url("img/112.png");
+
+        }
+    </style>
+</head>
+<body>
+
+<div id="div1">
+    <div id="div2" style="left:-340px;" >
+        <img src="img/112.png" alt=""/>
+        <img src="img/113.jpg" alt=""/>
+        <img src="img/114.gif" alt=""/>
+
+    </div>
+</div>
+    <script>
+        var wb=document.getElementById('div1');
+        var lb=document.getElementById('div2');
+        var img=document.getElementsByTagName('img')
+        var timer1=null;
+        var timer2=null;
+
+//        lb.innerHTML+=lb.innerHTML;
+//
+//        function all(){
+//            console.log("进入");
+//            wb.scrollLeft+=40;
+//            if(wb.scrollLeft==lb.offsetWidth/2){
+//                clearInterval(timer1);
+//                clearInterval(timer2);
+//                wb.scrollLeft=0;
+//            }
+//        };
+//        if(wb.scrollLeft%img[0].offsetWidth==0){
+//            clearInterval(timer1);
+//            clearInterval(timer2);
+//            timer1=setInterval(function(){
+//            timer2=setInterval(all,17)
+//        },1000)
+//        }
+//
+//       timer1= setInterval(all,17);
+        /*timer1=setInterval(demo,17)
+        function demo(){
+            wb.scrollLeft+=50;
+            if(wb.scrollLeft==lb.offsetWidth/2){
+                wb.scrollLeft=0;
+                clearInterval(timer1);
+                clearInterval(timer2);
+            }
+            if(wb.scrollLeft%img[0].offsetWidth==0){
+                clearInterval(timer1);
+                clearInterval(timer2);
+                timer2=setInterval(function(){
+                    timer1=setInterval(demo,17)
+                },1000)
+            }
+            console.log(wb.scrollLeft)
+        }*/
+            </script>
+</div>
+</body>
+</html>

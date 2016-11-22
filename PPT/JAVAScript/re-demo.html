@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>正则-demo</title>
+</head>
+<body>
+
+	<input type="text">
+	<input type="button" id="box" value="验证">
+	<script type="text/javascript">
+
+	//一种语法规则或者模式，展现出对某种方法的验证
+	//i:不区分大小写
+	//g:匹配全局
+	//\d:匹配数字
+	//\n:回车
+	//\r:换行
+	//.:匹配单个元字符
+	//^:范围开始位置，也有排除作用
+	//$:范围的结束位置
+	//\w:字母数字下划线
+	//\W：除了字母数字下划线
+	//\s:空字符
+	//\S:非空字符
+	//+:匹配一个或多个
+	//*:匹配所有
+	//|:或者，先匹配前面的，然后在匹配后面的
+	//创建正则
+		//js形式创建
+		var re = new RegExp();
+		console.log(re)
+
+		//通过perl语法创建正则
+		//search:匹配是否存在相应的元素，若有则返回偏移位置，若没有则返回-1;索引值从0开始
+		var str = "dsfascf";
+		var re1 = /a/;
+		//反斜杠内为所要匹配的内容
+		console.log(str.search(re1));
+		var str1 = "dsAfascf";
+		// var re2 = /a/gi;//再次若想匹配A，则需要用到i,因为i:不区分大小写
+		var re2 = new RegExp("a","gi");
+		console.log(str1.search(re2));
+
+
+
+
+		//match:把所有想要匹配的内容全匹配出来
+		var str2 = "gs23d2g2343sd3f32gr";
+		var re3 = /\d/g;//\单个匹配数字
+		var re4 = /\d\d/g;//\d\d只能匹配两个连一起的数字
+		var re5 = /\d+/g;//\d+匹配一个或多个数字
+		console.log(str2)
+		console.log(str2.match(re3))
+		console.log(str2.match(re4))
+		console.log(str2.match(re5))
+
+		var str3 = "zzz123你好";
+		var re6 = /123/g;//先申明正则表达式
+		console.log(str3.replace(re6,"世界"))
+		//replace(正则表达式,"要被替换的内容")
+		console.log(str3.replace(/zzz/g,"hello world"))
+		//变量名.className = 变量名.className.replace(/red/,"")
+
+
+
+		//简单地邮箱验证
+		//.test
+		var inp = document.getElementsByTagName('input');
+
+		var re0 = /^[A-Za-z0-9_]+@[a-z0-9]+\.[a-z]+$/i
+		// var re0 = /^[A-Za-z0-9]+@[a-z0-9]+\.[a-z]+$/i;
+		inp[1].onclick = function(){
+			if(re0.test(inp[0].value)){
+				alert("邮箱正确")
+			}else{
+				alert("请输入合法的邮箱")
+			}
+		}
+
+	</script>
+</body>
+</html>

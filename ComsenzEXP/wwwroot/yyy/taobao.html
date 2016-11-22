@@ -1,0 +1,2223 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>天逸</title>
+    <script language="JavaScript">
+        var now=new Date()
+        var hour=now.getHours()
+        var min=now.getMinutes()
+        alert("当前时间："+hour+":"+min+"天逸商城欢迎您")
+
+    </script>
+    <style type="text/css">
+        /*div{border: 1px solid green}*/
+        .li li{
+            list-style: none;
+            float: left;
+            padding-left: 40px;
+        }
+        
+        .zhengti{
+            margin: 0px auto;
+            width: 1300px;
+            height: 4000px;
+        }
+        .toubu{
+            width: 1300px;
+            height: 700px;
+            background-color: red;
+            position: absolute;
+            top: 0px;
+        }
+        .tishi{
+            color: gold;
+            float: left;
+            margin-left: 50px;
+        }
+        .daohang{
+            float: right;
+            margin-right: 50px;
+        }
+        .dintu{
+            margin-top: 30px;
+        }
+        .sousuo{
+            width: 1300px;
+            height: 120px;
+            position: relative;
+        }
+        .logo{
+            width: 200px;
+            height: 60px;
+            margin-top: 40px;
+            margin-left: 50px;
+            float: left;
+        }
+        .ma{
+            width: 100px;
+            height: 95px;
+            margin-top: 25px;
+            float: left;
+        }
+        .input{
+
+            width: 600px;
+            height: 120px;
+            float: left;
+            position: relative;
+        }
+        .a{
+            position: absolute;
+            left: 10px;
+            top: 5px;
+        }
+        .b{
+            position: absolute;
+            right: 0px;
+        }
+        .c{
+            position: absolute;
+            top: 50px;
+            left: 100px;
+        }
+        .swt{
+            float: left;
+
+            background-image: url("2.png");
+            width:180px ;
+            height: 130px;
+            background-repeat: no-repeat;
+        }
+        .d{
+            width: 180px;
+            height: 100px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        .dh{
+            width: 1298px;
+            height: 40px;
+            text-align: center;
+            position: relative;
+            background-color:#A20000;
+        }
+        .qi{
+            width: 327px;
+            height: 52px;
+            position: absolute;
+            right:20px;
+            top: 0px;
+        }
+        .qz{
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            color: darkorchid;
+        }
+        .zt{
+            width: 1100px;
+            height: 1120px;
+            margin-left: 150px;
+            margin-top: 710px;
+        }
+        .wan{
+            width: 1100px;
+            border-bottom: 3px solid black;
+        }
+        .pp{
+            width: 1100px;
+            height: 300px;
+            background-color: antiquewhite;
+        }
+        .ppa{
+            width: 198px;
+            height: 58px;
+            border: 1px solid gray;
+        }
+        .pp div:hover{
+            background-color: red;
+        }
+        .ppb{
+            width: 898px;
+            height: 300px;
+            background-repeat: repeat;
+            background-image: url("101.png");
+            float: right;
+            margin-top: -300px;
+        }
+        .ppt{
+            margin-left: 15px;
+            margin-top: 15px;
+        }
+        .ppz{
+            font-size: 25px;
+        }
+        .ppy{
+
+            font-size: 25px;
+
+        }
+        .meizi{
+            width: 1100px;
+            height: 50px;
+
+        }
+        .m td{
+            border: 1px solid gray;
+
+            width: 1100px;
+            height: 50px;
+            padding-left: 10px;
+        }
+
+        .td td:hover{
+            border-top:3px solid red ;
+            border-right:3px solid red ;
+            border-left:3px solid red ;
+            border-bottom: 3px solid aliceblue;
+        }
+        .mza{
+            float: left;
+            padding: 10px;
+        }
+        .mzb{
+            float: left;
+            width: 200px;
+        }
+        .mzc{
+            width: 648px;
+            height: 630px;
+            float: right;
+            padding: 10px;
+            background-color: gray;
+        }
+        .mzd{
+            float: left;
+            padding: 10px;
+
+        }
+        .yuan{
+            border-radius: 50%;
+            background-color: red;
+            text-align: center;
+            margin-left: 40px;
+            width: 80px;
+            height: 80px;
+
+        }
+        .ys{
+            color:#FFF00C;
+        }
+        .p{
+            color: red;
+        }
+        .jz{
+            text-decoration: line-through;
+        }
+        .s1{
+            background-color: aliceblue;
+        }
+        .kele{
+
+            width: 1100px;
+            height: 700px;
+            margin-left: 150px;
+        }
+        .qg{
+
+            height: 40px;
+        }
+        .xs{
+
+            width: 150px;
+            height: 30px;
+            float: left;
+        }
+        .kq{
+            margin:10px 0px 0px 50px;
+            float: left;
+        }
+        .sj{
+            float: left;
+            margin: 10px 0px 0px 30px;
+        }
+        .sj1{
+            float: left;
+            background-color: red;
+            margin-top: 10px;
+        }
+        .sj2{
+            float: left;
+            margin-top: 10px;
+        }
+        .sj3{
+            background-color: black;
+            width: 80px;
+            height: 20px;
+            float: left;
+            margin-top: 10px;
+            margin-left: 400px;
+            color: aliceblue;
+            padding-left: 20px;
+
+        }
+        .sj4{
+            background-color: gray;
+            width: 80px;
+            height: 20px;
+            float: left;
+            margin-top: 10px;
+            padding-left: 15px;
+            margin-left: 5px;
+
+
+        }
+        .qg1{
+            width: 215px;
+            height:179px;
+
+            float: left;
+        }
+        .qg2{
+            float: left;
+            height: 260px;
+            margin-left: 35px;
+            margin-top: 20px;
+        ;
+        }
+       .qg3{
+           width: 220px;
+           height:180px;
+           float: right;
+
+
+       }
+        .qg4{
+            width: 220px;
+            height: 100px;
+            float:right;
+
+        }
+        .qg5{
+            width: 220px;
+            height: 100px;
+            float: left;
+            margin-top: -102px;
+
+        }
+        .qg6{
+            width: 220px;
+            height:180px;
+            float: left;
+
+        }
+        .qg7{
+            width: 110px;
+            height: 50px;
+            float: left;
+        }
+        .qg8{
+            width: 110px;
+            height: 180px;
+            float: right;
+        }
+        .qg9{
+            width: 110px;
+            height: 50px;
+            float: left;
+        }
+        .qg0{
+            width: 40px;
+            height: 40px;
+            background-color: gray;
+            margin: 30px auto;
+        }
+        .qc{
+            width: 1100px;
+            height: 560px;
+
+            margin-left: 150px;
+            position: relative;
+        }
+        .mv{
+            width: 300px;
+            height: 500px;
+
+        }
+        .rm{
+             position: absolute;
+            left: 240px;
+            top:50px;
+
+        }
+        .gd{
+            position: absolute;
+            right: 0px;
+            top:65px;
+            width: 150px;
+
+            background-color: antiquewhite;
+        }
+        .dw1{
+            width: 400px;
+            height: 210px;
+            position: absolute;
+            top: 100px;
+            left: 300px;
+
+        }
+        .dw2{
+            width: 200px;
+            height: 100px;
+            position: absolute;
+            left: 700px;
+            top: 100px;
+        }
+        .dw3{
+            width: 200px;
+            height: 100px;
+            position: absolute;
+            left: 700px;
+            top: 210px;
+        }
+        .dw4{
+            width: 198px;
+            border: 1px solid gray;
+            position: absolute;
+            right: 0px;
+            top: 100px;
+        }
+        .dw5{
+            position: absolute;
+            left: 300px;
+            top: 320px;
+            text-align: center;
+
+        }
+        .dw6{
+            position: absolute;
+            left: 450px;
+            top: 320px;
+            text-align: center;
+        }
+        .dw7{
+            position: absolute;
+            left: 600px;
+            top: 320px;
+            text-align: center;
+        }
+        .dw8{
+            position: absolute;
+            left: 750px;
+            top: 320px;
+            text-align: center;
+        }
+        .dw9{
+            width: 198px;
+            height: 100px;
+            border-bottom: 1px dashed gray;
+            position: absolute;
+            right: 0px;
+            top: 130px;
+        }
+        .dw0{
+            width: 198px;
+            height: 100px;
+            border-bottom: 1px dashed gray;
+            position: absolute;
+            right: 0px;
+            top: 235px;
+        }
+        .dw10{
+            width: 198px;
+            height: 105px;
+            border-bottom: 1px dashed gray;
+            background-color: antiquewhite;
+            position: absolute;
+            right: 0px;
+            top: 335px;
+        }
+        .dw11{
+            width: 198px;
+            height: 105px;
+            border-bottom: 1px dashed gray;
+            background-color: khaki;
+            position: absolute;
+            right: 0px;
+            top: 435px;
+        }
+        .dw9a{
+            float: left;
+        }
+        .pl{
+            width: 1100px;
+            height: 500px;
+            margin-left: 150px;
+            position: relative;
+        }
+        .pl1{
+            width: 400px;
+            height: 30px;
+            float: left;
+            margin-left: 50px;
+            margin-top: 32px;
+            padding-top: 20px;
+        }
+        .pl2{
+            width: 170px;
+            height: 50px;
+            float: left;
+            margin-top: 32px;
+        }
+        .pl3{
+            width: 400px;
+            height: 30px;
+            float: left;
+            margin-top: 32px;
+            padding-top: 20px;
+        }
+        .plt{
+            margin-top: 8px;
+            float: left;
+        }
+        .plz{
+            margin-top: 5px;
+            float: left;
+        }
+        .pl4{
+            width: 330px;
+            height: 400px;
+            position: absolute;
+            left:30px;
+            top: 100px;
+            border-right: 1px solid gray;
+        }
+        .pl4a{
+            width: 329px;
+            height:100px;
+            border-bottom: 1px solid gray;
+
+        }
+        .pl4b{
+            width: 329px;
+            height:100px;
+            border-bottom: 1px solid gray;
+
+        }
+        .pl4c{
+            width: 329px;
+            height:100px;
+            border-bottom: 1px solid gray;
+
+        }
+        .pl4d{
+            width: 329px;
+            height:100px;
+            border-bottom: 1px solid gray;
+        }
+        .pl4aa{
+              display: block;
+              margin-top: -20px;
+              margin-left: 80px;
+          }
+        .plas{
+            margin-top: 20px;
+        }
+        .pl4aq{
+            margin-top: -75px;
+            margin-left: 55px;
+            display: block;
+        }
+        .pl4ab{
+            display: block;
+            margin-top: 0px;
+            margin-left: 80px;
+        }
+        .pl5{
+            width: 330px;
+            height: 400px;
+            position: absolute;
+            left:380px;
+            top: 100px;
+            border-right: 1px solid gray;
+        }
+        .pl6{
+            width: 330px;
+            height: 400px;
+            position: absolute;
+            left:730px;
+            top: 100px;
+
+        }
+        .dz{
+           width: 1100px;
+            height: 200px;
+            background-color: #b10505;
+            margin-top: 10px;
+            margin-left: 150px;
+            position: relative;
+            ;
+        }
+        .dza{
+            width: 240px;
+            height: 170px;
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            line-height: 30px;
+            color: aliceblue;
+            border-right: 1px solid aliceblue;
+        }
+        .za{
+            display: block;
+            margin-top: -40px;
+            margin-left: 40px;
+            font-size: 30px;
+        }
+        .zb{
+            display: block;
+            margin-left: 20px;
+            font-size: 15px;
+        }
+        .zc{
+            display: block;
+            margin-left: 40px;
+            font-size: 15px;
+        }
+        .zd{
+            font-size: 12px;
+        }
+        .dzb{
+            width: 560px;
+            height: 170px;
+            position: absolute;
+            top: 40px;
+            left: 280px;
+        }
+        .dzba{
+            margin-left: 90px;
+            position: relative;
+            color: aliceblue;
+        }
+        .dzbaa{
+            font-size: 15px;
+            width: 620px;
+            height: 30px;
+            margin: -40px 0px 0px -110px;
+            position: absolute;
+            text-decoration: underline;
+
+
+            
+        }
+        .ol li{
+            list-style: none;
+            float: left;
+            width: 115px;
+        }
+        .bzb1{
+            width: 110px;
+            height: 130px;
+            margin-top: 10px;
+            float: left;
+            margin-left: 2px;
+            line-height: 30px;
+            color: aliceblue;
+            text-align: center;
+        }
+        .dzc{
+            position: absolute;
+            right: 0px;
+            top: 35px;
+        }
+        .foot{
+            width: 1100px;
+            height: 100px;
+            margin-left: 150px;
+            border-bottom: 1px solid black;
+        }
+        .foota{
+            margin: 40px 80px;
+            width: 1000px;
+            height: 40px;
+        }
+        .foot1{
+            width: 100px;
+            height: 50px;
+            float: left;
+            margin-left: -20px;
+            text-align: center;
+        }
+        .foot1a{
+            font-size: 12px;
+        }
+        .foot2{
+            width: 100px;
+            height: 50px;
+            float: left;
+            margin-left: 23px;
+            text-align: center;
+        }
+        .dibu{
+            width: 1100px;
+            height: 300px;
+
+            margin-left: 150px;
+        }
+        .xw{
+            width: 1100px;
+            height: 50px;
+        }
+        .wz li{
+            list-style: none;
+            float: left;
+            border-right: 1px solid black;
+            padding-left: 10px;
+        }
+        .dba{
+            width: 100px;
+            height: 40px;
+            border: 1px solid black;
+            border-radius: 10%;
+            float: left;
+            margin-left: 150px;
+        }
+        .dbb{
+            width: 100px;
+            height: 40px;
+            border: 1px solid black;
+            border-radius: 10%;
+            float: left;
+            margin-left: 10px;
+        }
+        .dbaz{
+            display: block;
+            font-size: 12px;
+            margin: -35px 0px 0px 37px;
+        }
+        .dbat{
+            margin-top: 2px;
+            margin-left: 2px;
+        }
+        .dbc{
+            clear: left;
+            width: 100px;
+            height: 40px;
+            border: 1px solid black;
+            border-radius: 10%;
+            float: left;
+            margin-left: 200px;
+            margin-top: 5px;
+        }
+        .dbca{
+            width: 100px;
+            height: 40px;
+            border: 1px solid black;
+            border-radius: 10%;
+            float: left;
+            margin-left: 10px;
+            margin-top: 5px;
+        }
+        .dbac {
+            clear: left;
+           width: 750px;
+            height: 50px;
+           margin-left:200px;
+            margin-top: 150px;
+        }
+
+
+
+        .shu{
+            position: fixed;
+            top: 0px;
+            left: 22px;
+            z-index: 500;
+        }
+        .shu1{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 50px;
+        }
+        .shu2{
+            position: absolute;
+            top: 50px;
+            left: 5px;
+        }
+        .shu4{
+            position: absolute;
+            top: 60px;
+            left: -35px;
+            width: 70px;
+        }
+        .shu3 li{
+            list-style: none;
+            font-size: 12px;
+            height: 85px;
+        }
+    </style>
+</head>
+<body>
+<div class="shu">
+    <div class="shu1"><img src="left.png" alt="" width="38" height="586"/></div>
+    <div class="shu2"><img src="left-01.png" alt=""/></div>
+    <div class="shu4">
+        <ul class="shu3">
+            <li>正品保障</li>
+            <li>厂家直供</li>
+            <li>闪电送达</li>
+            <li>7天<br>退换</li>
+            <li>售后无忧</li>
+        </ul>
+    </div>
+</div>
+<div class="zhengti">
+
+    <div class="toubu">
+        <div class="tishi">
+
+            <font size="2">天逸国际温馨提示您！收藏天逸国际祝您走上致富之路。</font>
+        </div>
+        <div class="daohang">
+            <img src="img/daohang.png" alt=""/>
+        </div>
+        <div class="dintu">
+            <img src="img/zl.png" alt="这是一个图片" width="1300" height="60"/>
+        </div>
+        <div class="sousuo">
+            <div class="logo">
+                <img src="img/logo.png" alt=""/>
+            </div>
+            <div class="ma">
+                <img src="ma.png" alt="" />
+             </div>
+            <div class="input">
+                <div class="a"> <font size="1"> 亲，欢迎来到天逸商城，祝您购物愉快!</font></div>
+                <div class="b"><img src="lxwm.png" alt="" width="300" height="20"/></div>
+                <div class="c"> <font size="2">热门搜索：裙子|iphone s6|厨房用具|年货</font><br>
+
+                    <input type="text" style="width: 300px;height: 30px">
+                    <input type="button" value="搜索" style="height: 35px;width: 80px;background-color: peru">
+                </div>
+            </div>
+            <div class="swt">
+
+                    <div>
+                        <table  class="d"><tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td ><font size="1">全网比价</font></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><font size="1">分销商城</font></td>
+                                <td></td>
+                                <td><font size="1">视频报道</font></td>
+                                <td></td>
+                                <td><font size="1">手机商城</font></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><font size="1">火热团购</font></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr></span>
+                        </table>
+                    </div>
+                </div>
+
+        </div>
+        <div class="dh">
+            <ul class="li">
+                <li>首页</li>
+                <li>服装鞋帽</li>
+                <li>礼品箱包</li>
+                <li>个护化妆</li>
+                <li>3c数码</li>
+                <li>家具厨具</li>
+                <li>母婴玩具</li>
+                <li>食品酒饮</li>
+                <li>科普图书</li>
+            </ul>
+           <div class="qi"> <img src="xp.png" alt="" />
+               <div class="qz">游戏|充值 &nbsp;&nbsp;酒店|火车&nbsp; 汽车|飞机</div>
+           </div>
+
+
+        </div>
+        <div>
+            <img src="bj.jpg" alt="" width="1300" height="450"/>
+        </div>
+
+
+        </div>
+    <div class="zt">
+    <div class="wan">
+        <img src="ban.jpg" alt="" width="1100"/>
+    </div>
+    <div class="pp">
+        <div class="ppa">
+            <img src="hot-01.png"  class="ppt" alt=""/>
+            <span class="ppz">热门品牌</span>
+        </div>
+        <div class="ppa">
+            <img src="11.png" class="ppt" alt=""/>
+            <span class="ppz">服装鞋帽</span>
+        </div>
+        <div class="ppa">
+            <img src="22.png"  class="ppt"  alt=""/>
+            <span class="ppy">个护化妆</span>
+        </div>
+        <div class="ppa">
+            <img src="33.png"  class="ppt"  alt=""/>
+            <span class="ppz">热礼品箱包</span>
+        </div>
+        <div class="ppa">
+            <img src="44.png"   class="ppt" alt=""/>
+            <span class="ppz">3C数码</span>
+        </div>
+        <div  class="ppb">
+
+        </div>
+    </div>
+    <div >
+        <div class="meizi">
+            <table class="m" >
+            <tr class="td">
+                <td><a href="#"><img src="201.png" alt=""/>搭讪高富帅利器<img src="hot-02.png" alt=""/></a></td>
+                <td><a href="#"><img src="202.png" alt=""/>把妹泡妞神装<img src="hot-02.png" alt=""/></a></td>
+                <td><a href="#"><img src="203.png" alt=""/>女人粉嫩必备<img src="hot-02.png" alt=""/></a></td>
+                <td><a href="#"><img src="205.png" alt=""/>潮流数码达人<img src="hot-02.png" alt=""/></a></td>
+                <td><a href="#"><img src="207.png" alt=""/>男包女包包包<img src="hot-02.png" alt=""/></a></td>
+            </tr>
+            </table>
+        </div>
+        <div>
+            <div class="mza"><img src="454.png" alt="" width="200" height="300"/></div>
+            <div class="mzb">
+              <table>
+                <tr><td><font size="5" >街头美拍，<br/>经典意外展现</font> </td></tr>
+                  <tr><td height="130" ><div class="yuan"><font size="5">已售<br/><span class="ys">1999件</span></font> </div> </td></tr>
+                  <tr><td height="50"><font size="5">高端大气上档次，让腐女摇身一变成女神，男人的宠儿！</font> </td></tr>
+                  <tr><td>&nbsp;&nbsp;&nbsp;<input type="button" value="立即购买"></td></tr>
+              </table>
+            </div>
+            <div class="mzc">
+                <table>
+                    <tr>
+                        <td><img src="28.jpg" alt="" width="200" height="220"/><br>
+                        <div><font size="2">衣品韩风最新上架，双排扣女外套</font></div>
+                            <div  class="s1">
+                                <table>
+                                    <tr>
+                                        <td><font size="10">5折|</font></td>
+                                        <td><span class="jz">原价229</span><br><font size="6" class="p">¥199</font></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                        <td><img src="28.jpg" alt="" title="衣品韩风最新上架，双排扣女外套" width="200" height="220"/><br>
+                            <div><font size="2">衣品韩风最新上架，双排扣女外套</font></div>
+                            <div class="s1">
+                                <table>
+                                    <tr>
+                                        <td><font size="10">5折|</font></td>
+                                        <td><span class="jz">原价229</span><br><font size="6" class="p">¥199</font></td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                        </td>
+                        <td><img src="28.jpg" alt=""width="200" height="220"/><br>
+                            <div><font size="2">衣品韩风最新上架，双排扣女外套</font></div>
+                            <div  class="s1">
+                                <table>
+                                    <tr>
+                                        <td><font size="10">5折|</font></td>
+                                        <td><span class="jz">原价229</span><br><font size="6" class="p">¥199</font></td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="28.jpg" alt="" width="200" height="220"/><br>
+                            <div><font size="2">衣品韩风最新上架，双排扣女外套</font></div>
+                            <div class="s1">
+                                <table>
+                                    <tr>
+                                        <td><font size="10">5折|</font></td>
+                                        <td><span class="jz">原价229</span><br><font size="6" class="p">¥199</font></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                        <td><img src="28.jpg" alt="" width="200" height="220"/><br>
+                        <div><font size="2">衣品韩风最新上架，双排扣女外套</font></div>
+                            <div  class="s1">
+                                <table>
+                                    <tr>
+                                        <td><font size="10">5折|</font></td>
+                                        <td><span class="jz">原价229</span><br><font size="6" class="p">¥199</font></td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                        </td>
+                        <td><img src="28.jpg" alt="" width="200" height="220"/><br>
+                            <div><font size="2">衣品韩风最新上架，双排扣女外套</font></div>
+                            <div class="s1">
+                                <table>
+                                    <tr>
+                                        <td><font size="10">5折|</font></td>
+                                        <td><span class="jz">原价229</span><br><font size="6" class="p">¥199</font></td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="mzd">
+                <img src="454.png" alt="" width="200" height="300"/>
+            </div>
+            <div class="mzb">
+                <table>
+                    <tr><td><font size="5" >街头美拍，<br/>经典意外展现</font> </td></tr>
+                    <tr><td height="130" ><div class="yuan"><font size="5">已售<br/><span class="ys">1999件</span></font> </div> </td></tr>
+                    <tr><td height="50"><font size="5">高端大气上档次，让腐女摇身一变成女神，男人的宠儿！</font> </td></tr>
+                    <tr><td>&nbsp;&nbsp;&nbsp;<input type="button" value="立即购买"></td></tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</div>
+    <div class="kele">
+       <div >
+           <img src="ban-01.jpg" alt="" width="1100"/>
+       </div>
+        <div class="qg">
+            <div class="xs">
+            <img src="colck.png" alt="" class="tt"/><font size="5">限时抢购</font>
+            </div>
+            <div class="kq">
+                <span class="p">9时</span>开抢
+
+            </div>
+            <div class="sj">
+                剩余时间
+            </div>
+            <div class="sj1">24</div>
+            <div class="sj2">:</div>
+            <div class="sj1">22</div>
+            <div class="sj2">:</div>
+            <div class="sj1">15</div>
+            <div class="sj3">今日抢购</div>
+            <div class="sj4">明日预告 </div>
+        </div>
+        <div class="qg1">
+            新款韩版磨砂牛皮抽绳水桶包<br>
+            <img src="5.png" alt="" width="214" height="180"/>
+        </div>
+        <div class="qg2">
+            <img src="32.png" alt="" width="600" height="200"/>
+        </div>
+        <div class="qg3">
+            新款韩版磨砂牛皮抽绳水桶包<br>
+            <img src="8.png" alt=""  width="214" height="180"/>
+        </div>
+        <div class="qg4">
+            <div class="qg7"><br>
+                <font size="1">商场价：199</font>
+            </div>
+            <div class="qg8">
+                <div class="qg0">
+                    明日<br>开抢
+                </div>
+            </div>
+            <div class="qg9"><br>
+                秒杀价：<font class="p" size="5">109</font>
+            </div>
+        </div>
+        <div class="qg5"> <div class="qg7"><br>
+            <font size="1">商场价：199</font>
+        </div>
+            <div class="qg8">
+                <div class="qg0">
+                    明日<br>开抢
+                </div>
+            </div>
+            <div class="qg9"><br>
+                秒杀价：<font class="p" size="5">109</font>
+            </div></div>
+        <div class="qg1">新款韩版磨砂牛皮抽绳水桶包<br>
+            <img src="8.png" alt=""  width="214" height="180"/></div>
+        <div class="qg6">新款韩版磨砂牛皮抽绳水桶包<br>
+            <img src="8.png" alt=""  width="214" height="180"/></div>
+        <div class="qg1">新款韩版磨砂牛皮抽绳水桶包<br>
+            <img src="8.png" alt=""  width="214" height="180"/></div>
+        <div class="qg6">新款韩版磨砂牛皮抽绳水桶包<br>
+            <img src="8.png" alt=""  width="214" height="180"/></div>
+        <div class="qg1">新款韩版磨砂牛皮抽绳水桶包<br>
+            <img src="8.png" alt=""  width="214" height="180"/></div>
+        <div class="qg4"> <div class="qg7"><br>
+            <font size="1">商场价：199</font>
+        </div>
+            <div class="qg8">
+                <div class="qg0">
+                    明日<br>开抢
+                </div>
+            </div>
+            <div class="qg9"><br>
+                秒杀价：<font class="p" size="5">109</font>
+            </div></div>
+        <div class="qg4"> <div class="qg7"><br>
+            <font size="1">商场价：199</font>
+        </div>
+            <div class="qg8">
+                <div class="qg0">
+                    明日<br>开抢
+                </div>
+            </div>
+            <div class="qg9"><br>
+                秒杀价：<font class="p" size="5">109</font>
+            </div></div>
+        <div class="qg4"> <div class="qg7"><br>
+            <font size="1">商场价：199</font>
+        </div>
+            <div class="qg8">
+                <div class="qg0">
+                    明日<br>开抢
+                </div>
+            </div>
+            <div class="qg9"><br>
+                秒杀价：<font class="p" size="5">109</font>
+            </div></div>
+        <div class="qg4"> <div class="qg7"><br>
+            <font size="1">商场价：199</font>
+        </div>
+            <div class="qg8">
+                <div class="qg0">
+                    明日<br>开抢
+                </div>
+            </div>
+            <div class="qg9"><br>
+                秒杀价：<font class="p" size="5">109</font>
+            </div></div>
+        <div class="qg4"> <div class="qg7"><br>
+            <font size="1">商场价：199</font>
+        </div>
+            <div class="qg8">
+                <div class="qg0">
+                    明日<br>开抢
+                </div>
+            </div>
+            <div class="qg9"><br>
+                秒杀价：<font class="p" size="5">109</font>
+            </div></div>
+    </div>
+    <div class="qc">
+        <div>
+            <img src="1f.png" alt=""  width="1100"/>
+        </div>
+          <div class="mv">
+              <img src="1231.png" alt=""  height="500"/>
+          </div>
+        <div class="rm">
+            <ul class="li">
+                <li>热门搜索：</li>
+                <li>达芙妮</li>
+                <li>only</li>
+                <li>韩都衣舍</li>
+                <li>凡花</li>
+            </ul>
+        </div>
+        <div class="gd">
+            查看更多品牌》
+        </div>
+        <div class="dw1">
+            <img src="567.png" alt="" width="400" height="210"/>
+
+        </div>
+        <div class="dw2">
+            <img src="568.png" alt="" width="200" height="100"/>
+        </div>
+        <div class="dw3">
+            <img src="569.png" alt="" width="200" height="100"/>
+        </div>
+        <div class="dw4">
+           <font size="5">
+               人气排行
+           </font>
+        </div>
+        <div class="dw5">
+            <img src="1123.png" alt="" width="149" height="160"/><br>
+            安东尼的问候<br>
+            亚克力装饰连衣裙<br>
+            <font size="5">
+                ¥199.00
+            </font>
+
+        </div>
+        <div class="dw6">
+            <img src="456105.png" alt="" width="149" height="160"/><br>
+            安东尼的问候<br>
+            亚克力装饰连衣裙<br>
+            <font size="5">
+                ¥199.00
+            </font>
+        </div>
+        <div class="dw7">
+            <img src="1123.png" alt="" width="149" height="160"/><br>
+            安东尼的问候<br>
+            亚克力装饰连衣裙<br>
+            <font size="5">
+                ¥199.00
+            </font>
+        </div>
+        <div class="dw8">
+            <img src="456105.png" alt="" width="149" height="160"/><br>
+            安东尼的问候<br>
+            亚克力装饰连衣裙<br>
+            <font size="5">
+                ¥199.00
+            </font>
+        </div>
+        <div class="dw9">
+            <div class="dw9a">
+                <img src="1234.png" alt="" width="90" height="100"/>
+            </div>
+            <div class="dw9a">
+                <font size="1">安东尼的问候<br>
+                    亚克力装饰连衣裙<br></font>
+               <p><font size="5" class="p">
+                    ¥599.00
+                </font></p>
+            </div>
+        </div>
+        <div class="dw0">
+            <div class="dw9a">
+                <img src="1234.png" alt="" width="90" height="100"/>
+            </div>
+            <div class="dw9a">
+                <font size="1">安东尼的问候<br>
+                    亚克力装饰连衣裙<br></font>
+                <p><font size="5" class="p">
+                    ¥599.00
+                </font></p>
+            </div>
+        </div>
+        <div class="dw10">
+            <div class="dw9a">
+                <img src="856.png" alt="" width="90" height="100"/>
+            </div>
+            <div class="dw9a">
+                <font size="1">安东尼的问候<br>
+                    亚克力装饰连衣裙<br></font>
+                <p><font size="5" class="p">
+                    ¥599.00
+                </font></p>
+            </div>
+        </div>
+        <div class="dw11">
+            <div class="dw9a">
+                <img src="864.png" alt="" width="90" height="100"/>
+            </div>
+            <div class="dw9a">
+                <font size="1">安东尼的问候<br>
+                    亚克力装饰连衣裙<br></font>
+                <p><font size="5" class="p">
+                    ¥599.00
+                </font></p>
+            </div>
+        </div>
+    </div>
+    <div class="qc">
+        <div>
+            <img src="2f.png" alt=""  width="1100"/>
+        </div>
+        <div class="mv">
+            <img src="894.png" alt=""  height="500"/>
+        </div>
+        <div class="rm">
+            <ul class="li">
+                <li>热门搜索：</li>
+                <li>达芙妮</li>
+                <li>only</li>
+                <li>韩都衣舍</li>
+                <li>凡花</li>
+            </ul>
+        </div>
+        <div class="gd">
+            查看更多品牌》
+        </div>
+        <div class="dw1">
+            <img src="654.png" alt="" width="400" height="210"/>
+
+        </div>
+        <div class="dw2">
+            <img src="568.png" alt="" width="200" height="100"/>
+        </div>
+        <div class="dw3">
+            <img src="569.png" alt="" width="200" height="100"/>
+        </div>
+        <div class="dw4">
+            <font size="5">
+                人气排行
+            </font>
+        </div>
+        <div class="dw5">
+            <img src="98.png" alt="" width="149" height="160"/><br>
+            安东尼的问候<br>
+            亚克力装饰连衣裙<br>
+            <font size="5">
+                ¥199.00
+            </font>
+
+        </div>
+        <div class="dw6">
+            <img src="95.png" alt="" width="149" height="160"/><br>
+            安东尼的问候<br>
+            亚克力装饰连衣裙<br>
+            <font size="5">
+                ¥199.00
+            </font>
+        </div>
+        <div class="dw7">
+            <img src="96.png" alt="" width="149" height="160"/><br>
+            安东尼的问候<br>
+            亚克力装饰连衣裙<br>
+            <font size="5">
+                ¥199.00
+            </font>
+        </div>
+        <div class="dw8">
+            <img src="97.png" alt="" width="149" height="160"/><br>
+            安东尼的问候<br>
+            亚克力装饰连衣裙<br>
+            <font size="5">
+                ¥199.00
+            </font>
+        </div>
+        <div class="dw9">
+            <div class="dw9a">
+                <img src="754.png" alt="" width="90" height="100"/>
+            </div>
+            <div class="dw9a">
+                <font size="1">安东尼的问候<br>
+                    亚克力装饰连衣裙<br></font>
+                <p><font size="5" class="p">
+                    ¥599.00
+                </font></p>
+            </div>
+        </div>
+        <div class="dw0">
+            <div class="dw9a">
+                <img src="1234.png" alt="" width="90" height="100"/>
+            </div>
+            <div class="dw9a">
+                <font size="1">安东尼的问候<br>
+                    亚克力装饰连衣裙<br></font>
+                <p><font size="5" class="p">
+                    ¥599.00
+                </font></p>
+            </div>
+        </div>
+        <div class="dw10">
+            <div class="dw9a">
+                <img src="856.png" alt="" width="90" height="100"/>
+            </div>
+            <div class="dw9a">
+                <font size="1">安东尼的问候<br>
+                    亚克力装饰连衣裙<br></font>
+                <p><font size="5" class="p">
+                    ¥599.00
+                </font></p>
+            </div>
+        </div>
+        <div class="dw11">
+            <div class="dw9a">
+                <img src="864.png" alt="" width="90" height="100"/>
+            </div>
+            <div class="dw9a">
+                <font size="1">安东尼的问候<br>
+                    亚克力装饰连衣裙<br></font>
+                <p><font size="5" class="p">
+                    ¥599.00
+                </font></p>
+            </div>
+        </div>
+    </div>
+    <div class="qc">
+        <div>
+            <img src="3f.png" alt=""  width="1100"/>
+        </div>
+        <div class="mv">
+            <img src="1231.png" alt=""  height="500"/>
+        </div>
+        <div class="rm">
+            <ul class="li">
+                <li>热门搜索：</li>
+                <li>达芙妮</li>
+                <li>only</li>
+                <li>韩都衣舍</li>
+                <li>凡花</li>
+            </ul>
+        </div>
+        <div class="gd">
+            查看更多品牌》
+        </div>
+        <div class="dw1">
+            <img src="567.png" alt="" width="400" height="210"/>
+
+        </div>
+        <div class="dw2">
+            <img src="568.png" alt="" width="200" height="100"/>
+        </div>
+        <div class="dw3">
+            <img src="569.png" alt="" width="200" height="100"/>
+        </div>
+        <div class="dw4">
+            <font size="5">
+                人气排行
+            </font>
+        </div>
+        <div class="dw5">
+            <img src="1123.png" alt="" width="149" height="160"/><br>
+            安东尼的问候<br>
+            亚克力装饰连衣裙<br>
+            <font size="5">
+                ¥199.00
+            </font>
+
+        </div>
+        <div class="dw6">
+            <img src="456105.png" alt="" width="149" height="160"/><br>
+            安东尼的问候<br>
+            亚克力装饰连衣裙<br>
+            <font size="5">
+                ¥199.00
+            </font>
+        </div>
+        <div class="dw7">
+            <img src="1123.png" alt="" width="149" height="160"/><br>
+            安东尼的问候<br>
+            亚克力装饰连衣裙<br>
+            <font size="5">
+                ¥199.00
+            </font>
+        </div>
+        <div class="dw8">
+            <img src="456105.png" alt="" width="149" height="160"/><br>
+            安东尼的问候<br>
+            亚克力装饰连衣裙<br>
+            <font size="5">
+                ¥199.00
+            </font>
+        </div>
+        <div class="dw9">
+            <div class="dw9a">
+                <img src="1234.png" alt="" width="90" height="100"/>
+            </div>
+            <div class="dw9a">
+                <font size="1">安东尼的问候<br>
+                    亚克力装饰连衣裙<br></font>
+                <p><font size="5" class="p">
+                    ¥599.00
+                </font></p>
+            </div>
+        </div>
+        <div class="dw0">
+            <div class="dw9a">
+                <img src="1234.png" alt="" width="90" height="100"/>
+            </div>
+            <div class="dw9a">
+                <font size="1">安东尼的问候<br>
+                    亚克力装饰连衣裙<br></font>
+                <p><font size="5" class="p">
+                    ¥599.00
+                </font></p>
+            </div>
+        </div>
+        <div class="dw10">
+            <div class="dw9a">
+                <img src="856.png" alt="" width="90" height="100"/>
+            </div>
+            <div class="dw9a">
+                <font size="1">安东尼的问候<br>
+                    亚克力装饰连衣裙<br></font>
+                <p><font size="5" class="p">
+                    ¥599.00
+                </font></p>
+            </div>
+        </div>
+        <div class="dw11">
+            <div class="dw9a">
+                <img src="864.png" alt="" width="90" height="100"/>
+            </div>
+            <div class="dw9a">
+                <font size="1">安东尼的问候<br>
+                    亚克力装饰连衣裙<br></font>
+                <p><font size="5" class="p">
+                    ¥599.00
+                </font></p>
+            </div>
+        </div>
+    </div>
+    <div class="qc">
+        <div>
+            <img src="4f.png" alt=""  width="1100"/>
+        </div>
+        <div class="mv">
+            <img src="894.png" alt=""  height="500"/>
+        </div>
+        <div class="rm">
+            <ul class="li">
+                <li>热门搜索：</li>
+                <li>达芙妮</li>
+                <li>only</li>
+                <li>韩都衣舍</li>
+                <li>凡花</li>
+            </ul>
+        </div>
+        <div class="gd">
+            查看更多品牌》
+        </div>
+        <div class="dw1">
+            <img src="654.png" alt="" width="400" height="210"/>
+
+        </div>
+        <div class="dw2">
+            <img src="568.png" alt="" width="200" height="100"/>
+        </div>
+        <div class="dw3">
+            <img src="569.png" alt="" width="200" height="100"/>
+        </div>
+        <div class="dw4">
+            <font size="5">
+                人气排行
+            </font>
+        </div>
+        <div class="dw5">
+            <img src="98.png" alt="" width="149" height="160"/><br>
+            安东尼的问候<br>
+            亚克力装饰连衣裙<br>
+            <font size="5">
+                ¥199.00
+            </font>
+
+        </div>
+        <div class="dw6">
+            <img src="95.png" alt="" width="149" height="160"/><br>
+            安东尼的问候<br>
+            亚克力装饰连衣裙<br>
+            <font size="5">
+                ¥199.00
+            </font>
+        </div>
+        <div class="dw7">
+            <img src="96.png" alt="" width="149" height="160"/><br>
+            安东尼的问候<br>
+            亚克力装饰连衣裙<br>
+            <font size="5">
+                ¥199.00
+            </font>
+        </div>
+        <div class="dw8">
+            <img src="97.png" alt="" width="149" height="160"/><br>
+            安东尼的问候<br>
+            亚克力装饰连衣裙<br>
+            <font size="5">
+                ¥199.00
+            </font>
+        </div>
+        <div class="dw9">
+            <div class="dw9a">
+                <img src="754.png" alt="" width="90" height="100"/>
+            </div>
+            <div class="dw9a">
+                <font size="1">安东尼的问候<br>
+                    亚克力装饰连衣裙<br></font>
+                <p><font size="5" class="p">
+                    ¥599.00
+                </font></p>
+            </div>
+        </div>
+        <div class="dw0">
+            <div class="dw9a">
+                <img src="1234.png" alt="" width="90" height="100"/>
+            </div>
+            <div class="dw9a">
+                <font size="1">安东尼的问候<br>
+                    亚克力装饰连衣裙<br></font>
+                <p><font size="5" class="p">
+                    ¥599.00
+                </font></p>
+            </div>
+        </div>
+        <div class="dw10">
+            <div class="dw9a">
+                <img src="856.png" alt="" width="90" height="100"/>
+            </div>
+            <div class="dw9a">
+                <font size="1">安东尼的问候<br>
+                    亚克力装饰连衣裙<br></font>
+                <p><font size="5" class="p">
+                    ¥599.00
+                </font></p>
+            </div>
+        </div>
+        <div class="dw11">
+            <div class="dw9a">
+                <img src="864.png" alt="" width="90" height="100"/>
+            </div>
+            <div class="dw9a">
+                <font size="1">安东尼的问候<br>
+                    亚克力装饰连衣裙<br></font>
+                <p><font size="5" class="p">
+                    ¥599.00
+                </font></p>
+            </div>
+        </div>
+    </div>
+    <div class="qc">
+        <div>
+            <img src="5f.png" alt=""  width="1100"/>
+        </div>
+        <div class="mv">
+            <img src="1231.png" alt=""  height="500"/>
+        </div>
+        <div class="rm">
+            <ul class="li">
+                <li>热门搜索：</li>
+                <li>达芙妮</li>
+                <li>only</li>
+                <li>韩都衣舍</li>
+                <li>凡花</li>
+            </ul>
+        </div>
+        <div class="gd">
+            查看更多品牌》
+        </div>
+        <div class="dw1">
+            <img src="567.png" alt="" width="400" height="210"/>
+
+        </div>
+        <div class="dw2">
+            <img src="568.png" alt="" width="200" height="100"/>
+        </div>
+        <div class="dw3">
+            <img src="569.png" alt="" width="200" height="100"/>
+        </div>
+        <div class="dw4">
+            <font size="5">
+                人气排行
+            </font>
+        </div>
+        <div class="dw5">
+            <img src="1123.png" alt="" width="149" height="160"/><br>
+            安东尼的问候<br>
+            亚克力装饰连衣裙<br>
+            <font size="5">
+                ¥199.00
+            </font>
+
+        </div>
+        <div class="dw6">
+            <img src="456105.png" alt="" width="149" height="160"/><br>
+            安东尼的问候<br>
+            亚克力装饰连衣裙<br>
+            <font size="5">
+                ¥199.00
+            </font>
+        </div>
+        <div class="dw7">
+            <img src="1123.png" alt="" width="149" height="160"/><br>
+            安东尼的问候<br>
+            亚克力装饰连衣裙<br>
+            <font size="5">
+                ¥199.00
+            </font>
+        </div>
+        <div class="dw8">
+            <img src="456105.png" alt="" width="149" height="160"/><br>
+            安东尼的问候<br>
+            亚克力装饰连衣裙<br>
+            <font size="5">
+                ¥199.00
+            </font>
+        </div>
+        <div class="dw9">
+            <div class="dw9a">
+                <img src="1234.png" alt="" width="90" height="100"/>
+            </div>
+            <div class="dw9a">
+                <font size="1">安东尼的问候<br>
+                    亚克力装饰连衣裙<br></font>
+                <p><font size="5" class="p">
+                    ¥599.00
+                </font></p>
+            </div>
+        </div>
+        <div class="dw0">
+            <div class="dw9a">
+                <img src="1234.png" alt="" width="90" height="100"/>
+            </div>
+            <div class="dw9a">
+                <font size="1">安东尼的问候<br>
+                    亚克力装饰连衣裙<br></font>
+                <p><font size="5" class="p">
+                    ¥599.00
+                </font></p>
+            </div>
+        </div>
+        <div class="dw10">
+            <div class="dw9a">
+                <img src="856.png" alt="" width="90" height="100"/>
+            </div>
+            <div class="dw9a">
+                <font size="1">安东尼的问候<br>
+                    亚克力装饰连衣裙<br></font>
+                <p><font size="5" class="p">
+                    ¥599.00
+                </font></p>
+            </div>
+        </div>
+        <div class="dw11">
+            <div class="dw9a">
+                <img src="864.png" alt="" width="90" height="100"/>
+            </div>
+            <div class="dw9a">
+                <font size="1">安东尼的问候<br>
+                    亚克力装饰连衣裙<br></font>
+                <p><font size="5" class="p">
+                    ¥599.00
+                </font></p>
+            </div>
+        </div>
+    </div>
+    <div class="qc">
+        <div>
+            <img src="6f.png" alt=""  width="1100"/>
+        </div>
+        <div class="mv">
+            <img src="894.png" alt=""  height="500"/>
+        </div>
+        <div class="rm">
+            <ul class="li">
+                <li>热门搜索：</li>
+                <li>达芙妮</li>
+                <li>only</li>
+                <li>韩都衣舍</li>
+                <li>凡花</li>
+            </ul>
+        </div>
+        <div class="gd">
+            查看更多品牌》
+        </div>
+        <div class="dw1">
+            <img src="654.png" alt="" width="400" height="210"/>
+
+        </div>
+        <div class="dw2">
+            <img src="568.png" alt="" width="200" height="100"/>
+        </div>
+        <div class="dw3">
+            <img src="569.png" alt="" width="200" height="100"/>
+        </div>
+        <div class="dw4">
+            <font size="5">
+                人气排行
+            </font>
+        </div>
+        <div class="dw5">
+            <img src="98.png" alt="" width="149" height="160"/><br>
+            安东尼的问候<br>
+            亚克力装饰连衣裙<br>
+            <font size="5">
+                ¥199.00
+            </font>
+
+        </div>
+        <div class="dw6">
+            <img src="95.png" alt="" width="149" height="160"/><br>
+            安东尼的问候<br>
+            亚克力装饰连衣裙<br>
+            <font size="5">
+                ¥199.00
+            </font>
+        </div>
+        <div class="dw7">
+            <img src="96.png" alt="" width="149" height="160"/><br>
+            安东尼的问候<br>
+            亚克力装饰连衣裙<br>
+            <font size="5">
+                ¥199.00
+            </font>
+        </div>
+        <div class="dw8">
+            <img src="97.png" alt="" width="149" height="160"/><br>
+            安东尼的问候<br>
+            亚克力装饰连衣裙<br>
+            <font size="5">
+                ¥199.00
+            </font>
+        </div>
+        <div class="dw9">
+            <div class="dw9a">
+                <img src="754.png" alt="" width="90" height="100"/>
+            </div>
+            <div class="dw9a">
+                <font size="1">安东尼的问候<br>
+                    亚克力装饰连衣裙<br></font>
+                <p><font size="5" class="p">
+                    ¥599.00
+                </font></p>
+            </div>
+        </div>
+        <div class="dw0">
+            <div class="dw9a">
+                <img src="1234.png" alt="" width="90" height="100"/>
+            </div>
+            <div class="dw9a">
+                <font size="1">安东尼的问候<br>
+                    亚克力装饰连衣裙<br></font>
+                <p><font size="5" class="p">
+                    ¥599.00
+                </font></p>
+            </div>
+        </div>
+        <div class="dw10">
+            <div class="dw9a">
+                <img src="856.png" alt="" width="90" height="100"/>
+            </div>
+            <div class="dw9a">
+                <font size="1">安东尼的问候<br>
+                    亚克力装饰连衣裙<br></font>
+                <p><font size="5" class="p">
+                    ¥599.00
+                </font></p>
+            </div>
+        </div>
+        <div class="dw11">
+            <div class="dw9a">
+                <img src="864.png" alt="" width="90" height="100"/>
+            </div>
+            <div class="dw9a">
+                <font size="1">安东尼的问候<br>
+                    亚克力装饰连衣裙<br></font>
+                <p><font size="5" class="p">
+                    ¥599.00
+                </font></p>
+            </div>
+        </div>
+    </div>
+    <div class="qc">
+        <div>
+            <img src="7f.png" alt=""  width="1100"/>
+        </div>
+        <div class="mv">
+            <img src="1231.png" alt=""  height="500"/>
+        </div>
+        <div class="rm">
+            <ul class="li">
+                <li>热门搜索：</li>
+                <li>达芙妮</li>
+                <li>only</li>
+                <li>韩都衣舍</li>
+                <li>凡花</li>
+            </ul>
+        </div>
+        <div class="gd">
+            查看更多品牌》
+        </div>
+        <div class="dw1">
+            <img src="567.png" alt="" width="400" height="210"/>
+
+        </div>
+        <div class="dw2">
+            <img src="568.png" alt="" width="200" height="100"/>
+        </div>
+        <div class="dw3">
+            <img src="569.png" alt="" width="200" height="100"/>
+        </div>
+        <div class="dw4">
+            <font size="5">
+                人气排行
+            </font>
+        </div>
+        <div class="dw5">
+            <img src="1123.png" alt="" width="149" height="160"/><br>
+            安东尼的问候<br>
+            亚克力装饰连衣裙<br>
+            <font size="5">
+                ¥199.00
+            </font>
+
+        </div>
+        <div class="dw6">
+            <img src="456105.png" alt="" width="149" height="160"/><br>
+            安东尼的问候<br>
+            亚克力装饰连衣裙<br>
+            <font size="5">
+                ¥199.00
+            </font>
+        </div>
+        <div class="dw7">
+            <img src="1123.png" alt="" width="149" height="160"/><br>
+            安东尼的问候<br>
+            亚克力装饰连衣裙<br>
+            <font size="5">
+                ¥199.00
+            </font>
+        </div>
+        <div class="dw8">
+            <img src="456105.png" alt="" width="149" height="160"/><br>
+            安东尼的问候<br>
+            亚克力装饰连衣裙<br>
+            <font size="5">
+                ¥199.00
+            </font>
+        </div>
+        <div class="dw9">
+            <div class="dw9a">
+                <img src="1234.png" alt="" width="90" height="100"/>
+            </div>
+            <div class="dw9a">
+                <font size="1">安东尼的问候<br>
+                    亚克力装饰连衣裙<br></font>
+                <p><font size="5" class="p">
+                    ¥599.00
+                </font></p>
+            </div>
+        </div>
+        <div class="dw0">
+            <div class="dw9a">
+                <img src="1234.png" alt="" width="90" height="100"/>
+            </div>
+            <div class="dw9a">
+                <font size="1">安东尼的问候<br>
+                    亚克力装饰连衣裙<br></font>
+                <p><font size="5" class="p">
+                    ¥599.00
+                </font></p>
+            </div>
+        </div>
+        <div class="dw10">
+            <div class="dw9a">
+                <img src="856.png" alt="" width="90" height="100"/>
+            </div>
+            <div class="dw9a">
+                <font size="1">安东尼的问候<br>
+                    亚克力装饰连衣裙<br></font>
+                <p><font size="5" class="p">
+                    ¥599.00
+                </font></p>
+            </div>
+        </div>
+        <div class="dw11">
+            <div class="dw9a">
+                <img src="864.png" alt="" width="90" height="100"/>
+            </div>
+            <div class="dw9a">
+                <font size="1">安东尼的问候<br>
+                    亚克力装饰连衣裙<br></font>
+                <p><font size="5" class="p">
+                    ¥599.00
+                </font></p>
+            </div>
+        </div>
+    </div>
+    <div class="pl">
+        <div class="pl1">
+            <hr/>
+        </div>
+        <div class="pl2">
+            <div class="plt">
+                <img src="651.png" alt="" />
+            </div>
+            <div class="plz">
+                <font size="6">热门评论</font>
+            </div>
+        </div>
+        <div class="pl3">
+            <hr/></div>
+        <div class="pl4">
+            <div class="pl4a">
+                <img  class="plas" src="15.png" alt=""/>
+                <img  class="pl4aq" src="981.png" alt=""/>
+               <span class="pl4aa"><font size="4"><b>2016冬季新款时尚侧拉链女坡跟靴</b></font></span>
+               <span class="pl4ab">忘记评论了很好的宝贝，尤其是里面的毛很舒服</span>
+            </div>
+            <div class="pl4b">
+                <img  class="plas" src="16.png" alt=""/>
+                <img  class="pl4aq" src="981.png" alt=""/>
+                <span class="pl4aa"><font size="4"><b>2016冬季新款时尚侧拉链女坡跟靴</b></font></span>
+                <span class="pl4ab">忘记评论了很好的宝贝，尤其是里面的毛很舒服</span>
+            </div>
+            <div class="pl4c">
+                <img  class="plas" src="16.png" alt=""/>
+                <img  class="pl4aq" src="981.png" alt=""/>
+                <span class="pl4aa"><font size="4"><b>2016冬季新款时尚侧拉链女坡跟靴</b></font></span>
+                <span class="pl4ab">忘记评论了很好的宝贝，尤其是里面的毛很舒服</span>
+            </div>
+            <div class="pl4d">
+                <img  class="plas" src="16.png" alt=""/>
+                <img  class="pl4aq" src="981.png" alt=""/>
+                <span class="pl4aa"><font size="4"><b>2016冬季新款时尚侧拉链女坡跟靴</b></font></span>
+                <span class="pl4ab">忘记评论了很好的宝贝，尤其是里面的毛很舒服</span>
+        </div>
+        </div>
+        <div class="pl5">
+            <div class="pl4a">
+            <img  class="plas" src="17.png" alt=""/>
+            <img  class="pl4aq" src="981.png" alt=""/>
+            <span class="pl4aa"><font size="4"><b>2016冬季新款时尚侧拉链女坡跟靴</b></font></span>
+            <span class="pl4ab">忘记评论了很好的宝贝，尤其是里面的毛很舒服</span>
+        </div>
+            <div class="pl4b">
+                <img  class="plas" src="18.png" alt=""/>
+                <img  class="pl4aq" src="981.png" alt=""/>
+                <span class="pl4aa"><font size="4"><b>2016冬季新款时尚侧拉链女坡跟靴</b></font></span>
+                <span class="pl4ab">忘记评论了很好的宝贝，尤其是里面的毛很舒服</span>
+            </div>
+            <div class="pl4c">
+                <img  class="plas" src="18.png" alt=""/>
+                <img  class="pl4aq" src="981.png" alt=""/>
+                <span class="pl4aa"><font size="4"><b>2016冬季新款时尚侧拉链女坡跟靴</b></font></span>
+                <span class="pl4ab">忘记评论了很好的宝贝，尤其是里面的毛很舒服</span>
+            </div>
+            <div class="pl4d">
+                <img  class="plas" src="18.png" alt=""/>
+                <img  class="pl4aq" src="981.png" alt=""/>
+                <span class="pl4aa"><font size="4"><b>2016冬季新款时尚侧拉链女坡跟靴</b></font></span>
+                <span class="pl4ab">忘记评论了很好的宝贝，尤其是里面的毛很舒服</span>
+            </div>
+        </div>
+        <div class="pl6">
+            <div class="pl4a">
+                <img  class="plas" src="15.png" alt=""/>
+                <img  class="pl4aq" src="981.png" alt=""/>
+                <span class="pl4aa"><font size="4"><b>2016冬季新款时尚侧拉链女坡跟靴</b></font></span>
+                <span class="pl4ab">忘记评论了很好的宝贝，尤其是里面的毛很舒服</span>
+            </div>
+            <div class="pl4b">
+                <img  class="plas" src="19.png" alt=""/>
+                <img  class="pl4aq" src="981.png" alt=""/>
+                <span class="pl4aa"><font size="4"><b>2016冬季新款时尚侧拉链女坡跟靴</b></font></span>
+                <span class="pl4ab">忘记评论了很好的宝贝，尤其是里面的毛很舒服</span>
+            </div>
+            <div class="pl4c">
+                <img  class="plas" src="19.png" alt=""/>
+                <img  class="pl4aq" src="981.png" alt=""/>
+                <span class="pl4aa"><font size="4"><b>2016冬季新款时尚侧拉链女坡跟靴</b></font></span>
+                <span class="pl4ab">忘记评论了很好的宝贝，尤其是里面的毛很舒服</span>
+            </div>
+            <div class="pl4d">
+                <img  class="plas" src="19.png" alt=""/>
+                <img  class="pl4aq" src="981.png" alt=""/>
+                <span class="pl4aa"><font size="4"><b>2016冬季新款时尚侧拉链女坡跟靴</b></font></span>
+                <span class="pl4ab">忘记评论了很好的宝贝，尤其是里面的毛很舒服</span>
+            </div>
+        </div>
+    </div>
+    <div class="dz">
+        <div class="dza">
+            <img src="123456789.png" alt=""/>
+            <span class="za">400 650 1730</span>
+            <span class="zb">周一至周五9:30-8:30</span>
+            <span class="zc">周六至周日9:30-17:30</span>
+            <span class="zd">客服邮箱：tianyigouji88@163.com<br>
+            投诉建议：</span>
+        </div>
+        <div class="dzb">
+            <div class="dzba">
+                <img src="12345.png" alt="" width="470" />
+                <div class="dzbaa">
+                    <ul class="ol">
+                        <li>关于我们</li>
+                        <li>新手指南</li>
+                        <li>支付与配送</li>
+                        <li>购物条款</li>
+                        <li>售后服务</li>
+                    </ul>
+                </div>
+            </div> 
+            <div class="bzb1">
+               关于我们<br>
+               联系我们<br>
+               网站联盟<br>
+               法律说明<br>
+            </div>
+            <div class="bzb1">
+                付款流程<br>
+                如何注册<br>
+                常见问题<br>
+            </div>
+            <div class="bzb1">
+                支付贴士<br>
+                配送方式<br>
+                支付方式
+            </div>
+            <div class="bzb1">
+                服务细则<br>
+                隐私保护<br>
+                购物流程
+            </div>
+            <div class="bzb1">
+                家电配送<br>
+                关于家电<br>
+                退货保障
+            </div>
+        </div>
+        <div class="dzc">
+            <img src="1212.png" alt="" width="260"/>
+        </div>
+
+    </div>
+    <div class="foot">
+        <div cLass="foota">
+            <img src="foot.png" alt="" width="920" height="40"/><br>
+
+            <div class="foot1">
+
+                  <b> 免运费</b>
+                <br>
+                <span class="foot1a"> 全场满199元包邮</span>
+            </div>
+            <div class="foot2">
+                <b>超保障</b>
+                <br>
+                <span class="foot1a"> 品牌正品售后无忧</span>
+            </div>
+            <div class="foot2">
+                <b>全正品</b>
+                <br>
+                <span class="foot1a"> 正品保障假一赔十</span>
+            </div>
+            <div class="foot2">
+                <b>最放心</b>
+                <br>
+                <span class="foot1a">厂家直销质优价低</span>
+            </div>
+            <div class="foot2">
+                <b>快捷付</b>
+                <br>
+                <span class="foot1a">快捷支付有卡便付</span>
+            </div>
+            <div class="foot2">
+                <b>限时达</b>
+                <br>
+                <span class="foot1a">闪电发货快速送达</span>
+            </div>
+            <div class="foot2">
+                <b>优服务</b>
+                <br>
+                <span class="foot1a"> 金牌客服贴心服务</span>
+            </div>
+            <div class="foot2">
+                <b>随时退</b>
+                <br>
+                <span class="foot1a"> 质量问题7天退货</span>
+            </div>
+        </div>
+
+    </div>
+    <div class="dibu">
+        <div class="xw">
+        <ul class="wz">
+            <li><b>媒体报道：</b></li>
+            <li>搜狐</li>
+            <li>网易</li>
+            <li>中工网</li>
+            <li>今晚网</li>
+            <li> 秦皇岛新闻网</li>
+            <li>央广网</li>
+            <li>中财网</li>
+            <li>嘉鱼网</li>
+            <li>海峡经济网</li>
+            <li>新闻网</li>
+            <li>百姓资讯网</li>
+            <li>新北青网</li>
+            <li>财经要闻</li>
+        </ul>
+        </div>
+        <div class="dba">
+            <img src="91.png"  class="dbat" alt="这是一个图片" width="33" height="35"/>
+           <span class="dbaz">海淀网络<br>警察提醒您</span>
+        </div>
+        <div class="dbb">
+            <img src="92.png" class="dbat" alt="这是一个图片"  width="33" height="35"/>
+            <span class="dbaz">海淀网络<br>警察提醒您</span>
+        </div>
+        <div class="dbb">
+            <img src="93.png"  class="dbat"  alt="这是一个图片" width="33" height="35"/>
+            <span class="dbaz">海淀网络<br>警察提醒您</span>
+        </div>
+        <div class="dbb">
+            <img src="94.png"   class="dbat" alt="这是一个图片" width="33" height="35"/>
+            <span class="dbaz">海淀网络<br>警察提醒您</span>
+        </div>
+       <div class="dbb">
+        <img src="81.png"  class="dbat"  alt="这是一个图片" width="33" height="35"/>
+        <span class="dbaz">海淀网络<br>警察提醒您</span>
+    </div>
+    <div class="dbb">
+        <img src="82.png"  class="dbat"  alt="这是一个图片" width="33" height="35"/>
+        <span class="dbaz">海淀网络<br>警察提醒您</span>
+    </div>
+    <div class="dbb"    >
+        <img src="83.png"  class="dbat"  alt="这是一个图片" width="33" height="35"/>
+        <span class="dbaz">海淀网络<br>警察提醒您</span>
+    </div>
+
+    <div class="dbc">
+        <img src="84.png" class="dbat"  alt="这是一个图片" width="33" height="35"/>
+        <span class="dbaz">海淀网络<br>警察提醒您</span>
+    </div>
+    <div class="dbca">
+        <img src="71.png" class="dbat"  alt="这是一个图片" width="33" height="35"/>
+        <span class="dbaz">海淀网络<br>警察提醒您</span>
+    </div>
+    <div class="dbca">
+        <img src="72.png"  class="dbat" alt="这是一个图片" width="33" height="35"/>
+        <span class="dbaz">海淀网络<br>警察提醒您</span>
+    </div>
+    <div class="dbca">
+        <img src="73.png"  class="dbat" alt="这是一个图片" width="97"/>
+
+    </div>
+    <div class="dbca">
+        <img src="74.png" class="dbat"  alt="这是一个图片" width="33" height="35"/>
+        <span class="dbaz">海淀网络<br>警察提醒您</span>
+    </div>
+    <div class="dbca" >
+        <img src="91.png"  class="dbat" alt="这是一个图片" width="33" height="35"/>
+        <span class="dbaz">海淀网络<br>警察提醒您</span>
+    </div>
+    <div class="dbac    ">
+        <ul class="li">
+            <li>关于我们  |</li>
+            <li>联系我们  |</li>
+            <li>网站联盟  |</li>
+            <li>法律说明</li>
+        </ul><br>
+        <b>公司地址：</b>北京市海淀区上地东路35号院1号楼2层&nbsp;Copyright&copy;&nbsp;2005-2013&nbsp;鲁ICP备11012342号-1
+    </div>
+</div>
+
+
+
+    
+        
+    
+</div>
+</body>
+</html>

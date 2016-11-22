@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        *{
+            margin: 0px;
+        }
+        #div1{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: relative;
+            left: -200px;
+            top: 0px;
+        }
+        #div1 span{
+            width:20px;
+            height: 50px;
+            background-color: blue;
+            position: absolute;
+            left: 200px;
+            top: 75px;
+        }
+    </style>
+    <script>
+        var lefts=-200;
+        window.onload=function(){
+            var odiv=document.getElementById('div1');
+            odiv.onmouseover=function(){
+                startMove(10,0)
+            }
+            odiv.onmouseout=function(){
+                startMove(-10,-200)
+            }
+        }
+        var timer=null;
+        function startMove(speed,iTarget){
+            clearInterval(timer)
+            var odiv=document.getElementById('div1');
+            timer=setInterval(function(){
+                if(odiv.offsetLeft==iTarget){
+                    clearInterval(timer);
+                }else {
+                    odiv.style.left = odiv.offsetLeft + speed + 'px';
+                }
+            },10)
+        }
+
+
+    </script>
+</head>
+<body>
+
+
+
+<div id="div1" onload="startMove()" >
+
+    <span>分享</span>
+</div>
+
+</body>
+</html>

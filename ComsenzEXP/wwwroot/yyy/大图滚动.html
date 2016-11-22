@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        img{
+            width: 300px;
+            height: 400px;
+            float: left;
+        }
+        button{
+            width: 54px;
+        }
+        #wac{
+            width: 300px;
+            height: 400px;
+            border: 3px solid black;
+            position: relative;
+            left: 500px;
+            top: 50px;
+            overflow: hidden;
+        }
+        #lib{
+            width: 2100px;
+            height: 400px;
+
+            position: absolute;
+        }
+        #but{
+            position: absolute;
+            top: 455px;
+            left: 500px;
+            border-radius: 50%;
+        }
+        span{
+              width: 50px;
+              height: 50px;
+              background-color: black;
+              opacity: 0.3;
+              color: azure;
+            font-size: 50px;
+            padding-bottom: 5px;
+            display: none;
+
+          }
+        #span1{
+            position: fixed;
+            top: 150px;
+            left: 500px;
+        }
+        #span2{
+
+            position: fixed;
+            top: 150px;
+            left: 753px;
+            text-align: end;
+        }
+        span:hover{
+            opacity: 0.7;
+        }
+        #wac:hover span{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div id="wac">
+    <div id="lib" style="left: -300px" >
+        <img src="5.jpg" alt=""/>
+
+        <img src="img/1.jpg" alt=""/>
+        <img src="img/2.jpg" alt=""/>
+        <img src="img/3.jpg" alt=""/>
+        <img src="img/4.jpg" alt=""/>
+        <img src="img/5.jpg" alt=""/>
+
+        <img src="img/1.jpg" alt=""/>
+    </div>
+    <div>
+    <span id="span1"> < </span>
+    <span id="span2"> > </span>
+    </div>
+</div>
+
+<div id="but">
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>4</button>
+    <button>5</button>
+</div>
+
+ <script>
+     var spans=document.getElementsByTagName('span');
+     var wac=document.getElementById('wac');
+     var lib=document.getElementById('lib');
+     var buts = document.getElementsByTagName('button');
+     var span2=document.getElementById('span2');
+     var span1=document.getElementById('span1');
+     var img=document.getElementsByTagName('img')
+     var time1=null,time2=null;
+
+
+
+     function sx(offset){
+          var newLeft = parseInt( lib.style.left)+offset;
+         lib.style.left= newLeft + 'px';
+         if( newLeft > -300){
+             lib.style.left= -1500 + 'px';
+         }
+         if( newLeft < -1500){
+             lib.style.left= -300 + 'px';
+         }
+     }
+     span1.onclick=function(){
+
+         sx(300);
+     }
+     span2.onclick=function(){
+
+        sx(-300);
+     }
+     lib.innerHTML+=lib.innerHTML;
+     function all(){
+
+         if(wac.scrollLeft>lib.offsetWidth/2){
+             clearInterval(time1);
+             clearInterval(time2);
+             wac.scrollLeft=0;
+         }
+         else{
+             wac.scrollLeft+=10;
+         }
+         if(wac.scrollLeft%img[0].offsetWidth==0){
+             clearInterval(time1);
+             clearInterval(time2);
+           time2=setTimeout("time1=setInterval(all,15)",1500);
+         }
+     }
+     time1=setInterval(all,15);
+     wac.onmouseover=function(){
+         clearInterval(time1);
+         clearInterval(time2);
+
+     }
+     wac.onmouseout=function(){
+         console.log('进入');
+         time1=setInterval(all,15);
+     }
+
+ </script>
+</body>
+
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>JS——对话</title>
+    <style>
+        .yh1{
+            float: left;
+            /*position: relative;*/
+            width: 500px;
+            height: 500px;
+
+
+        }
+        .name1{
+            font-size: 30px;
+            font-weight:bold;
+            margin-left: 200px;
+           /* position: absolute;
+            left: 200px;*/
+        }
+        .yh1v{
+            width: 500px;
+            height: 300px;
+            margin-top: 20px;
+            /*overflow: auto;*/
+            overflow-x: hidden;
+            /*position: absolute;
+            top: 50px;*/
+            border: 1px solid gray;
+        }
+        .yh1x{
+            width: 350px;
+            height: 50px;
+            margin-top: 10px;
+            margin-left: 20px;
+           /* position: absolute;
+            top: 380px;
+            left: 20px;*/
+        }
+        .yh1b{
+            width: 80px;
+            height: 56px;
+            margin-left: 20px;
+            /*position: absolute;
+            top: 380px;
+            right: 20px;*/
+        }
+
+        .yh2{
+            float: left;
+            margin-left: 150px;
+           /* position: relative;*/
+            left: 600px;
+            width: 500px;
+            height: 500px;
+
+
+        }
+        .name2{
+            margin-left: 200px;
+            font-size: 30px;
+            font-weight:bold;
+            /*position: absolute;
+            left: 200px;*/
+        }
+        .yh2v{
+            width: 500px;
+            height: 300px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            /*position: absolute;
+            top: 50px;*/
+            border: 1px solid gray;
+            margin-top: 20px;
+        }
+        .yh2x{
+            width: 350px;
+            height: 50px;
+            margin-top: 10px;
+            margin-left: 20px;
+            /*position: absolute;
+            top: 380px;
+            left: 20px;*/
+        }
+        .yh2b{
+            width: 80px;
+            height: 56px;
+            margin-left: 20px;
+           /* position: absolute;
+            top: 380px;
+            right: 20px;*/
+        }
+        .hv1{
+            width: 500px;
+            height: 100px;
+            text-align: end;
+            position: relative;
+        }
+        .hv1s{
+            width: 500px;
+            height: 30px;
+            position: absolute;
+            right: 30px;
+        }
+        .hvv{
+            width: 450px;
+            height: 70px;
+            position: absolute;
+            top: 30px;
+            right: 30px;
+        }
+
+
+
+        .hv2{
+            width: 500px;
+            height: 100px;
+            position: relative;
+        }
+        .hv2s{
+            width: 200px;
+            height: 30px;
+            position: absolute;
+            left: 0px;
+        }
+        .hvv2{
+            width: 500px;
+            height: 70px;
+            position: absolute;
+            top: 30px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="yh1" id="yh1">
+    <div class="name1" >用户1</div>
+    <div class="yh1v" id="yh1v">
+
+    </div>
+    <input type="text" class="yh1x" placeholder="请输入内容" id="yh1x"/>
+    <button class="yh1b" id="yh1b">提交</button>
+</div>
+
+
+
+<div class="yh2" id="yh2">
+    <span class="name2">用户2</span>
+    <div class="yh2v" id="yh2v">
+
+    </div>
+    <input type="text" class="yh2x" placeholder="请输入内容" id="yh2x"/>
+    <button class="yh2b" id="yh2b">提交</button>
+</div>
+<script>
+    var yh1v=document.getElementById('yh1v');
+    var yh1x=document.getElementById('yh1x');
+    var yh1b=document.getElementById('yh1b');
+    var yh2v=document.getElementById('yh2v');
+    var yh2x=document.getElementById('yh2x');
+    var yh2b=document.getElementById('yh2b');
+
+
+    yh1b.onclick=function() {
+        var v11=document.createElement('div');
+        yh1v.appendChild(v11);
+        v11.className='hv1';
+        var v1s=document.createElement('div');
+        v11.appendChild(v1s);
+        v1s.className='hv1s'
+        var hvv=document.createElement('div');
+        v11.appendChild(hvv);
+        hvv.className="hvv"
+
+        var a=document.createElement('div');
+        yh2v.appendChild(a);
+        a.className='hv2';
+        var v2s=document.createElement('div');
+        a.appendChild(v2s);
+        v2s.className='hv2s'
+        var hvv2=document.createElement('div');
+        a.appendChild(hvv2);
+        hvv2.className="hvv2"
+        var sj=new Date()
+        var n=Date
+        v1s.innerHTML=sj.toLocaleString()+ '&nbsp'+'我';
+        v2s.innerHTML=sj.toLocaleString();
+        hvv.innerHTML = yh1x.value;
+        hvv2.innerHTML = yh1x.value;
+        yh1x.value=''
+        yh1v.scrollTop=yh1v.scrollHeight;
+        yh2v.scrollTop=yh2v.scrollHeight;
+    }
+
+
+    yh2b.onclick=function() {
+
+
+            var v11 = document.createElement('div');
+            yh2v.appendChild(v11);
+            v11.className = 'hv1';
+            var v1s = document.createElement('div');
+            v11.appendChild(v1s);
+            v1s.className = 'hv1s'
+            var hvv = document.createElement('div');
+            v11.appendChild(hvv);
+            hvv.className = "hvv"
+
+            var a = document.createElement('div');
+            yh1v.appendChild(a);
+            a.className = 'hv2';
+            var v2s = document.createElement('div');
+            a.appendChild(v2s);
+            v2s.className = 'hv2s'
+            var hvv2 = document.createElement('div');
+            a.appendChild(hvv2);
+            hvv2.className = "hvv2"
+            var sj = new Date()
+            var n = Date
+            v1s.innerHTML = sj.toLocaleString() + '&nbsp'+'我';
+            v2s.innerHTML = sj.toLocaleString();
+            hvv.innerHTML = yh2x.value;
+            hvv2.innerHTML = yh2x.value;
+            yh2x.value=''
+        yh1v.scrollTop=yh1v.scrollHeight;
+        yh2v.scrollTop=yh2v.scrollHeight;
+    }
+
+</script>
+</body>
+</html>

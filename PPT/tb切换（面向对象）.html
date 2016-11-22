@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>tab面向对象</title>
+	<style>
+	*{
+		margin:0;
+		padding:0;
+	}
+	#tabTitle,#tabTitle2{
+		width: 600px;
+		height: 100px;
+
+	}
+	#tabTitle div,#tabTitle2 div{
+		float: left;
+		width: 198px;
+		height: 98px;
+		border:1px red solid;
+		text-align: center;
+		line-height: 98px;
+
+	}
+	#tabContent,#tabContent2{
+		width: 600px;
+		height: 500px;
+
+	}
+	#tabContent div,#tabContent2 div{
+		width: 598px;
+		height: 498px;
+		border:1px red solid;
+		text-align: center;
+		line-height: 498px;
+		
+	}
+
+	.showClass {
+		display: block;
+	}
+	.hideClass{
+		display: none;
+	}
+	.active{
+		background: red;
+	}
+
+	</style>
+</head>
+<body>
+	<div id="tabTitle">
+		<div > 标题一</div>
+		<div > 标题二</div>
+		<div > 标题三</div>
+	</div>
+	<div id="tabContent">
+		<div class="hideClass"> 内容一</div>
+		<div class="hideClass"> 内容二</div>
+		<div class="hideClass"> 内容三</div>
+	</div>
+
+	<!-- <div id="tabTitle2">
+		<div > 标题一</div>
+		<div > 标题二</div>
+		<div > 标题三</div>
+	</div>
+	<div id="tabContent2">
+		<div class="hideClass"> 内容一</div>
+		<div class="hideClass"> 内容二</div>
+		<div class="hideClass"> 内容三</div>
+	</div> -->
+	<script>
+		(function(){
+			function Tab(title,content){
+				this.titleName= title;
+				this.contentName = content;
+				this.prevIndex = 0;
+			}
+			Tab.prototype.show = function(ele,showClass){
+				ele.className = showClass;
+			}
+			Tab.prototype.hide = function(ele,hideClass){
+				ele.className = hideClass;
+			}
+			Tab.prototype.init = function(){
+				
+				this.show(this.titleName[this.prevIndex],"active");
+				this.show(this.contentName[this.prevIndex],"showClass");
+				this.prevIndex = 0;
+				return this;
+			}
+			Tab.prototype.map = function(arr,fn){
+				for(var i=0;i<arr.length;i++){
+					fn(arr[i],i)
+				}
+			}
+			Tab.prototype.clickTab = function(){
+				var _this = this;
+				this.map(this.titleName,function(ele,index){
+					ele.onclick = function(){
+						_this.hide(_this.titleName[_this.prevIndex],"");
+						_this.hide(_this.contentName[_this.prevIndex],"hideClass");
+
+						_this.show(ele,"active");
+						_this.show(_this.contentName[index],"showClass");
+						_this.prevIndex = index;
+					}
+				})
+			}
+			function factory(title,content){
+				return new Tab(title,content).init();
+			}
+			window.$$ = factory;
+		})()
+		var titles = tabTitle.getElementsByTagName('div');
+		var contents = tabContent.getElementsByTagName("div");
+		$$(titles,contents).clickTab()
+
+		// var titles2 = tabTitle2.getElementsByTagName('div');
+		// var contents2 = tabContent2.getElementsByTagName("div");
+		// $$(titles2,contents2).clickTab()
+	</script>
+</body>
+</html>

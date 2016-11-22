@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        li{
+            width: 200px;
+            height: 100px;
+            background-color: aqua;
+            margin-top: 20px;
+            list-style: none;
+            position: relative;
+            overflow: hidden;
+
+        }
+        img{
+            width: 200px;
+            height: 100px;
+            float: left;
+        }
+        .t1{
+            position: absolute;
+            top: 0px;
+        }
+        .t2{
+            position: absolute;
+            left: 200px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<!--<span><marquee>
+    <img src="img/1.jpg" alt=""/>
+</marquee></span>
+<div style="width: 500px;height: 500px;border: 1px solid black;">
+    <span><marquee behavior="alternate" direction="right">
+        <img src="img/2.jpg" alt=""/>
+        <img src="img/2.jpg" alt=""/>
+    </marquee>
+    <marquee behavior="alternate" scrollamount="50" direction="">
+        <img src="img/1.jpg" alt=""/>
+        <img src="img/1.jpg" alt=""/>
+    </marquee>
+    </span>
+    <marquee behavior="alternate" scrollamount="2" direction="">
+        <img src="img/1.jpg" alt=""/>
+        <img src="img/1.jpg" alt=""/>
+    </marquee>
+    <marquee behavior="" scrollamount="1" direction="up">
+        <img src="img/1.jpg" alt=""/>
+        <img src="img/1.jpg" alt=""/>
+    </marquee>
+</div>-->
+<ul>
+    <li>
+        <!--<img src="img/ms1.jpg" alt="" class="t1"/><img src="img/ms2.jpg" alt="" class="t2"/>-->
+    </li>
+    <li>
+        <img src="img/ms3.jpg" alt="" class="t1"/><img src="img/ms4.jpg" alt="" class="t2"/>
+    </li>
+    <li>
+        <img src="img/ms1.jpg" alt="" class="t1"/><img src="img/ms2.jpg" alt="" class="t2"/>
+    </li>
+</ul>
+<script>
+    var lis=document.getElementsByTagName('li');
+    for(var i=0; i<lis.length;i ++){
+        //lis[i].time=null;
+        lis[i].onmouseover=function(){
+
+            sdamo(this,400);
+        }
+        lis[i].onmouseout=function(){
+            sdamo(this,200);
+        }
+    }
+    var time=null;
+    function sdamo(obj,dx){
+        clearInterval(obj.time);
+        obj.time=setInterval(function(){
+            var spe=(dx-obj.offsetWidth)/8;
+//            spe=spe>0?Math.ceil(spe):Math.floor(spe);
+            if(obj.offsetWidth==dx){
+                clearInterval(obj.time);
+            }
+            else{
+                obj.style.width=obj.offsetWidth+spe+'px';
+            }
+        },30)
+    }
+</script>
+<!--<script>
+    var lis=document.getElementsByTagName('li')[0];
+
+    function sdam1(obj,attr){
+
+        if(ojb.currentStyle){
+             return obj.currentStyle[attr];
+        }else{
+            return getComputedStyle(obj,false)[attr];
+        }
+    }
+    function sam(obj,attr,itar){
+        clearInterval(obj,time);
+        obj.time=setInterval(function(){
+            var ic=0;
+            if(attr=='opacity'){
+                ic=Math.round(parseFloat(getStyle(obj,attr))*100)
+            }
+            else{
+                ic=parseInt(getStyle(obj,attr));
+            }
+            var
+
+        })
+    }
+</script>-->
+
+<div id="ss">
+    文字
+</div>
+<script>
+    var ss=document.getElementById('ss');
+      function a(){
+        p=Math.floor(Math.random()*256);
+          b=Math.round(Math.random()*256);
+          c=Math.ceil(Math.random()*256);
+        // debugger;
+        ss.style.color="rgb("+p+","+b+","+c+")";
+    }
+    setInterval(a ,50);
+
+
+
+   /* function a(){
+        b=["yellow","red","purple","pink"];
+        var sj = Math.floor(Math.random() *4);
+        var c=b[sj];
+            ss.style.color=c;
+    }
+    setInterval(a,300);*/
+</script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+Build 3038
+----------
+Release Date: 9 June 2013
+
+    * Fixed further regressions in 3036
+
+Build 3037
+----------
+Release Date: 4 June 2013
+
+    * Fixed a regressions in 3036
+
+Build 3036
+----------
+Release Date: 4 June 2013
+
+    * Fixed regressions in file change detection
+    * Linux: Added support for High DPI, controlled by the GTK Text Scaling Factor
+    * Windows: DirectWrite is enabled automatically in high DPI mode
+    * OSX: Fixed context menus not working when the application is in the background
+
+Build 3035
+----------
+Release Date: 17 May 2013
+
+    * Restored Windows XP compatibility
+    * Fixed an OSX crash
+    * Fixed double closing of script tags
+
+Build 3034
+----------
+Release Date: 16 May 2013
+
+    * Improved file change detection
+    * Windows: Added high DPI support
+    * Graphics rendering ported to Skia from Cairo
+    * HTML tag auto completion is better behaved in script tags
+    * API: Fixed Selection.contains
+
+Build 3032
+----------
+Release Date: 6 May 2013
+
+    * Added setting always_prompt_for_file_reload
+    * Pressing right in the Goto Anything overlay will open the selected file without closing the overlay
+    * Improved handling of deleted files when restoring sessions
+    * Linux: Fixed popup menu positioning
+    * Windows: Fixed erroneous entries in system menu
+
+Build 3031
+----------
+Release Date: 1 May 2013
+
+    * Find panel has a drop down arrow to select previous items
+    * Minor Auto Complete visual tweaks
+    * API: Added view.show_popup_menu()
+    * API: Added is_valid() method to view and window, to determine if the handle has been invalidated
+
+Build 3030
+----------
+Release Date: 23 April 2013
+
+    * Fixed crash introduced in 3029
+
+Build 3029
+----------
+Release Date: 22 April 2013
+
+    * Fix for rare crash
+    * Telemetry is enabled by default for dev builds
+    * Improved Minimap hover logic
+    * Faster startup time
+
+Build 3028
+----------
+Release Date: 16 April 2013
+
+    * Fixed a regression in 3027
+
+Build 3027
+----------
+Release Date: 15 April 2013
+
+    * Fixed several rare crashes
+    * Improved HTML completions when typing outside of tags
+    * Fixed Close Tag not respecting self closing tags
+    * Windows: Fixed auto updates not installing when the application is installed to a drive other than C
+
+Build 3026
+----------
+Release Date: 10 April 2013
+
+    * auto_find_in_selection defaults to false as intended
+    * Fixed a sidebar regression in 3024
+    * Windows: Fixed an 'Open in Sublime Text' regression introduced in 3024
+    * Improved handling of packages with non-utf8 encoded .py files
+
+Build 3025
+----------
+Release Date: 9 April 2013
+
+    * Fixed some regressions in 3024
+    * Added Paste from History
+    * API: on_text_command and on_window command are now called when the menu is used
+    * API: Added on_post_text_command and on_post_window_command
+
+Build 3024
+----------
+Release Date: 8 April 2013
+
+    * Semi-transient sheets are no longer shown in the OPEN FILES section of the side bar
+    * Added setting 'auto_find_in_selection', for S2 style Find in Selection logic
+    * Using Google Breakpad to automatically report crashes
+    * Symlinks are followed by default in folders added to the side bar
+    * PHP: Improved auto indenting for the alternative control syntax
+    * "Remove all Folders from Project" now prompts to confirm
+    * Deleting a file via the side bar will first close the corresponding view, if any
+    * Update window will display properly even if the theme doesn't have rules for it
+    * Windows: New style Open Folder dialogs are used on Vista and later
+    * API: Added view.close()
+    * API: Added sublime.get_macro()
+
+Build 3023
+----------
+Release Date: 3 April 2013
+
+    * New auto update system for Windows and OS X
+    * Added telemetry. Telemetry is currently disabled by default, but will be enabled by default in future dev builds. It can be explicitly controlled with the enable_telemetry setting
+    * API: Fixed a memory leak in plugin_host

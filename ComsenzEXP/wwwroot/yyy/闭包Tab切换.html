@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #a1{
+            width: 1100px;
+            height: 50px;
+            background-color: antiquewhite;
+            position: relative;
+            top: 10px;
+        }
+        #a2{
+            list-style: none;
+            font-size: 50px;
+            position: relative;
+
+        }
+        #a2 li{
+            float: left;
+            /*margin-left: 50px;*/
+            width: 100px;
+        }
+        #a3{
+            width: 100px;
+            height: 50px;
+            background-color: #fab2dc;
+            position: absolute;
+            left: 0px;
+
+        }
+    </style>
+</head>
+<body>
+ <div id="a1">
+     <div id="a3"></div>
+     <ul id="a2">
+         <li>aaa</li>
+         <li>bbb</li>
+         <li>ccc</li>
+         <li>ddd</li>
+         <li>eee</li>
+     </ul>
+
+ </div>
+     <script>
+         var divs=document.getElementById('a3');
+         var lis=document.getElementsByTagName('li');
+         var  aa=0;
+         var bb=0;
+         for(var i=0;i<lis.length;i++){
+             lis[i].onmouseover=(function (n){
+                 return function(){
+                     aa=n;
+                 }
+             })(i)
+             lis[i].onmouseout=(function(n){
+                 return function(){
+                     aa=n;
+                 }
+             })(0)
+         };
+         setInterval(all,100)
+         function all(){
+             consloe.log('qw');
+                 if(divs.offsetLeft<100*aa){
+                divs.style.left=divs.offsetLeft+10+'px';
+                 bb=aa;
+
+             }
+             if(aa<bb){
+                 divs.style.left=divs.offsetLeft-10+'px';
+             }
+         }
+
+
+       /*  var divs=document.getElementById('b');
+         var  lis=document.getElementsByTagName('li');
+         var num=0;
+         var aa=0;
+         for (var i = 0; i < lis.length; i++) {
+             lis[i].onmouseover=(function(m) {
+                 return function(){
+                     num=m;
+                 }
+             })(i)
+             lis[i].onmouseout=(function(m){
+                 return function(){
+                     num=m;
+                 }
+             })(0)
+         };
+         setInterval(move,10)
+         function move(){
+
+             if (divs.offsetLeft<100*num) {
+                 divs.style.left=divs.offsetLeft+10+"px";
+                 aa=num;
+             };
+             if (num<aa) {
+                 divs.style.left=divs.offsetLeft-10+"px";
+
+             }else if(num==0){
+                 divs.style.left=0;
+
+             }
+         }*/
+//        // debugger;
+//         var divs=document.getElementsByTagName('div');
+//         var lis=document.getElementsByTagName('li');
+//         /*var num=0;
+//          var as=0;*/
+////         var divs=document.getElementById('b');
+////         var  lis=document.getElementsByTagName('li');
+//         var num=0;
+//         var aa=0;
+//         for (var i = 0; i < lis.length; i++) {
+//             lis[i].onmouseover=(function(m) {
+//                 return function(){
+//                     num=m;
+//                 }
+//             })(i)
+//             lis[i].onmouseout=(function(m){
+//                 return function(){
+//                     num=m;
+//                 }
+//             })(0)
+//         }
+//         setInterval(move,10)
+//         function move(){
+//             if (divs[1].offSetleft<220*num) {
+//                 divs[1].style.left=divs[1].offsetleft+10+"px";
+//                 aa=num;
+//             }
+//             if (num<aa) {
+//                 divs[1].style.left=divs[1].offSetleft-10+"px";
+//
+//             }else if(num==0){
+//                 divs[1].style.left=0;
+//             }
+//         }
+     </script>
+
+</body>
+</html>

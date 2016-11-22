@@ -1,0 +1,132 @@
+160920 13:56:49  InnoDB: Started; log sequence number 0 43655
+160920 13:56:59 [Note] exp_mysql50: ready for connections.
+Version: '5.0.90-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+160920 13:58:12 [Note] exp_mysql50: Normal shutdown
+
+160920 13:58:12  InnoDB: Starting shutdown...
+160920 13:58:13  InnoDB: Shutdown completed; log sequence number 0 43655
+160920 13:58:13 [Note] exp_mysql50: Shutdown complete
+
+160920 13:58:45  InnoDB: Started; log sequence number 0 43655
+160920 13:58:45 [Note] exp_mysql50: ready for connections.
+Version: '5.0.90-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+160922  8:30:54 [Note] exp_mysql50: Normal shutdown
+
+160922  8:31:02  InnoDB: Starting shutdown...
+160922  8:31:06  InnoDB: Shutdown completed; log sequence number 0 43655
+160922  8:31:07 [Note] exp_mysql50: Shutdown complete
+
+160922  8:37:43  InnoDB: Started; log sequence number 0 43655
+160922  8:37:46 [Note] exp_mysql50: ready for connections.
+Version: '5.0.90-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+160922  8:44:53 [Note] exp_mysql50: Normal shutdown
+
+160922  8:44:54  InnoDB: Starting shutdown...
+160922  8:44:55  InnoDB: Shutdown completed; log sequence number 0 43655
+160922  8:44:56 [Note] exp_mysql50: Shutdown complete
+
+160922  8:51:11  InnoDB: Started; log sequence number 0 43655
+160922  8:51:23 [Note] exp_mysql50: ready for connections.
+Version: '5.0.90-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+160922  8:52:55  InnoDB: Started; log sequence number 0 43655
+160922  8:53:04 [Note] exp_mysql50: ready for connections.
+Version: '5.0.90-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+160926 18:40:38 [Note] exp_mysql50: Normal shutdown
+
+160926 18:40:45  InnoDB: Starting shutdown...
+160926 18:40:50  InnoDB: Shutdown completed; log sequence number 0 43655
+160926 18:40:51 [Note] exp_mysql50: Shutdown complete
+
+160927  8:41:11  InnoDB: Started; log sequence number 0 43655
+160927  8:41:13 [Note] exp_mysql50: ready for connections.
+Version: '5.0.90-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+160927  8:57:56 [Note] exp_mysql50: Normal shutdown
+
+160927  8:57:58  InnoDB: Starting shutdown...
+160927  8:58:00  InnoDB: Shutdown completed; log sequence number 0 43655
+160927  8:58:00 [Note] exp_mysql50: Shutdown complete
+
+160927  9:00:03  InnoDB: Started; log sequence number 0 43655
+160927  9:00:09 [Note] exp_mysql50: ready for connections.
+Version: '5.0.90-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+160928  9:40:00 [Note] exp_mysql50: Normal shutdown
+
+160928  9:40:08  InnoDB: Starting shutdown...
+160928  9:40:16  InnoDB: Shutdown completed; log sequence number 0 43655
+160928  9:40:18 [Note] exp_mysql50: Shutdown complete
+
+160928  9:42:57  InnoDB: Started; log sequence number 0 43655
+160928  9:42:59 [Note] exp_mysql50: ready for connections.
+Version: '5.0.90-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+160928  9:50:56 [Note] exp_mysql50: Normal shutdown
+
+160928  9:50:57  InnoDB: Starting shutdown...
+160928  9:50:59  InnoDB: Shutdown completed; log sequence number 0 43655
+160928  9:50:59 [Note] exp_mysql50: Shutdown complete
+
+160928  9:57:28  InnoDB: Started; log sequence number 0 43655
+160928  9:57:40 [Note] exp_mysql50: ready for connections.
+Version: '5.0.90-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+160928  9:58:39  InnoDB: Started; log sequence number 0 43655
+160928  9:58:40 [Note] exp_mysql50: ready for connections.
+Version: '5.0.90-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+160928 11:10:53 [Note] exp_mysql50: Normal shutdown
+
+160928 11:11:01  InnoDB: Starting shutdown...
+160928 11:11:07  InnoDB: Shutdown completed; log sequence number 0 43655
+160928 11:11:08 [Note] exp_mysql50: Shutdown complete
+
+160928 11:12:09  InnoDB: Started; log sequence number 0 43655
+160928 11:12:11 [Note] exp_mysql50: ready for connections.
+Version: '5.0.90-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+160928 11:16:26 [Note] exp_mysql50: Normal shutdown
+
+160928 11:16:26  InnoDB: Starting shutdown...
+160928 11:16:27  InnoDB: Shutdown completed; log sequence number 0 43655
+160928 11:16:27 [Note] exp_mysql50: Shutdown complete
+
+160928 11:17:39  InnoDB: Started; log sequence number 0 43655
+160928 11:17:51 [Note] exp_mysql50: ready for connections.
+Version: '5.0.90-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+160928 11:19:36 [Note] exp_mysql50: Normal shutdown
+
+160928 11:19:36  InnoDB: Starting shutdown...
+160928 11:19:37  InnoDB: Shutdown completed; log sequence number 0 43655
+160928 11:19:38 [Note] exp_mysql50: Shutdown complete
+
+160928 11:21:02  InnoDB: Started; log sequence number 0 43655
+160928 11:21:06 [Note] exp_mysql50: ready for connections.
+Version: '5.0.90-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+160928 11:26:53 [Note] exp_mysql50: Normal shutdown
+
+160928 11:26:53  InnoDB: Starting shutdown...
+160928 11:26:54  InnoDB: Shutdown completed; log sequence number 0 43655
+160928 11:26:54 [Note] exp_mysql50: Shutdown complete
+
+160928 11:28:19  InnoDB: Started; log sequence number 0 43655
+160928 11:28:37 [Note] exp_mysql50: ready for connections.
+Version: '5.0.90-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+161008 13:31:32 [Note] exp_mysql50: Normal shutdown
+
+161008 13:31:41  InnoDB: Starting shutdown...
+161008 13:31:46  InnoDB: Shutdown completed; log sequence number 0 43655
+161008 13:31:48 [Note] exp_mysql50: Shutdown complete
+
+161008 13:40:28  InnoDB: Started; log sequence number 0 43655
+161008 13:40:34 [Note] exp_mysql50: ready for connections.
+Version: '5.0.90-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+161008 13:43:14  InnoDB: Started; log sequence number 0 43655
+161008 13:43:21 [Note] exp_mysql50: ready for connections.
+Version: '5.0.90-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+161008 13:52:31 [Note] exp_mysql50: Normal shutdown
+
+161008 13:52:34  InnoDB: Starting shutdown...
+161008 13:52:34  InnoDB: Shutdown completed; log sequence number 0 43655
+161008 13:52:34 [Note] exp_mysql50: Shutdown complete
+
+161008 13:58:35  InnoDB: Started; log sequence number 0 43655
+161008 13:58:50 [Note] exp_mysql50: ready for connections.
+Version: '5.0.90-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+161008 14:00:52  InnoDB: Started; log sequence number 0 43655
+161008 14:01:01 [Note] exp_mysql50: ready for connections.
+Version: '5.0.90-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
